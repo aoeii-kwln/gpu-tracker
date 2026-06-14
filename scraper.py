@@ -356,6 +356,16 @@ def run():
     else:
         log.info("No significant events — no email sent.")
 
+    # Auto push to GitHub Pages
+    try:
+        import subprocess
+        subprocess.run(["git", "add", "data/prices.json", "dashboard.html"], cwd=BASE_DIR, check=True)
+        subprocess.run(["git", "commit", "-m", f"auto update {today}"], cwd=BASE_DIR, check=True)
+        subprocess.run(["git", "push"], cwd=BASE_DIR, check=True)
+        log.info("GitHub Pages updated successfully.")
+    except Exception as e:
+        log.warning(f"GitHub push failed: {e}")
+
 
 if __name__ == "__main__":
     try:
