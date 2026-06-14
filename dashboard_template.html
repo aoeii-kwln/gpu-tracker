@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPU 価格推移ダッシュボード</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  /* ── Reset & Base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:        #f5f6f8;
+    --white:     #ffffff;
+    --border:    #e4e6ea;
+    --text:      #1a1d23;
+    --muted:     #6b7280;
+    --accent:    #2563eb;
+    --green:     #16a34a;
+    --red:       #dc2626;
+    --yellow:    #d97706;
+    --nvidia:    #76b900;
+    --amd:       #ed1c24;
+    --shadow:    0 1px 4px rgba(0,0,0,.08);
+    --radius:    10px;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Hiragino Sans', 'Meiryo', 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+  }
+  .site-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .site-title-icon {
+    background: var(--accent);
+    color: #fff;
+    width: 28px; height: 28px;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+  }
+  .header-meta {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ── Layout ── */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  /* ── Pick Up ── */
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .pickup-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 28px;
+  }
+  .pickup-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow);
+  }
+  .pickup-item.up   { border-left: 3px solid var(--red);   }
+  .pickup-item.down { border-left: 3px solid var(--green); }
+  .pickup-item.new  { border-left: 3px solid var(--accent);}
+  .pickup-icon { font-size: 18px; }
+  .pickup-text { flex: 1; font-size: 13px; font-weight: 500; }
+  .pickup-date { font-size: 11px; color: var(--muted); }
+  .pickup-badge {
+    font-size: 11px; font-weight: 700;
+    padding: 2px 8px; border-radius: 20px;
+  }
+  .badge-up   { background: #fef2f2; color: var(--red);   }
+  .badge-down { background: #f0fdf4; color: var(--green); }
+  .badge-new  { background: #eff6ff; color: var(--accent);}
+
+  /* ── Filter tabs ── */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px;
+    width: fit-content;
+    box-shadow: var(--shadow);
+  }
+  .tab {
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    transition: all .15s;
+  }
+  .tab.active {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  /* ── GPU Cards ── */
+  .gpu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gpu-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  /* Card top bar */
+  .card-top {
+    padding: 16px 20px 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+  .card-name-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .vendor-badge {
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    letter-spacing: .04em;
+  }
+  .badge-nvidia { background: #e8f5d0; color: #3a6300; }
+  .badge-amd    { background: #fde8e8; color: #9b1c1c; }
+  .card-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text);
+  }
+  .card-price-block {
+    text-align: right;
+  }
+  .card-min-label {
+    font-size: 10px;
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  .card-min-price {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+  }
+  .card-change {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .change-up   { color: var(--red);   }
+  .change-down { color: var(--green); }
+  .change-flat { color: var(--muted); }
+
+  /* Chart area */
+  .card-chart {
+    padding: 16px 20px 8px;
+    height: 220px;
+    position: relative;
+  }
+
+  /* Source table */
+  .card-sources {
+    padding: 0 20px 16px;
+  }
+  .sources-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 6px;
+  }
+  .source-item {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .source-item.best {
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+  }
+  .source-name-label { font-size: 11px; color: var(--muted); }
+  .source-price-val  {
+    font-size: 13px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .source-item.best .source-price-val { color: var(--green); }
+  .source-no-data { color: var(--muted); font-style: italic; font-size: 11px; }
+  /* ── Model Rankings ── */
+  .models-section {
+    border-top: 1px solid var(--border);
+    padding: 14px 20px 18px;
+  }
+  .models-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .model-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .model-table th {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--muted);
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .model-table th.right { text-align: right; }
+  .model-table td {
+    padding: 7px 8px;
+    border-bottom: 1px solid var(--bg);
+    vertical-align: middle;
+  }
+  .model-table tr:hover td { background: var(--bg); }
+  .rank-num {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--muted);
+    width: 32px;
+  }
+  .rank-1 .rank-num { color: #d97706; }
+  .rank-2 .rank-num { color: #6b7280; }
+  .rank-3 .rank-num { color: #92400e; }
+  .model-maker {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    width: 90px;
+    white-space: nowrap;
+  }
+  .model-name { font-weight: 500; color: var(--text); }
+  .model-name a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .model-name a:hover { color: var(--accent); text-decoration: underline; }
+  .model-price {
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+    text-align: right;
+    white-space: nowrap;
+    width: 100px;
+  }
+  .model-price.msi { color: var(--accent); }
+  .model-source {
+    font-size: 11px;
+    color: var(--muted);
+    text-align: right;
+    width: 80px;
+    white-space: nowrap;
+  }
+  .models-empty {
+    color: var(--muted);
+    font-size: 12px;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+
+  /* ── Empty / No data ── */
+  .no-pickup {
+    color: var(--muted);
+    font-size: 13px;
+    padding: 8px 0 20px;
+  }
+  .card-no-data {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="site-title">
+    <div class="site-title-icon">📊</div>
+    GPU 価格推移ダッシュボード
+  </div>
+  <div class="header-meta" id="last-updated">—</div>
+</header>
+
+<div class="container">
+
+  <!-- Pick Up -->
+  <div class="section-label">⚡ Pick Up — 直近7日の変動 / 新着</div>
+  <div class="pickup-list" id="pickup-list"></div>
+
+  <!-- Filters -->
+  <div class="tabs">
+    <button class="tab active" onclick="setPage('nvidia',this)">🟢 NVIDIA RTX 50</button>
+    <button class="tab" onclick="setPage('amd',this)">🔴 AMD RX 9000</button>
+  </div>
+
+  <!-- GPU list -->
+  <div class="gpu-list" id="gpu-list"></div>
+
+</div>
+
+<script>
+// ── Embedded data (injected by inject_data.py) ────────────────────────────
+const PRICES_DATA = __PRICES_DATA__;
+
+const SOURCE_LABELS = {
+  kakaku: "kakaku.com",
+};
+
+const CHART_COLORS = {
+  min:     { line: "#2563eb", fill: "rgba(37,99,235,.08)" },
+  kakaku:  "#f59e0b",
+  dospara: "#8b5cf6",
+  tsukumo: "#06b6d4",
+  unitcom: "#f97316",
+  joshin:  "#ec4899",
+  amazon:  "#10b981",
+  sofmap:  "#6366f1",
+};
+
+let currentFilter = "RTX50";
+const chartInstances = {};
+
+// ── Boot ─────────────────────────────────────────────────────────────────
+(function init() {
+  // Last updated
+  const allDates = Object.values(PRICES_DATA)
+    .flatMap(g => (g.history || []).map(h => h.date)).sort();
+  const latest = allDates[allDates.length - 1];
+  if (latest) {
+    document.getElementById("last-updated").textContent = `最終更新: ${latest}`;
+  }
+
+  renderPickup();
+  renderGPUs();
+})();
+
+// ── Filter ───────────────────────────────────────────────────────────────
+function setPage(page, btn) {
+  currentFilter = page === 'nvidia' ? 'RTX50' : 'RX9000';
+  document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  Object.values(chartInstances).forEach(c => { try { c.destroy(); } catch(e){} });
+  Object.keys(chartInstances).forEach(k => delete chartInstances[k]);
+  renderGPUs();
+}
+
+function setFilter(f, btn) {
+  currentFilter = f;
+  document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  Object.values(chartInstances).forEach(c => { try { c.destroy(); } catch(e){} });
+  Object.keys(chartInstances).forEach(k => delete chartInstances[k]);
+  renderGPUs();
+}
+
+// ── Pick Up ───────────────────────────────────────────────────────────────
+function renderPickup() {
+  const list = document.getElementById("pickup-list");
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - 7);
+  const cutoffStr = cutoff.toISOString().slice(0, 10);
+
+  const items = [];
+
+  // Price change events
+  for (const [gpu, data] of Object.entries(PRICES_DATA)) {
+    for (const ev of (data.events || [])) {
+      if (ev.date >= cutoffStr) items.push({ gpu, ...ev });
+    }
+  }
+
+  // New products from model release dates (直近7日以内に発売)
+  for (const [gpu, data] of Object.entries(PRICES_DATA)) {
+    const history = data.history || [];
+    const latestEntry = history[history.length - 1];
+    const models = latestEntry?.models || [];
+    for (const model of models) {
+      if (model.release_date && model.release_date >= cutoffStr) {
+        items.push({
+          type: "new_product",
+          gpu,
+          date: model.release_date,
+          maker: model.maker,
+          name: model.name,
+          price: model.price,
+          url: model.url,
+        });
+      }
+    }
+  }
+
+  items.sort((a, b) => b.date.localeCompare(a.date));
+
+  if (!items.length) {
+    list.innerHTML = `<p class="no-pickup">直近7日間に価格変動・新着商品はありません</p>`;
+    return;
+  }
+
+  list.innerHTML = items.map(ev => {
+    if (ev.type === "new_product") {
+      const nameHtml = ev.url
+        ? `<a href="${ev.url}" target="_blank" style="color:inherit">${escHtml(ev.maker)} ${escHtml(ev.name)}</a>`
+        : `${escHtml(ev.maker)} ${escHtml(ev.name)}`;
+      return `
+        <div class="pickup-item new">
+          <span class="pickup-icon">🆕</span>
+          <span class="pickup-text"><b>${ev.gpu}</b> — ${nameHtml} ¥${ev.price.toLocaleString()}</span>
+          <span class="pickup-date">${ev.date}</span>
+          <span class="pickup-badge badge-new">NEW</span>
+        </div>`;
+    }
+    const isNew  = ev.type === "new_model";
+    const isUp   = ev.type === "price_change" && ev.current > ev.prev;
+    const cls    = isNew ? "new" : isUp ? "up" : "down";
+    const icon   = isNew ? "🆕" : isUp ? "📈" : "📉";
+    const badge  = isNew ? "NEW" : ev.change;
+    const badgeCls = isNew ? "badge-new" : isUp ? "badge-up" : "badge-down";
+    const detail = isNew
+      ? `${ev.gpu} が初めて検出 — ¥${ev.price.toLocaleString()}`
+      : `${ev.gpu}  ¥${ev.prev.toLocaleString()} → ¥${ev.current.toLocaleString()}`;
+    return `
+      <div class="pickup-item ${cls}">
+        <span class="pickup-icon">${icon}</span>
+        <span class="pickup-text">${detail}</span>
+        <span class="pickup-date">${ev.date}</span>
+        <span class="pickup-badge ${badgeCls}">${badge}</span>
+      </div>`;
+  }).join("");
+}
+
+// ── GPU Cards ─────────────────────────────────────────────────────────────
+function renderGPUs() {
+  const list = document.getElementById("gpu-list");
+  list.innerHTML = "";
+
+  const entries = Object.entries(PRICES_DATA).filter(([, d]) => {
+    if (currentFilter === "all") return true;
+    return (d.meta?.series ?? "") === currentFilter;
+  });
+
+  entries.forEach(([gpu, data], idx) => {
+    const history = data.history || [];
+    const vendor  = data.meta?.vendor ?? "NVIDIA";
+    const card    = document.createElement("div");
+    card.className = "gpu-card";
+    const chartId = `chart-${idx}`;
+
+    // Price info
+    const latest  = history[history.length - 1];
+    const prev    = history.length > 1 ? history[history.length - 2] : null;
+    const minNow  = latest?.min_price ?? null;
+    const minPrev = prev?.min_price ?? null;
+    const sources = latest?.sources ?? {};
+    const bestPrice = minNow;
+
+    // Change
+    let changeHtml = `<div class="card-change change-flat">前日比 —</div>`;
+    if (minNow && minPrev) {
+      const pct = (minNow - minPrev) / minPrev;
+      const sign = pct > 0 ? "+" : "";
+      const cls  = pct > 0 ? "change-up" : pct < 0 ? "change-down" : "change-flat";
+      const arrow = pct > 0 ? "▲" : pct < 0 ? "▼" : "—";
+      changeHtml = `<div class="card-change ${cls}">前日比 ${arrow} ${sign}${(pct*100).toFixed(1)}%</div>`;
+    }
+
+    // Source grid
+    const sourceHtml = Object.entries(SOURCE_LABELS).map(([key, label]) => {
+      const p = sources[key];
+      if (!p) return `
+        <div class="source-item">
+          <span class="source-name-label">${label}</span>
+          <span class="source-no-data">—</span>
+        </div>`;
+      const isBest = p === bestPrice;
+      return `
+        <div class="source-item${isBest ? " best" : ""}">
+          <span class="source-name-label">${label}${isBest ? " ✓" : ""}</span>
+          <span class="source-price-val">¥${p.toLocaleString()}</span>
+        </div>`;
+    }).join("");
+
+    card.innerHTML = `
+      <div class="card-top">
+        <div>
+          <div class="card-name-row">
+            <span class="vendor-badge ${vendor === "AMD" ? "badge-amd" : "badge-nvidia"}">${vendor}</span>
+            <span class="card-name">${gpu}</span>
+          </div>
+        </div>
+        <div class="card-price-block">
+          <div class="card-min-label">最安値</div>
+          <div class="card-min-price">${minNow ? "¥" + minNow.toLocaleString() : "—"}</div>
+          ${changeHtml}
+        </div>
+      </div>
+      ${history.length > 0
+        ? `<div class="card-chart"><canvas id="${chartId}"></canvas></div>`
+        : `<div class="card-no-data">データがありません — scraper.py を実行してください</div>`
+      }
+      <div class="card-sources">
+        <div class="sources-title">販売店別価格</div>
+        <div class="source-grid">${sourceHtml}</div>
+      </div>
+      <div class="models-section">
+        <div class="models-title">📋 全モデル価格ランキング（kakaku.com）</div>
+        ${buildModelsHtml(data)}
+      </div>`;
+
+    list.appendChild(card);
+
+    if (history.length > 0) {
+      requestAnimationFrame(() => buildChart(chartId, gpu, history, vendor));
+    }
+  });
+}
+
+// ── Model Rankings ───────────────────────────────────────────────────────────
+function buildModelsHtml(data) {
+  // Get latest models from most recent history entry
+  const history = data.history || [];
+  let models = [];
+  // Walk history backwards to find latest entry with models
+  for (let i = history.length - 1; i >= 0; i--) {
+    if (history[i].models && history[i].models.length > 0) {
+      models = history[i].models;
+      break;
+    }
+  }
+
+  if (!models.length) {
+    return `<div class="models-empty">データなし — 次回 scraper.py 実行時に取得されます</div>`;
+  }
+
+  const rows = models.map((m, idx) => {
+    const rank = idx + 1;
+    const rankCls = rank <= 3 ? `rank-${rank}` : "";
+    const isMSI = m.maker === "MSI";
+    const priceCls = isMSI ? "model-price msi" : "model-price";
+    const nameHtml = m.url
+      ? `<a href="${m.url}" target="_blank">${escHtml(m.name)}</a>`
+      : escHtml(m.name);
+    return `
+      <tr class="${rankCls}">
+        <td class="rank-num">RANK ${rank}</td>
+        <td class="model-maker">${escHtml(m.maker)}</td>
+        <td class="model-name">${nameHtml}</td>
+        <td class="${priceCls}">¥${m.price.toLocaleString()}</td>
+        <td class="model-source">${escHtml(m.source || "kakaku")}</td>
+      </tr>`;
+  }).join("");
+
+  return `
+    <table class="model-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Maker</th>
+          <th>Model</th>
+          <th class="right">Price</th>
+          <th class="right">Source</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function escHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+// ── Chart ─────────────────────────────────────────────────────────────────
+function buildChart(chartId, gpu, history, vendor) {
+  const ctx = document.getElementById(chartId);
+  if (!ctx) return;
+
+  const labels = history.map(h => h.date.slice(5)); // MM-DD
+  const sourceKeys = [...new Set(history.flatMap(h => Object.keys(h.sources || {})))];
+
+  const accentColor = vendor === "AMD" ? "#dc2626" : "#2563eb";
+  const accentFill  = vendor === "AMD" ? "rgba(220,38,38,.07)" : "rgba(37,99,235,.07)";
+
+  const datasets = [
+    {
+      label: "最安値",
+      data: history.map(h => h.min_price ?? null),
+      borderColor: accentColor,
+      backgroundColor: accentFill,
+      borderWidth: 2.5,
+      pointRadius: history.length > 30 ? 1 : 3,
+      pointHoverRadius: 5,
+      fill: true,
+      tension: 0.35,
+      spanGaps: true,
+      order: 0,
+    },
+    ...sourceKeys.map((key, i) => ({
+      label: SOURCE_LABELS[key] ?? key,
+      data: history.map(h => h.sources?.[key] ?? null),
+      borderColor: CHART_COLORS[key] ?? "#aaa",
+      borderWidth: 1,
+      pointRadius: 0,
+      pointHoverRadius: 3,
+      fill: false,
+      tension: 0.35,
+      spanGaps: true,
+      borderDash: [4, 3],
+      order: i + 1,
+    })),
+  ];
+
+  const instance = new Chart(ctx, {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: {
+          position: "bottom",
+          labels: {
+            color: "#6b7280",
+            boxWidth: 10,
+            padding: 12,
+            font: { size: 11 },
+          },
+        },
+        tooltip: {
+          backgroundColor: "#fff",
+          borderColor: "#e4e6ea",
+          borderWidth: 1,
+          titleColor: "#1a1d23",
+          bodyColor: "#374151",
+          padding: 10,
+          callbacks: {
+            label: ctx => {
+              const v = ctx.parsed.y;
+              return v != null
+                ? ` ${ctx.dataset.label}: ¥${v.toLocaleString()}`
+                : ` ${ctx.dataset.label}: —`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: "#9ca3af",
+            font: { size: 11 },
+            maxTicksLimit: 10,
+            maxRotation: 0,
+          },
+          grid: { color: "#f3f4f6" },
+        },
+        y: {
+          ticks: {
+            color: "#9ca3af",
+            font: { size: 11 },
+            callback: v => "¥" + (v / 10000).toFixed(0) + "万",
+          },
+          grid: { color: "#f3f4f6" },
+        },
+      },
+    },
+  });
+
+  chartInstances[chartId] = instance;
+}
+</script>
+</body>
+</html>

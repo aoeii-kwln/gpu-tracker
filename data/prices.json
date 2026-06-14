@@ -1,0 +1,1863 @@
+{
+  "RTX 5090": {
+    "meta": {
+      "series": "RTX50",
+      "vendor": "NVIDIA"
+    },
+    "history": [
+      {
+        "date": "2026-05-14",
+        "min_price": 706452,
+        "sources": {
+          "kakaku": 718090,
+          "dospara": 706452,
+          "amazon": 711494,
+          "joshin": 710988
+        }
+      },
+      {
+        "date": "2026-05-15",
+        "min_price": 712676,
+        "sources": {
+          "kakaku": 712676,
+          "dospara": 729002,
+          "joshin": 720130,
+          "amazon": 718782
+        }
+      },
+      {
+        "date": "2026-05-16",
+        "min_price": 708679,
+        "sources": {
+          "amazon": 722570,
+          "dospara": 714817,
+          "joshin": 712290,
+          "tsukumo": 708679
+        }
+      },
+      {
+        "date": "2026-05-17",
+        "min_price": 703205,
+        "sources": {
+          "joshin": 725438,
+          "amazon": 703205,
+          "dospara": 712944,
+          "tsukumo": 721399
+        }
+      },
+      {
+        "date": "2026-05-18",
+        "min_price": 711558,
+        "sources": {
+          "tsukumo": 711705,
+          "joshin": 723910,
+          "dospara": 728278,
+          "kakaku": 711558
+        }
+      },
+      {
+        "date": "2026-05-19",
+        "min_price": 718624,
+        "sources": {
+          "amazon": 720147,
+          "kakaku": 718624,
+          "joshin": 727670,
+          "dospara": 724620
+        }
+      },
+      {
+        "date": "2026-05-20",
+        "min_price": 711889,
+        "sources": {
+          "amazon": 711889,
+          "kakaku": 714298,
+          "dospara": 725275,
+          "joshin": 728292
+        }
+      },
+      {
+        "date": "2026-05-21",
+        "min_price": 710780,
+        "sources": {
+          "dospara": 726792,
+          "kakaku": 712520,
+          "amazon": 735422,
+          "joshin": 710780
+        }
+      },
+      {
+        "date": "2026-05-22",
+        "min_price": 707793,
+        "sources": {
+          "kakaku": 732740,
+          "amazon": 707793,
+          "dospara": 712959,
+          "joshin": 709692
+        }
+      },
+      {
+        "date": "2026-05-23",
+        "min_price": 701972,
+        "sources": {
+          "amazon": 725871,
+          "tsukumo": 701972,
+          "dospara": 721843,
+          "kakaku": 725096
+        }
+      },
+      {
+        "date": "2026-05-24",
+        "min_price": 697021,
+        "sources": {
+          "amazon": 697021,
+          "dospara": 721497,
+          "kakaku": 718182,
+          "tsukumo": 708869
+        }
+      },
+      {
+        "date": "2026-05-25",
+        "min_price": 705303,
+        "sources": {
+          "dospara": 720730,
+          "tsukumo": 705303,
+          "amazon": 707904,
+          "kakaku": 710078
+        }
+      },
+      {
+        "date": "2026-05-26",
+        "min_price": 695105,
+        "sources": {
+          "tsukumo": 717384,
+          "dospara": 699804,
+          "joshin": 695105,
+          "amazon": 697108
+        }
+      },
+      {
+        "date": "2026-05-27",
+        "min_price": 700634,
+        "sources": {
+          "kakaku": 713179,
+          "dospara": 700648,
+          "joshin": 700634,
+          "amazon": 702032
+        }
+      },
+      {
+        "date": "2026-05-28",
+        "min_price": 711128,
+        "sources": {
+          "amazon": 731042,
+          "dospara": 719725,
+          "joshin": 727779,
+          "kakaku": 711128
+        }
+      },
+      {
+        "date": "2026-05-29",
+        "min_price": 704648,
+        "sources": {
+          "dospara": 727292,
+          "kakaku": 716154,
+          "tsukumo": 727791,
+          "joshin": 704648
+        }
+      },
+      {
+        "date": "2026-05-30",
+        "min_price": 718078,
+        "sources": {
+          "tsukumo": 718078,
+          "amazon": 739627,
+          "dospara": 730870,
+          "joshin": 726281
+        }
+      },
+      {
+        "date": "2026-05-31",
+        "min_price": 715260,
+        "sources": {
+          "tsukumo": 715260,
+          "joshin": 717892,
+          "dospara": 722904,
+          "kakaku": 716249
+        }
+      },
+      {
+        "date": "2026-06-01",
+        "min_price": 740577,
+        "sources": {
+          "amazon": 741354,
+          "joshin": 744846,
+          "tsukumo": 740577,
+          "kakaku": 744764
+        }
+      },
+      {
+        "date": "2026-06-02",
+        "min_price": 725109,
+        "sources": {
+          "joshin": 725109,
+          "dospara": 732956,
+          "amazon": 726389,
+          "kakaku": 749246
+        }
+      },
+      {
+        "date": "2026-06-03",
+        "min_price": 728222,
+        "sources": {
+          "dospara": 734829,
+          "amazon": 740578,
+          "joshin": 728222,
+          "kakaku": 735824
+        }
+      },
+      {
+        "date": "2026-06-04",
+        "min_price": 713483,
+        "sources": {
+          "amazon": 715628,
+          "joshin": 730634,
+          "kakaku": 713483,
+          "dospara": 715571
+        }
+      },
+      {
+        "date": "2026-06-05",
+        "min_price": 729168,
+        "sources": {
+          "amazon": 733479,
+          "joshin": 729168,
+          "tsukumo": 738562,
+          "kakaku": 734401
+        }
+      },
+      {
+        "date": "2026-06-06",
+        "min_price": 720703,
+        "sources": {
+          "kakaku": 737739,
+          "amazon": 720703,
+          "dospara": 728264,
+          "tsukumo": 730002
+        }
+      },
+      {
+        "date": "2026-06-07",
+        "min_price": 705789,
+        "sources": {
+          "joshin": 713050,
+          "tsukumo": 720157,
+          "kakaku": 726011,
+          "amazon": 705789
+        }
+      },
+      {
+        "date": "2026-06-08",
+        "min_price": 717080,
+        "sources": {
+          "joshin": 717080,
+          "tsukumo": 724037,
+          "amazon": 735776,
+          "kakaku": 718270
+        }
+      },
+      {
+        "date": "2026-06-09",
+        "min_price": 722949,
+        "sources": {
+          "tsukumo": 722949,
+          "joshin": 730825,
+          "kakaku": 734242,
+          "amazon": 734583
+        }
+      },
+      {
+        "date": "2026-06-10",
+        "min_price": 725072,
+        "sources": {
+          "kakaku": 748847,
+          "amazon": 738493,
+          "dospara": 738522,
+          "tsukumo": 725072
+        }
+      },
+      {
+        "date": "2026-06-11",
+        "min_price": 725038,
+        "sources": {
+          "kakaku": 732910,
+          "dospara": 738758,
+          "amazon": 733689,
+          "joshin": 725038
+        }
+      },
+      {
+        "date": "2026-06-12",
+        "min_price": 723014,
+        "sources": {
+          "kakaku": 736066,
+          "dospara": 749823,
+          "amazon": 742572,
+          "joshin": 723014
+        }
+      }
+    ],
+    "events": []
+  },
+  "RTX 5080": {
+    "meta": {
+      "series": "RTX50",
+      "vendor": "NVIDIA"
+    },
+    "history": [
+      {
+        "date": "2026-05-14",
+        "min_price": 201815,
+        "sources": {
+          "joshin": 207551,
+          "amazon": 202280,
+          "tsukumo": 201815,
+          "dospara": 206104
+        }
+      },
+      {
+        "date": "2026-05-15",
+        "min_price": 201942,
+        "sources": {
+          "dospara": 204593,
+          "amazon": 203014,
+          "tsukumo": 204113,
+          "kakaku": 201942
+        }
+      },
+      {
+        "date": "2026-05-16",
+        "min_price": 198685,
+        "sources": {
+          "joshin": 198725,
+          "tsukumo": 201654,
+          "amazon": 203915,
+          "dospara": 198685
+        }
+      },
+      {
+        "date": "2026-05-17",
+        "min_price": 201227,
+        "sources": {
+          "kakaku": 206699,
+          "tsukumo": 203888,
+          "dospara": 201854,
+          "amazon": 201227
+        }
+      },
+      {
+        "date": "2026-05-18",
+        "min_price": 202414,
+        "sources": {
+          "dospara": 205597,
+          "kakaku": 206211,
+          "amazon": 202453,
+          "joshin": 202414
+        }
+      },
+      {
+        "date": "2026-05-19",
+        "min_price": 200824,
+        "sources": {
+          "dospara": 201593,
+          "tsukumo": 200824,
+          "amazon": 205841,
+          "joshin": 205469
+        }
+      },
+      {
+        "date": "2026-05-20",
+        "min_price": 199025,
+        "sources": {
+          "joshin": 206644,
+          "tsukumo": 203500,
+          "dospara": 199025,
+          "amazon": 202976
+        }
+      },
+      {
+        "date": "2026-05-21",
+        "min_price": 204863,
+        "sources": {
+          "tsukumo": 205500,
+          "joshin": 204863,
+          "dospara": 205118,
+          "amazon": 207268
+        }
+      },
+      {
+        "date": "2026-05-22",
+        "min_price": 201340,
+        "sources": {
+          "joshin": 203501,
+          "dospara": 201340,
+          "amazon": 204013,
+          "kakaku": 204257
+        }
+      },
+      {
+        "date": "2026-05-23",
+        "min_price": 203906,
+        "sources": {
+          "amazon": 205532,
+          "kakaku": 203906,
+          "dospara": 206828,
+          "joshin": 208171
+        }
+      },
+      {
+        "date": "2026-05-24",
+        "min_price": 203192,
+        "sources": {
+          "joshin": 208594,
+          "dospara": 208282,
+          "kakaku": 209929,
+          "amazon": 203192
+        }
+      },
+      {
+        "date": "2026-05-25",
+        "min_price": 203299,
+        "sources": {
+          "kakaku": 204034,
+          "amazon": 205476,
+          "joshin": 206464,
+          "dospara": 203299
+        }
+      },
+      {
+        "date": "2026-05-26",
+        "min_price": 200551,
+        "sources": {
+          "joshin": 200551,
+          "amazon": 203913,
+          "dospara": 204896,
+          "kakaku": 204531
+        }
+      },
+      {
+        "date": "2026-05-27",
+        "min_price": 196640,
+        "sources": {
+          "tsukumo": 196640,
+          "amazon": 197849,
+          "joshin": 202508,
+          "dospara": 199507
+        }
+      },
+      {
+        "date": "2026-05-28",
+        "min_price": 196333,
+        "sources": {
+          "amazon": 202635,
+          "kakaku": 201582,
+          "tsukumo": 197666,
+          "dospara": 196333
+        }
+      },
+      {
+        "date": "2026-05-29",
+        "min_price": 195037,
+        "sources": {
+          "tsukumo": 197492,
+          "kakaku": 200988,
+          "joshin": 195037,
+          "dospara": 198303
+        }
+      },
+      {
+        "date": "2026-05-30",
+        "min_price": 196003,
+        "sources": {
+          "amazon": 196003,
+          "dospara": 197230,
+          "kakaku": 198535,
+          "joshin": 199491
+        }
+      },
+      {
+        "date": "2026-05-31",
+        "min_price": 193771,
+        "sources": {
+          "joshin": 199213,
+          "dospara": 193771,
+          "kakaku": 197512,
+          "tsukumo": 195120
+        }
+      },
+      {
+        "date": "2026-06-01",
+        "min_price": 194797,
+        "sources": {
+          "kakaku": 194797,
+          "tsukumo": 196811,
+          "dospara": 195759,
+          "joshin": 197724
+        }
+      },
+      {
+        "date": "2026-06-02",
+        "min_price": 193413,
+        "sources": {
+          "kakaku": 193622,
+          "dospara": 197632,
+          "amazon": 193421,
+          "tsukumo": 193413
+        }
+      },
+      {
+        "date": "2026-06-03",
+        "min_price": 193009,
+        "sources": {
+          "tsukumo": 193009,
+          "kakaku": 196501,
+          "joshin": 200432,
+          "dospara": 194381
+        }
+      },
+      {
+        "date": "2026-06-04",
+        "min_price": 193476,
+        "sources": {
+          "dospara": 193476,
+          "joshin": 199098,
+          "tsukumo": 197917,
+          "amazon": 199155
+        }
+      },
+      {
+        "date": "2026-06-05",
+        "min_price": 194503,
+        "sources": {
+          "dospara": 197018,
+          "kakaku": 197332,
+          "tsukumo": 194503,
+          "joshin": 198360
+        }
+      },
+      {
+        "date": "2026-06-06",
+        "min_price": 194512,
+        "sources": {
+          "dospara": 194512,
+          "amazon": 199120,
+          "kakaku": 199222,
+          "joshin": 194593
+        }
+      },
+      {
+        "date": "2026-06-07",
+        "min_price": 195295,
+        "sources": {
+          "dospara": 200718,
+          "joshin": 196307,
+          "kakaku": 199534,
+          "tsukumo": 195295
+        }
+      },
+      {
+        "date": "2026-06-08",
+        "min_price": 198939,
+        "sources": {
+          "joshin": 198939,
+          "amazon": 199383,
+          "kakaku": 200822,
+          "tsukumo": 200489
+        }
+      },
+      {
+        "date": "2026-06-09",
+        "min_price": 196479,
+        "sources": {
+          "amazon": 196479,
+          "joshin": 197836,
+          "tsukumo": 198450,
+          "kakaku": 200715
+        }
+      },
+      {
+        "date": "2026-06-10",
+        "min_price": 201405,
+        "sources": {
+          "kakaku": 201405,
+          "joshin": 202186,
+          "dospara": 202913,
+          "tsukumo": 204170
+        }
+      },
+      {
+        "date": "2026-06-11",
+        "min_price": 196309,
+        "sources": {
+          "amazon": 196309,
+          "kakaku": 199761,
+          "dospara": 198634,
+          "tsukumo": 200162
+        }
+      },
+      {
+        "date": "2026-06-12",
+        "min_price": 196033,
+        "sources": {
+          "tsukumo": 198988,
+          "dospara": 196033,
+          "kakaku": 196599,
+          "amazon": 202234
+        }
+      }
+    ],
+    "events": []
+  },
+  "RTX 5070 Ti": {
+    "meta": {
+      "series": "RTX50",
+      "vendor": "NVIDIA"
+    },
+    "history": [
+      {
+        "date": "2026-05-14",
+        "min_price": 168593,
+        "sources": {
+          "kakaku": 168593,
+          "tsukumo": 173784,
+          "amazon": 172797,
+          "joshin": 173078
+        }
+      },
+      {
+        "date": "2026-05-15",
+        "min_price": 167138,
+        "sources": {
+          "joshin": 168655,
+          "dospara": 167614,
+          "tsukumo": 169155,
+          "kakaku": 167138
+        }
+      },
+      {
+        "date": "2026-05-16",
+        "min_price": 170733,
+        "sources": {
+          "amazon": 172122,
+          "dospara": 172645,
+          "joshin": 171372,
+          "tsukumo": 170733
+        }
+      },
+      {
+        "date": "2026-05-17",
+        "min_price": 168218,
+        "sources": {
+          "kakaku": 168218,
+          "dospara": 171982,
+          "amazon": 169791,
+          "tsukumo": 172629
+        }
+      },
+      {
+        "date": "2026-05-18",
+        "min_price": 167934,
+        "sources": {
+          "tsukumo": 169799,
+          "kakaku": 169496,
+          "amazon": 168444,
+          "dospara": 167934
+        }
+      },
+      {
+        "date": "2026-05-19",
+        "min_price": 172133,
+        "sources": {
+          "joshin": 172133,
+          "tsukumo": 172200,
+          "kakaku": 173026,
+          "amazon": 172255
+        }
+      },
+      {
+        "date": "2026-05-20",
+        "min_price": 167354,
+        "sources": {
+          "tsukumo": 169276,
+          "joshin": 171859,
+          "kakaku": 167354,
+          "amazon": 169856
+        }
+      },
+      {
+        "date": "2026-05-21",
+        "min_price": 167152,
+        "sources": {
+          "kakaku": 167152,
+          "tsukumo": 172535,
+          "joshin": 172919,
+          "dospara": 169294
+        }
+      },
+      {
+        "date": "2026-05-22",
+        "min_price": 166051,
+        "sources": {
+          "amazon": 168978,
+          "dospara": 166051,
+          "tsukumo": 169634,
+          "kakaku": 166871
+        }
+      },
+      {
+        "date": "2026-05-23",
+        "min_price": 166741,
+        "sources": {
+          "dospara": 170461,
+          "kakaku": 166741,
+          "tsukumo": 169532,
+          "joshin": 170829
+        }
+      },
+      {
+        "date": "2026-05-24",
+        "min_price": 164655,
+        "sources": {
+          "kakaku": 168716,
+          "tsukumo": 170920,
+          "dospara": 170556,
+          "joshin": 164655
+        }
+      },
+      {
+        "date": "2026-05-25",
+        "min_price": 166965,
+        "sources": {
+          "kakaku": 172197,
+          "joshin": 167525,
+          "tsukumo": 166965,
+          "amazon": 172358
+        }
+      },
+      {
+        "date": "2026-05-26",
+        "min_price": 168575,
+        "sources": {
+          "kakaku": 172539,
+          "tsukumo": 168925,
+          "dospara": 168575,
+          "amazon": 173107
+        }
+      },
+      {
+        "date": "2026-05-27",
+        "min_price": 166600,
+        "sources": {
+          "kakaku": 171181,
+          "dospara": 168509,
+          "amazon": 166600,
+          "tsukumo": 167112
+        }
+      },
+      {
+        "date": "2026-05-28",
+        "min_price": 165989,
+        "sources": {
+          "kakaku": 166603,
+          "dospara": 165989,
+          "joshin": 170657,
+          "tsukumo": 168580
+        }
+      },
+      {
+        "date": "2026-05-29",
+        "min_price": 164220,
+        "sources": {
+          "amazon": 164220,
+          "dospara": 169696,
+          "joshin": 168817,
+          "kakaku": 166632
+        }
+      },
+      {
+        "date": "2026-05-30",
+        "min_price": 166779,
+        "sources": {
+          "amazon": 170015,
+          "tsukumo": 170901,
+          "kakaku": 166779,
+          "dospara": 171871
+        }
+      },
+      {
+        "date": "2026-05-31",
+        "min_price": 167455,
+        "sources": {
+          "tsukumo": 169966,
+          "dospara": 173745,
+          "amazon": 167455,
+          "joshin": 169435
+        }
+      },
+      {
+        "date": "2026-06-01",
+        "min_price": 165362,
+        "sources": {
+          "amazon": 165623,
+          "tsukumo": 166217,
+          "kakaku": 167074,
+          "dospara": 165362
+        }
+      },
+      {
+        "date": "2026-06-02",
+        "min_price": 167357,
+        "sources": {
+          "kakaku": 168380,
+          "tsukumo": 168578,
+          "dospara": 168040,
+          "amazon": 167357
+        }
+      },
+      {
+        "date": "2026-06-03",
+        "min_price": 172251,
+        "sources": {
+          "dospara": 174514,
+          "joshin": 172251,
+          "kakaku": 173968,
+          "amazon": 173586
+        }
+      },
+      {
+        "date": "2026-06-04",
+        "min_price": 166567,
+        "sources": {
+          "dospara": 166968,
+          "amazon": 166567,
+          "joshin": 169998,
+          "kakaku": 172680
+        }
+      },
+      {
+        "date": "2026-06-05",
+        "min_price": 168150,
+        "sources": {
+          "dospara": 168150,
+          "kakaku": 168545,
+          "amazon": 169476,
+          "joshin": 171386
+        }
+      },
+      {
+        "date": "2026-06-06",
+        "min_price": 169103,
+        "sources": {
+          "dospara": 171917,
+          "tsukumo": 169103,
+          "amazon": 172551,
+          "kakaku": 172500
+        }
+      },
+      {
+        "date": "2026-06-07",
+        "min_price": 167716,
+        "sources": {
+          "tsukumo": 168256,
+          "dospara": 172191,
+          "amazon": 167716,
+          "joshin": 173334
+        }
+      },
+      {
+        "date": "2026-06-08",
+        "min_price": 167361,
+        "sources": {
+          "amazon": 172008,
+          "joshin": 168437,
+          "dospara": 167361,
+          "tsukumo": 167516
+        }
+      },
+      {
+        "date": "2026-06-09",
+        "min_price": 164752,
+        "sources": {
+          "dospara": 166496,
+          "amazon": 164752,
+          "kakaku": 166663,
+          "tsukumo": 166832
+        }
+      },
+      {
+        "date": "2026-06-10",
+        "min_price": 166307,
+        "sources": {
+          "joshin": 166980,
+          "amazon": 170715,
+          "tsukumo": 170905,
+          "dospara": 166307
+        }
+      },
+      {
+        "date": "2026-06-11",
+        "min_price": 166802,
+        "sources": {
+          "dospara": 169320,
+          "amazon": 169152,
+          "tsukumo": 167435,
+          "kakaku": 166802
+        }
+      },
+      {
+        "date": "2026-06-12",
+        "min_price": 163649,
+        "sources": {
+          "amazon": 164173,
+          "joshin": 165113,
+          "tsukumo": 163649,
+          "dospara": 165323
+        }
+      }
+    ],
+    "events": []
+  },
+  "RTX 5070": {
+    "meta": {
+      "series": "RTX50",
+      "vendor": "NVIDIA"
+    },
+    "history": [
+      {
+        "date": "2026-05-14",
+        "min_price": 101653,
+        "sources": {
+          "kakaku": 102373,
+          "joshin": 101653,
+          "tsukumo": 103291,
+          "amazon": 104340
+        }
+      },
+      {
+        "date": "2026-05-15",
+        "min_price": 101943,
+        "sources": {
+          "joshin": 105592,
+          "tsukumo": 103874,
+          "dospara": 105795,
+          "kakaku": 101943
+        }
+      },
+      {
+        "date": "2026-05-16",
+        "min_price": 102769,
+        "sources": {
+          "amazon": 105173,
+          "kakaku": 102769,
+          "dospara": 104591,
+          "joshin": 104542
+        }
+      },
+      {
+        "date": "2026-05-17",
+        "min_price": 103759,
+        "sources": {
+          "joshin": 105244,
+          "kakaku": 105081,
+          "tsukumo": 104166,
+          "dospara": 103759
+        }
+      },
+      {
+        "date": "2026-05-18",
+        "min_price": 104970,
+        "sources": {
+          "dospara": 105548,
+          "amazon": 107334,
+          "tsukumo": 105448,
+          "joshin": 104970
+        }
+      },
+      {
+        "date": "2026-05-19",
+        "min_price": 104096,
+        "sources": {
+          "kakaku": 104096,
+          "joshin": 105698,
+          "amazon": 105264,
+          "tsukumo": 105520
+        }
+      },
+      {
+        "date": "2026-05-20",
+        "min_price": 103499,
+        "sources": {
+          "dospara": 103510,
+          "tsukumo": 103912,
+          "kakaku": 105009,
+          "joshin": 103499
+        }
+      },
+      {
+        "date": "2026-05-21",
+        "min_price": 101731,
+        "sources": {
+          "amazon": 101731,
+          "kakaku": 102460,
+          "joshin": 102711,
+          "tsukumo": 101922
+        }
+      },
+      {
+        "date": "2026-05-22",
+        "min_price": 100434,
+        "sources": {
+          "tsukumo": 103239,
+          "joshin": 102782,
+          "amazon": 100458,
+          "dospara": 100434
+        }
+      },
+      {
+        "date": "2026-05-23",
+        "min_price": 101162,
+        "sources": {
+          "dospara": 101162,
+          "joshin": 102621,
+          "kakaku": 102864,
+          "tsukumo": 102633
+        }
+      },
+      {
+        "date": "2026-05-24",
+        "min_price": 100628,
+        "sources": {
+          "dospara": 100628,
+          "joshin": 102116,
+          "tsukumo": 101452,
+          "amazon": 101460
+        }
+      },
+      {
+        "date": "2026-05-25",
+        "min_price": 101447,
+        "sources": {
+          "dospara": 103222,
+          "kakaku": 102163,
+          "amazon": 101447,
+          "tsukumo": 103241
+        }
+      },
+      {
+        "date": "2026-05-26",
+        "min_price": 98739,
+        "sources": {
+          "kakaku": 98756,
+          "joshin": 102263,
+          "dospara": 98739,
+          "amazon": 99859
+        }
+      },
+      {
+        "date": "2026-05-27",
+        "min_price": 99437,
+        "sources": {
+          "dospara": 100336,
+          "tsukumo": 99437,
+          "kakaku": 101029,
+          "joshin": 100884
+        }
+      },
+      {
+        "date": "2026-05-28",
+        "min_price": 98745,
+        "sources": {
+          "amazon": 98745,
+          "kakaku": 99852,
+          "dospara": 99168,
+          "joshin": 99285
+        }
+      },
+      {
+        "date": "2026-05-29",
+        "min_price": 97773,
+        "sources": {
+          "joshin": 99658,
+          "amazon": 100151,
+          "dospara": 101140,
+          "tsukumo": 97773
+        }
+      },
+      {
+        "date": "2026-05-30",
+        "min_price": 97156,
+        "sources": {
+          "amazon": 99903,
+          "dospara": 97999,
+          "joshin": 100441,
+          "tsukumo": 97156
+        }
+      },
+      {
+        "date": "2026-05-31",
+        "min_price": 97850,
+        "sources": {
+          "tsukumo": 97850,
+          "amazon": 99454,
+          "joshin": 99752,
+          "kakaku": 100453
+        }
+      },
+      {
+        "date": "2026-06-01",
+        "min_price": 97992,
+        "sources": {
+          "joshin": 99750,
+          "kakaku": 97992,
+          "dospara": 98789,
+          "amazon": 101446
+        }
+      },
+      {
+        "date": "2026-06-02",
+        "min_price": 98075,
+        "sources": {
+          "amazon": 99192,
+          "kakaku": 99965,
+          "dospara": 98075,
+          "tsukumo": 98455
+        }
+      },
+      {
+        "date": "2026-06-03",
+        "min_price": 97917,
+        "sources": {
+          "joshin": 97917,
+          "tsukumo": 100030,
+          "amazon": 98640,
+          "kakaku": 99153
+        }
+      },
+      {
+        "date": "2026-06-04",
+        "min_price": 99573,
+        "sources": {
+          "dospara": 101464,
+          "tsukumo": 101687,
+          "amazon": 99573,
+          "joshin": 101130
+        }
+      },
+      {
+        "date": "2026-06-05",
+        "min_price": 100228,
+        "sources": {
+          "dospara": 100228,
+          "amazon": 100499,
+          "tsukumo": 101360,
+          "kakaku": 100504
+        }
+      },
+      {
+        "date": "2026-06-06",
+        "min_price": 97746,
+        "sources": {
+          "kakaku": 99761,
+          "joshin": 97746,
+          "amazon": 99719,
+          "dospara": 98057
+        }
+      },
+      {
+        "date": "2026-06-07",
+        "min_price": 98548,
+        "sources": {
+          "tsukumo": 98548,
+          "joshin": 99419,
+          "dospara": 101395,
+          "kakaku": 98710
+        }
+      },
+      {
+        "date": "2026-06-08",
+        "min_price": 100051,
+        "sources": {
+          "joshin": 100589,
+          "amazon": 100051,
+          "kakaku": 101071,
+          "tsukumo": 101695
+        }
+      },
+      {
+        "date": "2026-06-09",
+        "min_price": 100032,
+        "sources": {
+          "dospara": 100787,
+          "joshin": 102034,
+          "kakaku": 100032,
+          "amazon": 101111
+        }
+      },
+      {
+        "date": "2026-06-10",
+        "min_price": 100210,
+        "sources": {
+          "kakaku": 102466,
+          "tsukumo": 100210,
+          "amazon": 103630,
+          "dospara": 103550
+        }
+      },
+      {
+        "date": "2026-06-11",
+        "min_price": 100068,
+        "sources": {
+          "joshin": 100978,
+          "amazon": 100345,
+          "tsukumo": 102220,
+          "dospara": 100068
+        }
+      },
+      {
+        "date": "2026-06-12",
+        "min_price": 99117,
+        "sources": {
+          "amazon": 99117,
+          "joshin": 100369,
+          "tsukumo": 99817,
+          "kakaku": 100943
+        }
+      }
+    ],
+    "events": [
+      {
+        "type": "new_model",
+        "date": "2026-05-14",
+        "price": 101653,
+        "label": "new"
+      }
+    ]
+  },
+  "RX 9070 XT": {
+    "meta": {
+      "series": "RX9000",
+      "vendor": "AMD"
+    },
+    "history": [
+      {
+        "date": "2026-05-14",
+        "min_price": 95014,
+        "sources": {
+          "joshin": 97293,
+          "tsukumo": 95014,
+          "kakaku": 97772,
+          "dospara": 98266
+        }
+      },
+      {
+        "date": "2026-05-15",
+        "min_price": 94943,
+        "sources": {
+          "joshin": 95694,
+          "tsukumo": 96241,
+          "kakaku": 94943,
+          "dospara": 96906
+        }
+      },
+      {
+        "date": "2026-05-16",
+        "min_price": 94310,
+        "sources": {
+          "tsukumo": 94310,
+          "dospara": 97475,
+          "joshin": 96264,
+          "amazon": 96972
+        }
+      },
+      {
+        "date": "2026-05-17",
+        "min_price": 96743,
+        "sources": {
+          "tsukumo": 96743,
+          "amazon": 96790,
+          "dospara": 97377,
+          "kakaku": 98203
+        }
+      },
+      {
+        "date": "2026-05-18",
+        "min_price": 96621,
+        "sources": {
+          "tsukumo": 97317,
+          "kakaku": 96621,
+          "dospara": 98336,
+          "joshin": 99101
+        }
+      },
+      {
+        "date": "2026-05-19",
+        "min_price": 96944,
+        "sources": {
+          "joshin": 98548,
+          "amazon": 97640,
+          "tsukumo": 96944,
+          "dospara": 97402
+        }
+      },
+      {
+        "date": "2026-05-20",
+        "min_price": 96195,
+        "sources": {
+          "tsukumo": 96340,
+          "kakaku": 97372,
+          "dospara": 96700,
+          "amazon": 96195
+        }
+      },
+      {
+        "date": "2026-05-21",
+        "min_price": 95124,
+        "sources": {
+          "kakaku": 98870,
+          "tsukumo": 97429,
+          "amazon": 95124,
+          "dospara": 97148
+        }
+      },
+      {
+        "date": "2026-05-22",
+        "min_price": 95697,
+        "sources": {
+          "dospara": 98328,
+          "tsukumo": 95854,
+          "amazon": 95697,
+          "kakaku": 96502
+        }
+      },
+      {
+        "date": "2026-05-23",
+        "min_price": 97055,
+        "sources": {
+          "dospara": 97055,
+          "joshin": 98706,
+          "kakaku": 98526,
+          "amazon": 98682
+        }
+      },
+      {
+        "date": "2026-05-24",
+        "min_price": 96113,
+        "sources": {
+          "dospara": 96930,
+          "tsukumo": 98426,
+          "kakaku": 96113,
+          "amazon": 97532
+        }
+      },
+      {
+        "date": "2026-05-25",
+        "min_price": 97080,
+        "sources": {
+          "dospara": 97080,
+          "joshin": 97551,
+          "tsukumo": 97501,
+          "amazon": 97267
+        }
+      },
+      {
+        "date": "2026-05-26",
+        "min_price": 96322,
+        "sources": {
+          "amazon": 98018,
+          "kakaku": 96322,
+          "tsukumo": 98000,
+          "joshin": 98588
+        }
+      },
+      {
+        "date": "2026-05-27",
+        "min_price": 98651,
+        "sources": {
+          "tsukumo": 98651,
+          "amazon": 99266,
+          "dospara": 100136,
+          "kakaku": 99676
+        }
+      },
+      {
+        "date": "2026-05-28",
+        "min_price": 97379,
+        "sources": {
+          "tsukumo": 99454,
+          "dospara": 98790,
+          "joshin": 97708,
+          "kakaku": 97379
+        }
+      },
+      {
+        "date": "2026-05-29",
+        "min_price": 99238,
+        "sources": {
+          "joshin": 99733,
+          "dospara": 99238,
+          "amazon": 99924,
+          "tsukumo": 100136
+        }
+      },
+      {
+        "date": "2026-05-30",
+        "min_price": 99336,
+        "sources": {
+          "joshin": 99377,
+          "dospara": 99793,
+          "amazon": 99336,
+          "tsukumo": 100331
+        }
+      },
+      {
+        "date": "2026-05-31",
+        "min_price": 98391,
+        "sources": {
+          "tsukumo": 101381,
+          "amazon": 98486,
+          "joshin": 98391,
+          "kakaku": 100868
+        }
+      },
+      {
+        "date": "2026-06-01",
+        "min_price": 97638,
+        "sources": {
+          "kakaku": 98172,
+          "dospara": 97638,
+          "amazon": 98783,
+          "joshin": 98431
+        }
+      },
+      {
+        "date": "2026-06-02",
+        "min_price": 96562,
+        "sources": {
+          "tsukumo": 98590,
+          "joshin": 98101,
+          "dospara": 96562,
+          "kakaku": 97228
+        }
+      },
+      {
+        "date": "2026-06-03",
+        "min_price": 96587,
+        "sources": {
+          "joshin": 97229,
+          "kakaku": 98341,
+          "amazon": 98628,
+          "tsukumo": 96587
+        }
+      },
+      {
+        "date": "2026-06-04",
+        "min_price": 95937,
+        "sources": {
+          "amazon": 97133,
+          "joshin": 95937,
+          "tsukumo": 99478,
+          "dospara": 98660
+        }
+      },
+      {
+        "date": "2026-06-05",
+        "min_price": 96867,
+        "sources": {
+          "kakaku": 98971,
+          "joshin": 100243,
+          "dospara": 97299,
+          "tsukumo": 96867
+        }
+      },
+      {
+        "date": "2026-06-06",
+        "min_price": 98527,
+        "sources": {
+          "tsukumo": 99444,
+          "kakaku": 98527,
+          "dospara": 100744,
+          "joshin": 99420
+        }
+      },
+      {
+        "date": "2026-06-07",
+        "min_price": 99339,
+        "sources": {
+          "tsukumo": 101398,
+          "kakaku": 99339,
+          "dospara": 102440,
+          "joshin": 100589
+        }
+      },
+      {
+        "date": "2026-06-08",
+        "min_price": 97881,
+        "sources": {
+          "dospara": 98889,
+          "kakaku": 97881,
+          "tsukumo": 100428,
+          "amazon": 99198
+        }
+      },
+      {
+        "date": "2026-06-09",
+        "min_price": 96239,
+        "sources": {
+          "dospara": 99945,
+          "kakaku": 97771,
+          "amazon": 96239,
+          "tsukumo": 99317
+        }
+      },
+      {
+        "date": "2026-06-10",
+        "min_price": 98107,
+        "sources": {
+          "tsukumo": 98297,
+          "dospara": 101115,
+          "joshin": 100081,
+          "amazon": 98107
+        }
+      },
+      {
+        "date": "2026-06-11",
+        "min_price": 96391,
+        "sources": {
+          "tsukumo": 97951,
+          "dospara": 96391,
+          "kakaku": 98010,
+          "joshin": 98485
+        }
+      },
+      {
+        "date": "2026-06-12",
+        "min_price": 96114,
+        "sources": {
+          "tsukumo": 96399,
+          "dospara": 96114,
+          "kakaku": 99100,
+          "joshin": 97380
+        }
+      }
+    ],
+    "events": []
+  },
+  "RX 9070": {
+    "meta": {
+      "series": "RX9000",
+      "vendor": "AMD"
+    },
+    "history": [
+      {
+        "date": "2026-05-14",
+        "min_price": 87726,
+        "sources": {
+          "amazon": 89064,
+          "tsukumo": 90367,
+          "kakaku": 87726,
+          "joshin": 89992
+        }
+      },
+      {
+        "date": "2026-05-15",
+        "min_price": 88091,
+        "sources": {
+          "tsukumo": 89156,
+          "amazon": 89113,
+          "kakaku": 88091,
+          "dospara": 88260
+        }
+      },
+      {
+        "date": "2026-05-16",
+        "min_price": 89403,
+        "sources": {
+          "joshin": 89403,
+          "dospara": 89602,
+          "tsukumo": 90640,
+          "kakaku": 91122
+        }
+      },
+      {
+        "date": "2026-05-17",
+        "min_price": 89761,
+        "sources": {
+          "amazon": 90305,
+          "tsukumo": 90338,
+          "joshin": 89761,
+          "dospara": 91242
+        }
+      },
+      {
+        "date": "2026-05-18",
+        "min_price": 90424,
+        "sources": {
+          "tsukumo": 91689,
+          "joshin": 90424,
+          "kakaku": 91496,
+          "amazon": 91001
+        }
+      },
+      {
+        "date": "2026-05-19",
+        "min_price": 89356,
+        "sources": {
+          "kakaku": 91465,
+          "amazon": 92128,
+          "joshin": 89356,
+          "dospara": 91556
+        }
+      },
+      {
+        "date": "2026-05-20",
+        "min_price": 92264,
+        "sources": {
+          "tsukumo": 92264,
+          "dospara": 93156,
+          "joshin": 92996,
+          "amazon": 92952
+        }
+      },
+      {
+        "date": "2026-05-21",
+        "min_price": 92013,
+        "sources": {
+          "dospara": 94628,
+          "kakaku": 92115,
+          "amazon": 92013,
+          "tsukumo": 94626
+        }
+      },
+      {
+        "date": "2026-05-22",
+        "min_price": 90670,
+        "sources": {
+          "joshin": 91488,
+          "kakaku": 93730,
+          "tsukumo": 90670,
+          "amazon": 91640
+        }
+      },
+      {
+        "date": "2026-05-23",
+        "min_price": 92702,
+        "sources": {
+          "joshin": 93026,
+          "tsukumo": 93315,
+          "kakaku": 92702,
+          "dospara": 94503
+        }
+      },
+      {
+        "date": "2026-05-24",
+        "min_price": 92490,
+        "sources": {
+          "amazon": 94087,
+          "dospara": 94514,
+          "joshin": 93936,
+          "kakaku": 92490
+        }
+      },
+      {
+        "date": "2026-05-25",
+        "min_price": 91527,
+        "sources": {
+          "joshin": 93002,
+          "kakaku": 91654,
+          "tsukumo": 91527,
+          "amazon": 91705
+        }
+      },
+      {
+        "date": "2026-05-26",
+        "min_price": 91535,
+        "sources": {
+          "kakaku": 94182,
+          "dospara": 92821,
+          "tsukumo": 91535,
+          "joshin": 93602
+        }
+      },
+      {
+        "date": "2026-05-27",
+        "min_price": 91111,
+        "sources": {
+          "dospara": 93872,
+          "tsukumo": 92042,
+          "amazon": 91864,
+          "kakaku": 91111
+        }
+      },
+      {
+        "date": "2026-05-28",
+        "min_price": 91168,
+        "sources": {
+          "tsukumo": 92201,
+          "dospara": 91727,
+          "kakaku": 91168,
+          "joshin": 92785
+        }
+      },
+      {
+        "date": "2026-05-29",
+        "min_price": 91703,
+        "sources": {
+          "amazon": 93263,
+          "kakaku": 91842,
+          "dospara": 93855,
+          "tsukumo": 91703
+        }
+      },
+      {
+        "date": "2026-05-30",
+        "min_price": 90638,
+        "sources": {
+          "tsukumo": 94032,
+          "dospara": 91904,
+          "joshin": 90638,
+          "kakaku": 92457
+        }
+      },
+      {
+        "date": "2026-05-31",
+        "min_price": 91463,
+        "sources": {
+          "amazon": 91879,
+          "kakaku": 91463,
+          "dospara": 92716,
+          "tsukumo": 93240
+        }
+      },
+      {
+        "date": "2026-06-01",
+        "min_price": 89867,
+        "sources": {
+          "kakaku": 89874,
+          "dospara": 89867,
+          "amazon": 90013,
+          "tsukumo": 90144
+        }
+      },
+      {
+        "date": "2026-06-02",
+        "min_price": 90279,
+        "sources": {
+          "dospara": 93072,
+          "tsukumo": 90279,
+          "joshin": 91505,
+          "kakaku": 91250
+        }
+      },
+      {
+        "date": "2026-06-03",
+        "min_price": 91981,
+        "sources": {
+          "joshin": 93047,
+          "dospara": 92566,
+          "tsukumo": 93461,
+          "amazon": 91981
+        }
+      },
+      {
+        "date": "2026-06-04",
+        "min_price": 90841,
+        "sources": {
+          "kakaku": 91701,
+          "tsukumo": 93552,
+          "dospara": 90841,
+          "joshin": 91747
+        }
+      },
+      {
+        "date": "2026-06-05",
+        "min_price": 90651,
+        "sources": {
+          "joshin": 92141,
+          "tsukumo": 90651,
+          "amazon": 91149,
+          "kakaku": 93943
+        }
+      },
+      {
+        "date": "2026-06-06",
+        "min_price": 90092,
+        "sources": {
+          "tsukumo": 90624,
+          "kakaku": 92364,
+          "joshin": 92041,
+          "amazon": 90092
+        }
+      },
+      {
+        "date": "2026-06-07",
+        "min_price": 89879,
+        "sources": {
+          "amazon": 89879,
+          "tsukumo": 91846,
+          "joshin": 90780,
+          "dospara": 89891
+        }
+      },
+      {
+        "date": "2026-06-08",
+        "min_price": 89956,
+        "sources": {
+          "amazon": 89956,
+          "dospara": 90063,
+          "joshin": 90210,
+          "kakaku": 92452
+        }
+      },
+      {
+        "date": "2026-06-09",
+        "min_price": 88883,
+        "sources": {
+          "tsukumo": 91351,
+          "dospara": 89550,
+          "kakaku": 88883,
+          "joshin": 89510
+        }
+      },
+      {
+        "date": "2026-06-10",
+        "min_price": 88099,
+        "sources": {
+          "tsukumo": 88099,
+          "amazon": 89517,
+          "kakaku": 88307,
+          "dospara": 89644
+        }
+      },
+      {
+        "date": "2026-06-11",
+        "min_price": 87438,
+        "sources": {
+          "kakaku": 88947,
+          "amazon": 88177,
+          "dospara": 89672,
+          "joshin": 87438
+        }
+      },
+      {
+        "date": "2026-06-12",
+        "min_price": 88748,
+        "sources": {
+          "tsukumo": 90551,
+          "kakaku": 90702,
+          "dospara": 88748,
+          "joshin": 91840
+        }
+      }
+    ],
+    "events": []
+  }
+}

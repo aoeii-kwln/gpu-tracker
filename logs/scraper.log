@@ -1,0 +1,642 @@
+2026-06-12 23:30:54,670 [INFO] Scraping: RTX 5090
+2026-06-12 23:30:55,028 [INFO]   kakaku: ¥28,900
+2026-06-12 23:30:56,766 [WARNING] dospara [RTX 5090]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205090&categorys=750
+2026-06-12 23:30:59,873 [WARNING] tsukumo [RTX 5090]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5090&category=200100
+2026-06-12 23:31:01,393 [WARNING] unitcom [RTX 5090]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5090&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:31:22,119 [WARNING] joshin [RTX 5090]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:31:28,034 [INFO]   kakaku models [RTX 5090]: 0 models found
+2026-06-12 23:31:29,534 [INFO] Scraping: RTX 5080
+2026-06-12 23:31:29,970 [INFO]   kakaku: ¥28,900
+2026-06-12 23:31:31,676 [WARNING] dospara [RTX 5080]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205080&categorys=750
+2026-06-12 23:31:33,472 [WARNING] tsukumo [RTX 5080]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5080&category=200100
+2026-06-12 23:31:34,983 [WARNING] unitcom [RTX 5080]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5080&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:31:55,693 [WARNING] joshin [RTX 5080]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:32:00,655 [INFO]   kakaku models [RTX 5080]: 0 models found
+2026-06-12 23:32:02,155 [INFO] Scraping: RTX 5070 Ti
+2026-06-12 23:32:02,509 [INFO]   kakaku: ¥28,900
+2026-06-12 23:32:04,241 [WARNING] dospara [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070%20Ti&categorys=750
+2026-06-12 23:32:05,948 [WARNING] tsukumo [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070+Ti&category=200100
+2026-06-12 23:32:07,458 [WARNING] unitcom [RTX 5070 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:32:28,169 [WARNING] joshin [RTX 5070 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:32:29,822 [WARNING] amazon [RTX 5070 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:32:33,454 [INFO]   kakaku models [RTX 5070 Ti]: 0 models found
+2026-06-12 23:32:34,955 [INFO] Scraping: RTX 5070
+2026-06-12 23:32:35,349 [INFO]   kakaku: ¥28,900
+2026-06-12 23:32:37,072 [WARNING] dospara [RTX 5070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070&categorys=750
+2026-06-12 23:32:40,192 [WARNING] tsukumo [RTX 5070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070&category=200100
+2026-06-12 23:32:41,700 [WARNING] unitcom [RTX 5070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:33:02,402 [WARNING] joshin [RTX 5070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:33:04,072 [WARNING] amazon [RTX 5070]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:33:07,510 [INFO]   kakaku models [RTX 5070]: 0 models found
+2026-06-12 23:33:09,011 [INFO] Scraping: RTX 5060 Ti
+2026-06-12 23:33:09,495 [INFO]   kakaku: ¥28,900
+2026-06-12 23:33:11,250 [WARNING] dospara [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060%20Ti&categorys=750
+2026-06-12 23:33:12,931 [WARNING] tsukumo [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060+Ti&category=200100
+2026-06-12 23:33:14,439 [WARNING] unitcom [RTX 5060 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:33:35,141 [WARNING] joshin [RTX 5060 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:33:36,813 [WARNING] amazon [RTX 5060 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:33:40,251 [INFO]   kakaku models [RTX 5060 Ti]: 0 models found
+2026-06-12 23:33:41,752 [INFO] Scraping: RTX 5060
+2026-06-12 23:33:42,248 [INFO]   kakaku: ¥28,900
+2026-06-12 23:33:43,971 [WARNING] dospara [RTX 5060]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060&categorys=750
+2026-06-12 23:33:45,675 [WARNING] tsukumo [RTX 5060]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060&category=200100
+2026-06-12 23:33:47,185 [WARNING] unitcom [RTX 5060]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:34:07,890 [WARNING] joshin [RTX 5060]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:34:09,555 [WARNING] amazon [RTX 5060]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:34:13,091 [INFO]   kakaku models [RTX 5060]: 0 models found
+2026-06-12 23:34:14,592 [INFO] Scraping: RX 9070 XT
+2026-06-12 23:34:15,056 [INFO]   kakaku: ¥28,900
+2026-06-12 23:34:16,785 [WARNING] dospara [RX 9070 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070%20XT&categorys=750
+2026-06-12 23:34:18,464 [WARNING] tsukumo [RX 9070 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070+XT&category=200100
+2026-06-12 23:34:19,968 [WARNING] unitcom [RX 9070 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:34:40,658 [WARNING] joshin [RX 9070 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:34:42,342 [WARNING] amazon [RX 9070 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:34:45,832 [INFO]   kakaku models [RX 9070 XT]: 0 models found
+2026-06-12 23:34:47,333 [INFO] Scraping: RX 9070
+2026-06-12 23:34:47,873 [INFO]   kakaku: ¥28,900
+2026-06-12 23:34:49,615 [WARNING] dospara [RX 9070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070&categorys=750
+2026-06-12 23:34:51,309 [WARNING] tsukumo [RX 9070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070&category=200100
+2026-06-12 23:34:52,814 [WARNING] unitcom [RX 9070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:35:13,538 [WARNING] joshin [RX 9070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:35:15,193 [WARNING] amazon [RX 9070]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:35:18,643 [INFO]   kakaku models [RX 9070]: 0 models found
+2026-06-12 23:35:20,144 [INFO] Scraping: RX 9060 XT
+2026-06-12 23:35:20,844 [INFO]   kakaku: ¥28,900
+2026-06-12 23:35:22,603 [WARNING] dospara [RX 9060 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209060%20XT&categorys=750
+2026-06-12 23:35:24,288 [WARNING] tsukumo [RX 9060 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9060+XT&category=200100
+2026-06-12 23:35:25,798 [WARNING] unitcom [RX 9060 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9060+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:35:46,518 [WARNING] joshin [RX 9060 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:35:48,196 [WARNING] amazon [RX 9060 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9060+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:35:51,646 [INFO]   kakaku models [RX 9060 XT]: 0 models found
+2026-06-12 23:35:53,150 [INFO] Data saved. 9 event(s) detected.
+2026-06-12 23:35:53,199 [WARNING] Email not configured — skipping notification.
+2026-06-12 23:36:30,978 [INFO] Scraping: RTX 5090
+2026-06-12 23:36:31,383 [INFO]   kakaku: ¥768,801
+2026-06-12 23:36:33,121 [WARNING] dospara [RTX 5090]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205090&categorys=750
+2026-06-12 23:36:34,821 [WARNING] tsukumo [RTX 5090]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5090&category=200100
+2026-06-12 23:36:36,330 [WARNING] unitcom [RTX 5090]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5090&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:36:57,912 [WARNING] joshin [RTX 5090]: HTTPSConnectionPool(host='joshinweb.jp', port=443): Read timed out. (read timeout=20)
+2026-06-12 23:37:03,136 [INFO]   kakaku models [RTX 5090]: 0 models found
+2026-06-12 23:37:04,637 [INFO] Scraping: RTX 5080
+2026-06-12 23:37:05,125 [INFO]   kakaku: ¥194,980
+2026-06-12 23:37:06,827 [WARNING] dospara [RTX 5080]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205080&categorys=750
+2026-06-12 23:37:08,530 [WARNING] tsukumo [RTX 5080]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5080&category=200100
+2026-06-12 23:37:10,048 [WARNING] unitcom [RTX 5080]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5080&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:37:30,783 [WARNING] joshin [RTX 5080]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:37:35,908 [INFO]   kakaku models [RTX 5080]: 0 models found
+2026-06-12 23:37:37,409 [INFO] Scraping: RTX 5070 Ti
+2026-06-12 23:37:37,858 [INFO]   kakaku: ¥157,800
+2026-06-12 23:37:39,598 [WARNING] dospara [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070%20Ti&categorys=750
+2026-06-12 23:37:41,326 [WARNING] tsukumo [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070+Ti&category=200100
+2026-06-12 23:37:42,835 [WARNING] unitcom [RTX 5070 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:38:03,536 [WARNING] joshin [RTX 5070 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:38:05,225 [WARNING] amazon [RTX 5070 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:38:08,768 [INFO]   kakaku models [RTX 5070 Ti]: 0 models found
+2026-06-12 23:38:10,270 [INFO] Scraping: RTX 5070
+2026-06-12 23:38:10,788 [INFO]   kakaku: ¥95,800
+2026-06-12 23:38:12,511 [WARNING] dospara [RTX 5070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070&categorys=750
+2026-06-12 23:38:14,991 [WARNING] tsukumo [RTX 5070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070&category=200100
+2026-06-12 23:38:16,498 [WARNING] unitcom [RTX 5070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:38:37,208 [WARNING] joshin [RTX 5070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:38:38,871 [WARNING] amazon [RTX 5070]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:38:42,273 [INFO]   kakaku models [RTX 5070]: 0 models found
+2026-06-12 23:38:43,775 [INFO] Scraping: RTX 5060 Ti
+2026-06-12 23:38:44,306 [INFO]   kakaku: ¥91,980
+2026-06-12 23:38:46,029 [WARNING] dospara [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060%20Ti&categorys=750
+2026-06-12 23:38:47,708 [WARNING] tsukumo [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060+Ti&category=200100
+2026-06-12 23:38:49,212 [WARNING] unitcom [RTX 5060 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:39:09,907 [WARNING] joshin [RTX 5060 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:39:11,583 [WARNING] amazon [RTX 5060 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:39:15,042 [INFO]   kakaku models [RTX 5060 Ti]: 0 models found
+2026-06-12 23:39:16,543 [INFO] Scraping: RTX 5060
+2026-06-12 23:39:17,089 [INFO]   kakaku: ¥54,180
+2026-06-12 23:39:18,853 [WARNING] dospara [RTX 5060]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060&categorys=750
+2026-06-12 23:39:20,690 [WARNING] tsukumo [RTX 5060]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060&category=200100
+2026-06-12 23:39:22,197 [WARNING] unitcom [RTX 5060]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:39:42,948 [WARNING] joshin [RTX 5060]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:39:44,803 [WARNING] amazon [RTX 5060]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:39:48,237 [INFO]   kakaku models [RTX 5060]: 0 models found
+2026-06-12 23:39:49,738 [INFO] Scraping: RX 9070 XT
+2026-06-12 23:39:50,191 [INFO]   kakaku: ¥87,800
+2026-06-12 23:39:51,942 [WARNING] dospara [RX 9070 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070%20XT&categorys=750
+2026-06-12 23:39:53,616 [WARNING] tsukumo [RX 9070 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070+XT&category=200100
+2026-06-12 23:39:55,124 [WARNING] unitcom [RX 9070 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:40:15,818 [WARNING] joshin [RX 9070 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:40:17,489 [WARNING] amazon [RX 9070 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:40:20,985 [INFO]   kakaku models [RX 9070 XT]: 0 models found
+2026-06-12 23:40:22,486 [INFO] Scraping: RX 9070
+2026-06-12 23:40:23,081 [INFO]   kakaku: ¥87,800
+2026-06-12 23:40:24,828 [WARNING] dospara [RX 9070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070&categorys=750
+2026-06-12 23:40:26,518 [WARNING] tsukumo [RX 9070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070&category=200100
+2026-06-12 23:40:28,025 [WARNING] unitcom [RX 9070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:40:48,742 [WARNING] joshin [RX 9070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:40:50,415 [WARNING] amazon [RX 9070]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:40:54,070 [INFO]   kakaku models [RX 9070]: 0 models found
+2026-06-12 23:40:55,571 [INFO] Scraping: RX 9060 XT
+2026-06-12 23:40:56,079 [INFO]   kakaku: ¥59,201
+2026-06-12 23:40:57,774 [WARNING] dospara [RX 9060 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209060%20XT&categorys=750
+2026-06-12 23:40:59,486 [WARNING] tsukumo [RX 9060 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9060+XT&category=200100
+2026-06-12 23:41:00,997 [WARNING] unitcom [RX 9060 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9060+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-12 23:41:21,748 [WARNING] joshin [RX 9060 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-12 23:41:23,427 [WARNING] amazon [RX 9060 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9060+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-12 23:41:26,900 [INFO]   kakaku models [RX 9060 XT]: 0 models found
+2026-06-12 23:41:28,408 [INFO] Data saved. 7 event(s) detected.
+2026-06-12 23:41:28,455 [WARNING] Email not configured — skipping notification.
+2026-06-14 10:08:09,690 [INFO] Scraping: RTX 5090
+2026-06-14 10:08:10,078 [INFO]   kakaku: ¥639,799
+2026-06-14 10:08:11,807 [WARNING] dospara [RTX 5090]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205090&categorys=750
+2026-06-14 10:08:13,517 [WARNING] tsukumo [RTX 5090]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5090&category=200100
+2026-06-14 10:08:15,036 [WARNING] unitcom [RTX 5090]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5090&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:08:36,585 [WARNING] joshin [RTX 5090]: HTTPSConnectionPool(host='joshinweb.jp', port=443): Read timed out. (read timeout=20)
+2026-06-14 10:08:41,537 [INFO]   kakaku models [RTX 5090]: 0 models found
+2026-06-14 10:08:43,041 [INFO] Scraping: RTX 5080
+2026-06-14 10:08:43,438 [INFO]   kakaku: ¥194,980
+2026-06-14 10:08:45,178 [WARNING] dospara [RTX 5080]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205080&categorys=750
+2026-06-14 10:08:48,390 [WARNING] tsukumo [RTX 5080]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5080&category=200100
+2026-06-14 10:08:49,897 [WARNING] unitcom [RTX 5080]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5080&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:09:11,479 [WARNING] joshin [RTX 5080]: HTTPSConnectionPool(host='joshinweb.jp', port=443): Read timed out. (read timeout=20)
+2026-06-14 10:09:13,142 [WARNING] amazon [RTX 5080]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5080&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:09:16,558 [INFO]   kakaku models [RTX 5080]: 0 models found
+2026-06-14 10:09:18,059 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 10:09:18,417 [INFO]   kakaku: ¥157,800
+2026-06-14 10:09:20,172 [WARNING] dospara [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070%20Ti&categorys=750
+2026-06-14 10:09:21,883 [WARNING] tsukumo [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070+Ti&category=200100
+2026-06-14 10:09:23,406 [WARNING] unitcom [RTX 5070 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:09:44,360 [WARNING] joshin [RTX 5070 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:09:46,028 [WARNING] amazon [RTX 5070 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:09:49,420 [INFO]   kakaku models [RTX 5070 Ti]: 0 models found
+2026-06-14 10:09:50,921 [INFO] Scraping: RTX 5070
+2026-06-14 10:09:51,384 [INFO]   kakaku: ¥95,269
+2026-06-14 10:09:53,101 [WARNING] dospara [RTX 5070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070&categorys=750
+2026-06-14 10:09:54,797 [WARNING] tsukumo [RTX 5070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070&category=200100
+2026-06-14 10:09:56,304 [WARNING] unitcom [RTX 5070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:10:16,996 [WARNING] joshin [RTX 5070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:10:22,645 [INFO]   kakaku models [RTX 5070]: 0 models found
+2026-06-14 10:10:24,146 [INFO] Scraping: RTX 5060 Ti
+2026-06-14 10:10:24,575 [INFO]   kakaku: ¥91,980
+2026-06-14 10:10:26,310 [WARNING] dospara [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060%20Ti&categorys=750
+2026-06-14 10:10:28,009 [WARNING] tsukumo [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060+Ti&category=200100
+2026-06-14 10:10:29,516 [WARNING] unitcom [RTX 5060 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:10:50,208 [WARNING] joshin [RTX 5060 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:10:51,874 [WARNING] amazon [RTX 5060 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:10:55,464 [INFO]   kakaku models [RTX 5060 Ti]: 0 models found
+2026-06-14 10:10:56,964 [INFO] Scraping: RTX 5060
+2026-06-14 10:10:57,377 [INFO]   kakaku: ¥54,180
+2026-06-14 10:10:59,119 [WARNING] dospara [RTX 5060]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060&categorys=750
+2026-06-14 10:11:01,397 [WARNING] tsukumo [RTX 5060]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060&category=200100
+2026-06-14 10:11:02,905 [WARNING] unitcom [RTX 5060]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:11:23,651 [WARNING] joshin [RTX 5060]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:11:25,323 [WARNING] amazon [RTX 5060]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:11:28,846 [INFO]   kakaku models [RTX 5060]: 0 models found
+2026-06-14 10:11:30,346 [INFO] Scraping: RX 9070 XT
+2026-06-14 10:11:30,809 [INFO]   kakaku: ¥90,890
+2026-06-14 10:11:32,558 [WARNING] dospara [RX 9070 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070%20XT&categorys=750
+2026-06-14 10:11:34,252 [WARNING] tsukumo [RX 9070 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070+XT&category=200100
+2026-06-14 10:11:35,756 [WARNING] unitcom [RX 9070 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:11:56,447 [WARNING] joshin [RX 9070 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:12:02,421 [INFO]   kakaku models [RX 9070 XT]: 0 models found
+2026-06-14 10:12:03,922 [INFO] Scraping: RX 9070
+2026-06-14 10:12:04,493 [INFO]   kakaku: ¥90,890
+2026-06-14 10:12:06,222 [WARNING] dospara [RX 9070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070&categorys=750
+2026-06-14 10:12:07,917 [WARNING] tsukumo [RX 9070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070&category=200100
+2026-06-14 10:12:09,434 [WARNING] unitcom [RX 9070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:12:30,157 [WARNING] joshin [RX 9070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:12:31,802 [WARNING] amazon [RX 9070]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:12:35,371 [INFO]   kakaku models [RX 9070]: 0 models found
+2026-06-14 10:12:36,872 [INFO] Scraping: RX 9060 XT
+2026-06-14 10:12:37,320 [INFO]   kakaku: ¥58,000
+2026-06-14 10:12:39,065 [WARNING] dospara [RX 9060 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209060%20XT&categorys=750
+2026-06-14 10:12:40,819 [WARNING] tsukumo [RX 9060 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9060+XT&category=200100
+2026-06-14 10:12:42,326 [WARNING] unitcom [RX 9060 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9060+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:13:03,905 [WARNING] joshin [RX 9060 XT]: HTTPSConnectionPool(host='joshinweb.jp', port=443): Read timed out. (read timeout=20)
+2026-06-14 10:13:05,557 [WARNING] amazon [RX 9060 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9060+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:13:08,939 [INFO]   kakaku models [RX 9060 XT]: 0 models found
+2026-06-14 10:13:10,446 [INFO] Data saved. 4 event(s) detected.
+2026-06-14 10:13:10,482 [WARNING] Email not configured — skipping notification.
+2026-06-14 10:21:40,421 [INFO] Scraping: RTX 5090
+2026-06-14 10:21:40,833 [INFO]   kakaku: ¥639,799
+2026-06-14 10:21:42,590 [WARNING] dospara [RTX 5090]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205090&categorys=750
+2026-06-14 10:21:44,352 [WARNING] tsukumo [RTX 5090]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5090&category=200100
+2026-06-14 10:21:45,872 [WARNING] unitcom [RTX 5090]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5090&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:22:06,621 [WARNING] joshin [RTX 5090]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:22:11,649 [INFO]   kakaku models [RTX 5090]: 0 models found
+2026-06-14 10:22:13,150 [INFO] Scraping: RTX 5080
+2026-06-14 10:22:13,537 [INFO]   kakaku: ¥194,980
+2026-06-14 10:22:15,229 [WARNING] dospara [RTX 5080]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205080&categorys=750
+2026-06-14 10:22:16,908 [WARNING] tsukumo [RTX 5080]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5080&category=200100
+2026-06-14 10:22:18,413 [WARNING] unitcom [RTX 5080]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5080&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:22:39,132 [WARNING] joshin [RTX 5080]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:22:40,781 [WARNING] amazon [RTX 5080]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5080&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:22:44,210 [INFO]   kakaku models [RTX 5080]: 0 models found
+2026-06-14 10:22:45,711 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 10:22:46,082 [INFO]   kakaku: ¥157,800
+2026-06-14 10:22:47,807 [WARNING] dospara [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070%20Ti&categorys=750
+2026-06-14 10:22:49,507 [WARNING] tsukumo [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070+Ti&category=200100
+2026-06-14 10:22:51,015 [WARNING] unitcom [RTX 5070 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:23:11,724 [WARNING] joshin [RTX 5070 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:23:13,378 [WARNING] amazon [RTX 5070 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:23:16,879 [INFO]   kakaku models [RTX 5070 Ti]: 0 models found
+2026-06-14 10:23:18,380 [INFO] Scraping: RTX 5070
+2026-06-14 10:23:18,931 [INFO]   kakaku: ¥95,267
+2026-06-14 10:23:20,672 [WARNING] dospara [RTX 5070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070&categorys=750
+2026-06-14 10:23:22,379 [WARNING] tsukumo [RTX 5070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070&category=200100
+2026-06-14 10:23:23,886 [WARNING] unitcom [RTX 5070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:23:44,586 [WARNING] joshin [RTX 5070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:23:49,738 [INFO]   kakaku models [RTX 5070]: 0 models found
+2026-06-14 10:23:51,239 [INFO] Scraping: RTX 5060 Ti
+2026-06-14 10:23:51,770 [INFO]   kakaku: ¥91,980
+2026-06-14 10:23:53,724 [WARNING] dospara [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060%20Ti&categorys=750
+2026-06-14 10:23:56,800 [WARNING] tsukumo [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060+Ti&category=200100
+2026-06-14 10:23:58,307 [WARNING] unitcom [RTX 5060 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:24:19,008 [WARNING] joshin [RTX 5060 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:24:20,681 [WARNING] amazon [RTX 5060 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:24:24,326 [INFO]   kakaku models [RTX 5060 Ti]: 0 models found
+2026-06-14 10:24:25,826 [INFO] Scraping: RTX 5060
+2026-06-14 10:24:26,288 [INFO]   kakaku: ¥54,180
+2026-06-14 10:24:28,005 [WARNING] dospara [RTX 5060]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060&categorys=750
+2026-06-14 10:24:29,684 [WARNING] tsukumo [RTX 5060]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060&category=200100
+2026-06-14 10:24:31,201 [WARNING] unitcom [RTX 5060]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:24:51,906 [WARNING] joshin [RTX 5060]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:24:57,742 [INFO]   kakaku models [RTX 5060]: 0 models found
+2026-06-14 10:24:59,243 [INFO] Scraping: RX 9070 XT
+2026-06-14 10:24:59,737 [INFO]   kakaku: ¥86,980
+2026-06-14 10:25:01,486 [WARNING] dospara [RX 9070 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070%20XT&categorys=750
+2026-06-14 10:25:03,175 [WARNING] tsukumo [RX 9070 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070+XT&category=200100
+2026-06-14 10:25:04,683 [WARNING] unitcom [RX 9070 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:25:25,397 [WARNING] joshin [RX 9070 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:25:27,056 [WARNING] amazon [RX 9070 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:25:30,573 [INFO]   kakaku models [RX 9070 XT]: 0 models found
+2026-06-14 10:25:32,073 [INFO] Scraping: RX 9070
+2026-06-14 10:25:32,651 [INFO]   kakaku: ¥86,980
+2026-06-14 10:25:34,398 [WARNING] dospara [RX 9070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070&categorys=750
+2026-06-14 10:25:36,086 [WARNING] tsukumo [RX 9070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070&category=200100
+2026-06-14 10:25:37,596 [WARNING] unitcom [RX 9070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:25:58,332 [WARNING] joshin [RX 9070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:26:03,475 [INFO]   kakaku models [RX 9070]: 0 models found
+2026-06-14 10:26:04,976 [INFO] Scraping: RX 9060 XT
+2026-06-14 10:26:05,502 [INFO]   kakaku: ¥58,000
+2026-06-14 10:26:07,260 [WARNING] dospara [RX 9060 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209060%20XT&categorys=750
+2026-06-14 10:26:08,931 [WARNING] tsukumo [RX 9060 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9060+XT&category=200100
+2026-06-14 10:26:10,437 [WARNING] unitcom [RX 9060 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9060+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:26:31,168 [WARNING] joshin [RX 9060 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:26:32,854 [WARNING] amazon [RX 9060 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9060+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:26:36,382 [INFO]   kakaku models [RX 9060 XT]: 0 models found
+2026-06-14 10:26:37,890 [INFO] Data saved. 7 event(s) detected.
+2026-06-14 10:26:37,935 [WARNING] Email not configured — skipping notification.
+2026-06-14 10:34:58,625 [INFO] Scraping: RTX 5090
+2026-06-14 10:34:59,148 [INFO]   kakaku: ¥90,890
+2026-06-14 10:35:00,891 [WARNING] dospara [RTX 5090]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205090&categorys=750
+2026-06-14 10:35:02,564 [WARNING] tsukumo [RTX 5090]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5090&category=200100
+2026-06-14 10:35:04,086 [WARNING] unitcom [RTX 5090]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5090&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:35:24,807 [WARNING] joshin [RTX 5090]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:35:30,599 [INFO]   kakaku models [RTX 5090]: 0 models found
+2026-06-14 10:35:32,099 [INFO] Scraping: RTX 5080
+2026-06-14 10:35:32,585 [INFO]   kakaku: ¥90,890
+2026-06-14 10:35:34,319 [WARNING] dospara [RTX 5080]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205080&categorys=750
+2026-06-14 10:35:35,989 [WARNING] tsukumo [RTX 5080]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5080&category=200100
+2026-06-14 10:35:37,501 [WARNING] unitcom [RTX 5080]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5080&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:35:58,227 [WARNING] joshin [RTX 5080]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:36:04,025 [INFO]   kakaku models [RTX 5080]: 0 models found
+2026-06-14 10:36:05,526 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 10:36:05,987 [INFO]   kakaku: ¥90,890
+2026-06-14 10:36:07,773 [WARNING] dospara [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070%20Ti&categorys=750
+2026-06-14 10:36:09,447 [WARNING] tsukumo [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070+Ti&category=200100
+2026-06-14 10:36:10,957 [WARNING] unitcom [RTX 5070 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:36:31,687 [WARNING] joshin [RTX 5070 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:36:33,342 [WARNING] amazon [RTX 5070 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:36:36,845 [INFO]   kakaku models [RTX 5070 Ti]: 0 models found
+2026-06-14 10:36:38,346 [INFO] Scraping: RTX 5070
+2026-06-14 10:36:38,831 [INFO]   kakaku: ¥90,890
+2026-06-14 10:36:40,599 [WARNING] dospara [RTX 5070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070&categorys=750
+2026-06-14 10:36:42,283 [WARNING] tsukumo [RTX 5070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070&category=200100
+2026-06-14 10:36:43,788 [WARNING] unitcom [RTX 5070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:37:04,493 [WARNING] joshin [RTX 5070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:37:10,357 [INFO]   kakaku models [RTX 5070]: 0 models found
+2026-06-14 10:37:11,857 [INFO] Scraping: RTX 5060 Ti
+2026-06-14 10:37:12,348 [INFO]   kakaku: ¥90,890
+2026-06-14 10:37:14,104 [WARNING] dospara [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060%20Ti&categorys=750
+2026-06-14 10:37:15,787 [WARNING] tsukumo [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060+Ti&category=200100
+2026-06-14 10:37:17,295 [WARNING] unitcom [RTX 5060 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:37:38,007 [WARNING] joshin [RTX 5060 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:37:39,685 [WARNING] amazon [RTX 5060 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:37:43,254 [INFO]   kakaku models [RTX 5060 Ti]: 0 models found
+2026-06-14 10:37:44,755 [INFO] Scraping: RTX 5060
+2026-06-14 10:37:45,416 [INFO]   kakaku: ¥90,890
+2026-06-14 10:37:47,141 [WARNING] dospara [RTX 5060]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060&categorys=750
+2026-06-14 10:37:48,844 [WARNING] tsukumo [RTX 5060]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060&category=200100
+2026-06-14 10:37:50,354 [WARNING] unitcom [RTX 5060]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:38:11,092 [WARNING] joshin [RTX 5060]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:38:12,758 [WARNING] amazon [RTX 5060]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:38:16,226 [INFO]   kakaku models [RTX 5060]: 0 models found
+2026-06-14 10:38:17,726 [INFO] Scraping: RX 9070 XT
+2026-06-14 10:38:18,169 [INFO]   kakaku: ¥90,890
+2026-06-14 10:38:19,941 [WARNING] dospara [RX 9070 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070%20XT&categorys=750
+2026-06-14 10:38:21,633 [WARNING] tsukumo [RX 9070 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070+XT&category=200100
+2026-06-14 10:38:23,142 [WARNING] unitcom [RX 9070 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:38:43,885 [WARNING] joshin [RX 9070 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:38:45,561 [WARNING] amazon [RX 9070 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:38:49,187 [INFO]   kakaku models [RX 9070 XT]: 1 models found
+2026-06-14 10:38:50,687 [INFO] Scraping: RX 9070
+2026-06-14 10:38:51,173 [INFO]   kakaku: ¥90,890
+2026-06-14 10:38:52,895 [WARNING] dospara [RX 9070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070&categorys=750
+2026-06-14 10:38:54,583 [WARNING] tsukumo [RX 9070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070&category=200100
+2026-06-14 10:38:56,091 [WARNING] unitcom [RX 9070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:39:16,822 [WARNING] joshin [RX 9070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:39:21,911 [INFO]   kakaku models [RX 9070]: 1 models found
+2026-06-14 10:39:23,412 [INFO] Scraping: RX 9060 XT
+2026-06-14 10:39:23,890 [INFO]   kakaku: ¥90,890
+2026-06-14 10:39:25,633 [WARNING] dospara [RX 9060 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209060%20XT&categorys=750
+2026-06-14 10:39:27,345 [WARNING] tsukumo [RX 9060 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9060+XT&category=200100
+2026-06-14 10:39:28,849 [WARNING] unitcom [RX 9060 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9060+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 10:39:49,573 [WARNING] joshin [RX 9060 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 10:39:51,242 [WARNING] amazon [RX 9060 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9060+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 10:39:54,729 [INFO]   kakaku models [RX 9060 XT]: 0 models found
+2026-06-14 10:39:56,242 [INFO] Data saved. 8 event(s) detected.
+2026-06-14 10:39:56,286 [WARNING] Email not configured — skipping notification.
+2026-06-14 14:52:37,527 [INFO] Scraping: RTX 5090
+2026-06-14 14:52:37,908 [INFO]   kakaku: ¥90,890
+2026-06-14 14:52:39,807 [WARNING] dospara [RTX 5090]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205090&categorys=750
+2026-06-14 14:52:41,521 [WARNING] tsukumo [RTX 5090]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5090&category=200100
+2026-06-14 14:52:43,039 [WARNING] unitcom [RTX 5090]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5090&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:53:03,760 [WARNING] joshin [RTX 5090]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:53:08,811 [INFO]   kakaku models [RTX 5090]: 0 models found
+2026-06-14 14:53:10,312 [INFO] Scraping: RTX 5080
+2026-06-14 14:53:10,745 [INFO]   kakaku: ¥90,890
+2026-06-14 14:53:12,482 [WARNING] dospara [RTX 5080]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205080&categorys=750
+2026-06-14 14:53:14,157 [WARNING] tsukumo [RTX 5080]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5080&category=200100
+2026-06-14 14:53:15,668 [WARNING] unitcom [RTX 5080]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5080&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:53:36,373 [WARNING] joshin [RTX 5080]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:53:38,029 [WARNING] amazon [RTX 5080]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5080&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 14:53:41,541 [INFO]   kakaku models [RTX 5080]: 0 models found
+2026-06-14 14:53:43,042 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 14:53:43,511 [INFO]   kakaku: ¥90,890
+2026-06-14 14:53:45,272 [WARNING] dospara [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070%20Ti&categorys=750
+2026-06-14 14:53:46,953 [WARNING] tsukumo [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070+Ti&category=200100
+2026-06-14 14:53:48,459 [WARNING] unitcom [RTX 5070 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:54:09,181 [WARNING] joshin [RTX 5070 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:54:10,839 [WARNING] amazon [RTX 5070 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 14:54:14,248 [INFO]   kakaku models [RTX 5070 Ti]: 0 models found
+2026-06-14 14:54:15,749 [INFO] Scraping: RTX 5070
+2026-06-14 14:54:16,299 [INFO]   kakaku: ¥90,890
+2026-06-14 14:54:18,032 [WARNING] dospara [RTX 5070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070&categorys=750
+2026-06-14 14:54:19,726 [WARNING] tsukumo [RTX 5070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070&category=200100
+2026-06-14 14:54:21,233 [WARNING] unitcom [RTX 5070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:54:41,963 [WARNING] joshin [RTX 5070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:54:43,615 [WARNING] amazon [RTX 5070]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 14:54:47,065 [INFO]   kakaku models [RTX 5070]: 0 models found
+2026-06-14 14:54:48,566 [INFO] Scraping: RTX 5060 Ti
+2026-06-14 14:54:49,024 [INFO]   kakaku: ¥90,890
+2026-06-14 14:54:50,793 [WARNING] dospara [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060%20Ti&categorys=750
+2026-06-14 14:54:52,500 [WARNING] tsukumo [RTX 5060 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060+Ti&category=200100
+2026-06-14 14:54:54,005 [WARNING] unitcom [RTX 5060 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:55:14,727 [WARNING] joshin [RTX 5060 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:55:16,390 [WARNING] amazon [RTX 5060 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5060+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 14:55:19,857 [INFO]   kakaku models [RTX 5060 Ti]: 0 models found
+2026-06-14 14:55:21,357 [INFO] Scraping: RTX 5060
+2026-06-14 14:55:21,830 [INFO]   kakaku: ¥90,890
+2026-06-14 14:55:24,402 [WARNING] dospara [RTX 5060]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205060&categorys=750
+2026-06-14 14:55:26,102 [WARNING] tsukumo [RTX 5060]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5060&category=200100
+2026-06-14 14:55:27,615 [WARNING] unitcom [RTX 5060]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5060&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:55:48,340 [WARNING] joshin [RTX 5060]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:55:54,108 [INFO]   kakaku models [RTX 5060]: 0 models found
+2026-06-14 14:55:55,609 [INFO] Scraping: RX 9070 XT
+2026-06-14 14:55:56,090 [INFO]   kakaku: ¥90,890
+2026-06-14 14:55:57,845 [WARNING] dospara [RX 9070 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070%20XT&categorys=750
+2026-06-14 14:55:59,542 [WARNING] tsukumo [RX 9070 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070+XT&category=200100
+2026-06-14 14:56:01,061 [WARNING] unitcom [RX 9070 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:56:21,795 [WARNING] joshin [RX 9070 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:56:23,459 [WARNING] amazon [RX 9070 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 14:56:26,988 [INFO]   kakaku models [RX 9070 XT]: 1 models found
+2026-06-14 14:56:28,489 [INFO] Scraping: RX 9070
+2026-06-14 14:56:29,028 [INFO]   kakaku: ¥90,890
+2026-06-14 14:56:30,805 [WARNING] dospara [RX 9070]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209070&categorys=750
+2026-06-14 14:56:32,524 [WARNING] tsukumo [RX 9070]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9070&category=200100
+2026-06-14 14:56:34,042 [WARNING] unitcom [RX 9070]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9070&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:56:54,748 [WARNING] joshin [RX 9070]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:56:56,642 [WARNING] amazon [RX 9070]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9070&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 14:57:00,320 [INFO]   kakaku models [RX 9070]: 1 models found
+2026-06-14 14:57:01,821 [INFO] Scraping: RX 9060 XT
+2026-06-14 14:57:02,296 [INFO]   kakaku: ¥90,890
+2026-06-14 14:57:04,044 [WARNING] dospara [RX 9060 XT]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RX%209060%20XT&categorys=750
+2026-06-14 14:57:05,725 [WARNING] tsukumo [RX 9060 XT]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RX+9060+XT&category=200100
+2026-06-14 14:57:07,234 [WARNING] unitcom [RX 9060 XT]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RX+9060+XT&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 14:57:27,975 [WARNING] joshin [RX 9060 XT]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 14:57:29,621 [WARNING] amazon [RX 9060 XT]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RX+9060+XT&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 14:57:33,088 [INFO]   kakaku models [RX 9060 XT]: 0 models found
+2026-06-14 14:57:34,597 [INFO] Data saved. 0 event(s) detected.
+2026-06-14 14:57:34,640 [INFO] No significant events — no email sent.
+2026-06-14 16:22:46,337 [INFO] Scraping: RTX 5090
+2026-06-14 16:22:46,713 [INFO]   kakaku: ¥90,890
+2026-06-14 16:22:48,464 [WARNING] dospara [RTX 5090]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205090&categorys=750
+2026-06-14 16:22:50,160 [WARNING] tsukumo [RTX 5090]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5090&category=200100
+2026-06-14 16:22:51,677 [WARNING] unitcom [RTX 5090]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5090&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 16:23:12,399 [WARNING] joshin [RTX 5090]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 16:23:14,071 [WARNING] amazon [RTX 5090]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5090&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 16:23:17,545 [INFO]   kakaku models [RTX 5090]: 0 models found
+2026-06-14 16:23:19,046 [INFO] Scraping: RTX 5080
+2026-06-14 16:23:19,573 [INFO]   kakaku: ¥90,890
+2026-06-14 16:23:21,305 [WARNING] dospara [RTX 5080]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205080&categorys=750
+2026-06-14 16:23:23,010 [WARNING] tsukumo [RTX 5080]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5080&category=200100
+2026-06-14 16:23:24,518 [WARNING] unitcom [RTX 5080]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5080&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 16:23:45,203 [WARNING] joshin [RTX 5080]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 16:23:46,865 [WARNING] amazon [RTX 5080]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5080&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 16:23:50,360 [INFO]   kakaku models [RTX 5080]: 0 models found
+2026-06-14 16:23:51,861 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 16:23:52,306 [INFO]   kakaku: ¥90,890
+2026-06-14 16:23:54,028 [WARNING] dospara [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://www.dospara.co.jp/5shopping/search.php?ackey=RTX%205070%20Ti&categorys=750
+2026-06-14 16:23:55,741 [WARNING] tsukumo [RTX 5070 Ti]: 404 Client Error: Not Found for url: https://shop.tsukumo.co.jp/goods/search/?keyword=RTX+5070+Ti&category=200100
+2026-06-14 16:23:57,246 [WARNING] unitcom [RTX 5070 Ti]: HTTPSConnectionPool(host='www.pcone.co.jp', port=443): Max retries exceeded with url: /product/list/?q=RTX+5070+Ti&ctg=10020100 (Caused by NameResolutionError("HTTPSConnection(host='www.pcone.co.jp', port=443): Failed to resolve 'www.pcone.co.jp' ([Errno 11001] getaddrinfo failed)"))
+2026-06-14 16:24:17,920 [WARNING] joshin [RTX 5070 Ti]: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))
+2026-06-14 16:24:19,784 [WARNING] amazon [RTX 5070 Ti]: 503 Server Error: Service Temporarily Unavailable for url: https://www.amazon.co.jp/s?k=RTX+5070+Ti&rh=n%3A2151966051&sort=price-asc-rank
+2026-06-14 16:35:30,302 [INFO] Scraping: RTX 5090
+2026-06-14 16:35:32,290 [INFO]   kakaku models [RTX 5090]: 1 models found
+2026-06-14 16:35:33,791 [INFO]   kakaku: ¥697,800
+2026-06-14 16:35:33,792 [INFO] Scraping: RTX 5080
+2026-06-14 16:35:35,907 [INFO]   kakaku models [RTX 5080]: 1 models found
+2026-06-14 16:35:37,408 [INFO]   kakaku: ¥194,980
+2026-06-14 16:35:37,409 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 16:35:39,525 [INFO]   kakaku models [RTX 5070 Ti]: 1 models found
+2026-06-14 16:35:41,025 [INFO]   kakaku: ¥158,000
+2026-06-14 16:35:41,027 [INFO] Scraping: RTX 5070
+2026-06-14 16:35:43,166 [INFO]   kakaku models [RTX 5070]: 1 models found
+2026-06-14 16:35:44,667 [INFO]   kakaku: ¥95,800
+2026-06-14 16:35:44,667 [INFO] Scraping: RTX 5060 Ti
+2026-06-14 16:35:46,857 [INFO]   kakaku models [RTX 5060 Ti]: 1 models found
+2026-06-14 16:35:48,358 [INFO]   kakaku: ¥93,800
+2026-06-14 16:35:48,358 [INFO] Scraping: RTX 5060
+2026-06-14 16:35:50,432 [INFO]   kakaku models [RTX 5060]: 1 models found
+2026-06-14 16:35:51,933 [INFO]   kakaku: ¥54,180
+2026-06-14 16:35:51,933 [INFO] Scraping: RX 9070 XT
+2026-06-14 16:35:53,971 [INFO]   kakaku models [RX 9070 XT]: 1 models found
+2026-06-14 16:35:55,472 [INFO]   kakaku: ¥90,890
+2026-06-14 16:35:55,472 [INFO] Scraping: RX 9070
+2026-06-14 16:35:57,498 [INFO]   kakaku models [RX 9070]: 1 models found
+2026-06-14 16:35:58,999 [INFO]   kakaku: ¥89,800
+2026-06-14 16:35:59,000 [INFO] Scraping: RX 9060 XT
+2026-06-14 16:36:01,032 [INFO]   kakaku models [RX 9060 XT]: 1 models found
+2026-06-14 16:36:02,533 [INFO]   kakaku: ¥58,000
+2026-06-14 16:36:02,536 [INFO] Data saved. 7 event(s) detected.
+2026-06-14 16:36:02,548 [WARNING] Email not configured — skipping notification.
+2026-06-14 16:39:26,469 [INFO] Scraping: RTX 5090
+2026-06-14 16:39:28,440 [INFO]   kakaku models [RTX 5090]: 0 models found
+2026-06-14 16:39:29,941 [INFO]   kakaku: ¥689,800
+2026-06-14 16:39:29,942 [INFO] Scraping: RTX 5080
+2026-06-14 16:39:32,032 [INFO]   kakaku models [RTX 5080]: 0 models found
+2026-06-14 16:39:33,533 [INFO]   kakaku: ¥194,980
+2026-06-14 16:39:33,534 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 16:39:35,678 [INFO]   kakaku models [RTX 5070 Ti]: 0 models found
+2026-06-14 16:39:37,179 [INFO]   kakaku: ¥157,800
+2026-06-14 16:39:37,181 [INFO] Scraping: RTX 5070
+2026-06-14 16:39:39,286 [INFO]   kakaku models [RTX 5070]: 0 models found
+2026-06-14 16:39:40,786 [INFO]   kakaku: ¥95,243
+2026-06-14 16:39:40,787 [INFO] Scraping: RTX 5060 Ti
+2026-06-14 16:39:43,179 [INFO]   kakaku models [RTX 5060 Ti]: 0 models found
+2026-06-14 16:39:44,680 [INFO]   kakaku: ¥62,800
+2026-06-14 16:39:44,681 [INFO] Scraping: RTX 5060
+2026-06-14 16:39:46,859 [INFO]   kakaku models [RTX 5060]: 0 models found
+2026-06-14 16:39:48,360 [INFO]   kakaku: ¥53,500
+2026-06-14 16:39:48,361 [INFO] Scraping: RX 9070 XT
+2026-06-14 16:39:50,598 [INFO]   kakaku models [RX 9070 XT]: 0 models found
+2026-06-14 16:39:52,099 [INFO]   kakaku: ¥86,980
+2026-06-14 16:39:52,101 [INFO] Scraping: RX 9070
+2026-06-14 16:39:54,209 [INFO]   kakaku models [RX 9070]: 0 models found
+2026-06-14 16:39:55,710 [INFO]   kakaku: ¥85,800
+2026-06-14 16:39:55,711 [INFO] Scraping: RX 9060 XT
+2026-06-14 16:39:57,946 [INFO]   kakaku models [RX 9060 XT]: 0 models found
+2026-06-14 16:39:59,447 [INFO]   kakaku: ¥53,980
+2026-06-14 16:39:59,458 [INFO] Data saved. 8 event(s) detected.
+2026-06-14 16:39:59,500 [WARNING] Email not configured — skipping notification.
+2026-06-14 16:41:44,385 [INFO] Scraping: RTX 5090
+2026-06-14 16:41:46,422 [INFO]   kakaku models [RTX 5090]: 14 models found
+2026-06-14 16:41:47,923 [INFO]   kakaku: ¥689,800
+2026-06-14 16:41:47,924 [INFO] Scraping: RTX 5080
+2026-06-14 16:41:50,015 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-14 16:41:51,515 [INFO]   kakaku: ¥194,980
+2026-06-14 16:41:51,516 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 16:41:53,633 [INFO]   kakaku models [RTX 5070 Ti]: 28 models found
+2026-06-14 16:41:55,134 [INFO]   kakaku: ¥157,800
+2026-06-14 16:41:55,135 [INFO] Scraping: RTX 5070
+2026-06-14 16:41:57,243 [INFO]   kakaku models [RTX 5070]: 34 models found
+2026-06-14 16:41:58,744 [INFO]   kakaku: ¥95,243
+2026-06-14 16:41:58,744 [INFO] Scraping: RTX 5060 Ti
+2026-06-14 16:42:01,000 [INFO]   kakaku models [RTX 5060 Ti]: 40 models found
+2026-06-14 16:42:02,501 [INFO]   kakaku: ¥62,800
+2026-06-14 16:42:02,501 [INFO] Scraping: RTX 5060
+2026-06-14 16:42:04,574 [INFO]   kakaku models [RTX 5060]: 28 models found
+2026-06-14 16:42:06,075 [INFO]   kakaku: ¥53,500
+2026-06-14 16:42:06,075 [INFO] Scraping: RX 9070 XT
+2026-06-14 16:42:08,147 [INFO]   kakaku models [RX 9070 XT]: 25 models found
+2026-06-14 16:42:09,647 [INFO]   kakaku: ¥86,980
+2026-06-14 16:42:09,648 [INFO] Scraping: RX 9070
+2026-06-14 16:42:11,603 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-14 16:42:13,104 [INFO]   kakaku: ¥85,800
+2026-06-14 16:42:13,104 [INFO] Scraping: RX 9060 XT
+2026-06-14 16:42:15,188 [INFO]   kakaku models [RX 9060 XT]: 26 models found
+2026-06-14 16:42:16,688 [INFO]   kakaku: ¥53,980
+2026-06-14 16:42:16,694 [INFO] Data saved. 8 event(s) detected.
+2026-06-14 16:42:16,725 [WARNING] Email not configured — skipping notification.
+2026-06-14 22:16:23,954 [INFO] Scraping: RTX 5090
+2026-06-14 22:16:25,928 [INFO]   kakaku models [RTX 5090]: 14 models found
+2026-06-14 22:16:27,429 [INFO]   kakaku: ¥697,800
+2026-06-14 22:16:27,429 [INFO] Scraping: RTX 5080
+2026-06-14 22:16:29,561 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-14 22:16:31,062 [INFO]   kakaku: ¥194,980
+2026-06-14 22:16:31,063 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 22:16:33,191 [INFO]   kakaku models [RTX 5070 Ti]: 28 models found
+2026-06-14 22:16:34,691 [INFO]   kakaku: ¥157,800
+2026-06-14 22:16:34,693 [INFO] Scraping: RTX 5070
+2026-06-14 22:16:36,870 [INFO]   kakaku models [RTX 5070]: 34 models found
+2026-06-14 22:16:38,371 [INFO]   kakaku: ¥93,000
+2026-06-14 22:16:38,371 [INFO] Scraping: RTX 5060 Ti 16G
+2026-06-14 22:16:40,486 [INFO]   kakaku models [RTX 5060 Ti 16G]: 23 models found
+2026-06-14 22:16:41,986 [INFO]   kakaku: ¥91,980
+2026-06-14 22:16:41,987 [INFO] Scraping: RTX 5060 Ti 8G
+2026-06-14 22:16:44,050 [INFO]   kakaku models [RTX 5060 Ti 8G]: 26 models found
+2026-06-14 22:16:45,550 [INFO]   kakaku: ¥62,800
+2026-06-14 22:16:45,551 [INFO] Scraping: RTX 5060
+2026-06-14 22:16:47,612 [INFO]   kakaku models [RTX 5060]: 28 models found
+2026-06-14 22:16:49,113 [INFO]   kakaku: ¥53,500
+2026-06-14 22:16:49,114 [INFO] Scraping: RX 9070 XT
+2026-06-14 22:16:51,272 [INFO]   kakaku models [RX 9070 XT]: 25 models found
+2026-06-14 22:16:52,773 [INFO]   kakaku: ¥86,980
+2026-06-14 22:16:52,774 [INFO] Scraping: RX 9070
+2026-06-14 22:16:54,745 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-14 22:16:56,245 [INFO]   kakaku: ¥85,800
+2026-06-14 22:16:56,246 [INFO] Scraping: RX 9060 XT 16G
+2026-06-14 22:16:58,231 [INFO]   kakaku models [RX 9060 XT 16G]: 16 models found
+2026-06-14 22:16:59,731 [INFO]   kakaku: ¥57,500
+2026-06-14 22:16:59,733 [INFO] Scraping: RX 9060 XT 8G
+2026-06-14 22:17:01,694 [INFO]   kakaku models [RX 9060 XT 8G]: 10 models found
+2026-06-14 22:17:03,195 [INFO]   kakaku: ¥53,980
+2026-06-14 22:17:03,203 [INFO] Data saved. 10 event(s) detected.
+2026-06-14 22:17:03,223 [WARNING] Email not configured — skipping notification.
+2026-06-14 22:23:07,513 [INFO] Scraping: RTX 5090
+2026-06-14 22:23:09,694 [INFO]   kakaku models [RTX 5090]: 14 models found
+2026-06-14 22:23:11,195 [INFO]   kakaku: ¥697,800
+2026-06-14 22:23:11,196 [INFO] Scraping: RTX 5080
+2026-06-14 22:23:13,333 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-14 22:23:14,834 [INFO]   kakaku: ¥194,980
+2026-06-14 22:23:14,834 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 22:23:17,028 [INFO]   kakaku models [RTX 5070 Ti]: 28 models found
+2026-06-14 22:23:18,528 [INFO]   kakaku: ¥157,800
+2026-06-14 22:23:18,529 [INFO] Scraping: RTX 5070
+2026-06-14 22:23:20,633 [INFO]   kakaku models [RTX 5070]: 34 models found
+2026-06-14 22:23:22,134 [INFO]   kakaku: ¥93,000
+2026-06-14 22:23:22,135 [INFO] Scraping: RTX 5060 Ti 16G
+2026-06-14 22:23:24,298 [INFO]   kakaku models [RTX 5060 Ti 16G]: 23 models found
+2026-06-14 22:23:25,799 [INFO]   kakaku: ¥91,980
+2026-06-14 22:23:25,800 [INFO] Scraping: RTX 5060 Ti 8G
+2026-06-14 22:23:27,885 [INFO]   kakaku models [RTX 5060 Ti 8G]: 26 models found
+2026-06-14 22:23:29,386 [INFO]   kakaku: ¥62,800
+2026-06-14 22:23:29,386 [INFO] Scraping: RTX 5060
+2026-06-14 22:23:31,495 [INFO]   kakaku models [RTX 5060]: 28 models found
+2026-06-14 22:23:32,996 [INFO]   kakaku: ¥53,500
+2026-06-14 22:23:32,997 [INFO] Scraping: RX 9070 XT
+2026-06-14 22:23:35,119 [INFO]   kakaku models [RX 9070 XT]: 25 models found
+2026-06-14 22:23:36,619 [INFO]   kakaku: ¥86,980
+2026-06-14 22:23:36,619 [INFO] Scraping: RX 9070
+2026-06-14 22:23:38,588 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-14 22:23:40,089 [INFO]   kakaku: ¥85,800
+2026-06-14 22:23:40,090 [INFO] Scraping: RX 9060 XT 16G
+2026-06-14 22:23:42,090 [INFO]   kakaku models [RX 9060 XT 16G]: 16 models found
+2026-06-14 22:23:43,591 [INFO]   kakaku: ¥57,500
+2026-06-14 22:23:43,591 [INFO] Scraping: RX 9060 XT 8G
+2026-06-14 22:23:45,546 [INFO]   kakaku models [RX 9060 XT 8G]: 10 models found
+2026-06-14 22:23:47,046 [INFO]   kakaku: ¥53,980
+2026-06-14 22:23:47,057 [INFO] Data saved. 10 event(s) detected.
+2026-06-14 22:23:47,091 [WARNING] Email not configured — skipping notification.
+2026-06-14 22:32:05,429 [INFO] Scraping: RTX 5090
+2026-06-14 22:32:07,406 [INFO]   kakaku models [RTX 5090]: 14 models found
+2026-06-14 22:32:08,907 [INFO]   kakaku: ¥697,800
+2026-06-14 22:32:08,908 [INFO] Scraping: RTX 5080
+2026-06-14 22:32:11,047 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-14 22:32:12,548 [INFO]   kakaku: ¥194,980
+2026-06-14 22:32:12,549 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 22:32:14,645 [INFO]   kakaku models [RTX 5070 Ti]: 28 models found
+2026-06-14 22:32:16,145 [INFO]   kakaku: ¥157,800
+2026-06-14 22:32:16,146 [INFO] Scraping: RTX 5070
+2026-06-14 22:32:18,243 [INFO]   kakaku models [RTX 5070]: 34 models found
+2026-06-14 22:32:19,744 [INFO]   kakaku: ¥93,000
+2026-06-14 22:32:19,745 [INFO] Scraping: RTX 5060 Ti 16G
+2026-06-14 22:32:21,828 [INFO]   kakaku models [RTX 5060 Ti 16G]: 23 models found
+2026-06-14 22:32:23,329 [INFO]   kakaku: ¥91,980
+2026-06-14 22:32:23,329 [INFO] Scraping: RTX 5060 Ti 8G
+2026-06-14 22:32:25,379 [INFO]   kakaku models [RTX 5060 Ti 8G]: 26 models found
+2026-06-14 22:32:26,880 [INFO]   kakaku: ¥62,800
+2026-06-14 22:32:26,881 [INFO] Scraping: RTX 5060
+2026-06-14 22:32:29,049 [INFO]   kakaku models [RTX 5060]: 28 models found
+2026-06-14 22:32:30,550 [INFO]   kakaku: ¥53,500
+2026-06-14 22:32:30,551 [INFO] Scraping: RX 9070 XT
+2026-06-14 22:32:32,677 [INFO]   kakaku models [RX 9070 XT]: 25 models found
+2026-06-14 22:32:34,178 [INFO]   kakaku: ¥86,980
+2026-06-14 22:32:34,179 [INFO] Scraping: RX 9070
+2026-06-14 22:32:36,160 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-14 22:32:37,661 [INFO]   kakaku: ¥85,800
+2026-06-14 22:32:37,663 [INFO] Scraping: RX 9060 XT 16G
+2026-06-14 22:32:39,684 [INFO]   kakaku models [RX 9060 XT 16G]: 16 models found
+2026-06-14 22:32:41,185 [INFO]   kakaku: ¥57,500
+2026-06-14 22:32:41,186 [INFO] Scraping: RX 9060 XT 8G
+2026-06-14 22:32:43,131 [INFO]   kakaku models [RX 9060 XT 8G]: 10 models found
+2026-06-14 22:32:44,632 [INFO]   kakaku: ¥53,980
+2026-06-14 22:32:44,636 [INFO] Data saved. 11 event(s) detected.
+2026-06-14 22:32:44,670 [WARNING] Email not configured — skipping notification.
