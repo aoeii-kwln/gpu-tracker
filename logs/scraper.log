@@ -640,3 +640,213 @@
 2026-06-14 22:32:44,632 [INFO]   kakaku: ¥53,980
 2026-06-14 22:32:44,636 [INFO] Data saved. 11 event(s) detected.
 2026-06-14 22:32:44,670 [WARNING] Email not configured — skipping notification.
+2026-06-14 23:23:32,464 [INFO] Scraping: RTX 5090
+2026-06-14 23:23:34,430 [INFO]   kakaku models [RTX 5090]: 14 models found
+2026-06-14 23:23:35,931 [INFO]   kakaku: ¥697,800
+2026-06-14 23:23:35,932 [INFO] Scraping: RTX 5080
+2026-06-14 23:23:38,033 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-14 23:23:39,533 [INFO]   kakaku: ¥194,980
+2026-06-14 23:23:39,533 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 23:23:41,795 [INFO]   kakaku models [RTX 5070 Ti]: 28 models found
+2026-06-14 23:23:43,296 [INFO]   kakaku: ¥157,800
+2026-06-14 23:23:43,297 [INFO] Scraping: RTX 5070
+2026-06-14 23:23:45,460 [INFO]   kakaku models [RTX 5070]: 34 models found
+2026-06-14 23:23:46,961 [INFO]   kakaku: ¥93,000
+2026-06-14 23:23:46,961 [INFO] Scraping: RTX 5060 Ti 16G
+2026-06-14 23:23:49,013 [INFO]   kakaku models [RTX 5060 Ti 16G]: 23 models found
+2026-06-14 23:23:50,514 [INFO]   kakaku: ¥91,980
+2026-06-14 23:23:50,515 [INFO] Scraping: RTX 5060 Ti 8G
+2026-06-14 23:23:52,634 [INFO]   kakaku models [RTX 5060 Ti 8G]: 26 models found
+2026-06-14 23:23:54,135 [INFO]   kakaku: ¥62,800
+2026-06-14 23:23:54,135 [INFO] Scraping: RTX 5060
+2026-06-14 23:23:56,237 [INFO]   kakaku models [RTX 5060]: 28 models found
+2026-06-14 23:23:57,738 [INFO]   kakaku: ¥53,500
+2026-06-14 23:23:57,739 [INFO] Scraping: RX 9070 XT
+2026-06-14 23:23:59,918 [INFO]   kakaku models [RX 9070 XT]: 25 models found
+2026-06-14 23:24:01,419 [INFO]   kakaku: ¥86,980
+2026-06-14 23:24:01,420 [INFO] Scraping: RX 9070
+2026-06-14 23:24:03,361 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-14 23:24:04,862 [INFO]   kakaku: ¥85,800
+2026-06-14 23:24:04,862 [INFO] Scraping: RX 9060 XT 16G
+2026-06-14 23:24:06,885 [INFO]   kakaku models [RX 9060 XT 16G]: 16 models found
+2026-06-14 23:24:08,386 [INFO]   kakaku: ¥57,500
+2026-06-14 23:24:08,386 [INFO] Scraping: RX 9060 XT 8G
+2026-06-14 23:24:10,380 [INFO]   kakaku models [RX 9060 XT 8G]: 10 models found
+2026-06-14 23:24:11,881 [INFO]   kakaku: ¥53,980
+2026-06-14 23:24:11,889 [INFO] Data saved. 11 event(s) detected.
+2026-06-14 23:24:11,906 [WARNING] Email not configured — skipping notification.
+2026-06-14 23:24:13,600 [INFO] GitHub Pages updated successfully.
+2026-06-14 23:31:28,634 [INFO] Scraping: RTX 5090
+2026-06-14 23:31:30,605 [INFO]   kakaku models [RTX 5090]: 14 models found
+2026-06-14 23:31:32,106 [INFO]   kakaku: ¥697,800
+2026-06-14 23:31:32,107 [INFO] Scraping: RTX 5080
+2026-06-14 23:31:34,259 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-14 23:31:35,760 [INFO]   kakaku: ¥194,980
+2026-06-14 23:31:35,761 [INFO] Scraping: RTX 5070 Ti
+2026-06-14 23:31:37,897 [INFO]   kakaku models [RTX 5070 Ti]: 28 models found
+2026-06-14 23:31:39,398 [INFO]   kakaku: ¥157,800
+2026-06-14 23:31:39,399 [INFO] Scraping: RTX 5070
+2026-06-14 23:31:41,502 [INFO]   kakaku models [RTX 5070]: 34 models found
+2026-06-14 23:31:43,002 [INFO]   kakaku: ¥93,000
+2026-06-14 23:31:43,003 [INFO] Scraping: RTX 5060 Ti 16G
+2026-06-14 23:31:45,133 [INFO]   kakaku models [RTX 5060 Ti 16G]: 23 models found
+2026-06-14 23:31:46,636 [INFO]   kakaku: ¥91,980
+2026-06-14 23:31:46,637 [INFO] Scraping: RTX 5060 Ti 8G
+2026-06-14 23:31:48,684 [INFO]   kakaku models [RTX 5060 Ti 8G]: 26 models found
+2026-06-14 23:31:50,185 [INFO]   kakaku: ¥62,800
+2026-06-14 23:31:50,186 [INFO] Scraping: RTX 5060
+2026-06-14 23:31:52,280 [INFO]   kakaku models [RTX 5060]: 28 models found
+2026-06-14 23:31:53,781 [INFO]   kakaku: ¥53,500
+2026-06-14 23:31:53,782 [INFO] Scraping: RX 9070 XT
+2026-06-14 23:31:55,840 [INFO]   kakaku models [RX 9070 XT]: 25 models found
+2026-06-14 23:31:57,341 [INFO]   kakaku: ¥86,980
+2026-06-14 23:31:57,343 [INFO] Scraping: RX 9070
+2026-06-14 23:31:59,350 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-14 23:32:00,850 [INFO]   kakaku: ¥85,800
+2026-06-14 23:32:00,852 [INFO] Scraping: RX 9060 XT 16G
+2026-06-14 23:32:02,958 [INFO]   kakaku models [RX 9060 XT 16G]: 16 models found
+2026-06-14 23:32:04,459 [INFO]   kakaku: ¥57,500
+2026-06-14 23:32:04,460 [INFO] Scraping: RX 9060 XT 8G
+2026-06-14 23:32:06,398 [INFO]   kakaku models [RX 9060 XT 8G]: 10 models found
+2026-06-14 23:32:07,899 [INFO]   kakaku: ¥53,980
+2026-06-14 23:32:07,909 [INFO] Data saved. 0 event(s) detected.
+2026-06-14 23:32:07,926 [INFO] No significant events — no email sent.
+2026-06-14 23:32:09,641 [INFO] GitHub Pages updated successfully.
+2026-06-17 22:11:24,012 [INFO] Scraping: RTX 5090
+2026-06-17 22:11:26,035 [INFO]   kakaku models [RTX 5090]: 13 models found
+2026-06-17 22:11:27,536 [INFO]   kakaku: ¥709,800
+2026-06-17 22:11:27,537 [INFO] Scraping: RTX 5080
+2026-06-17 22:11:29,628 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-17 22:11:31,129 [INFO]   kakaku: ¥194,980
+2026-06-17 22:11:31,130 [INFO] Scraping: RTX 5070 Ti
+2026-06-17 22:11:33,266 [INFO]   kakaku models [RTX 5070 Ti]: 27 models found
+2026-06-17 22:11:34,766 [INFO]   kakaku: ¥157,800
+2026-06-17 22:11:34,768 [INFO] Scraping: RTX 5070
+2026-06-17 22:11:36,930 [INFO]   kakaku models [RTX 5070]: 35 models found
+2026-06-17 22:11:38,431 [INFO]   kakaku: ¥94,980
+2026-06-17 22:11:38,432 [INFO] Scraping: RTX 5060 Ti 16G
+2026-06-17 22:11:40,520 [INFO]   kakaku models [RTX 5060 Ti 16G]: 23 models found
+2026-06-17 22:11:42,020 [INFO]   kakaku: ¥91,980
+2026-06-17 22:11:42,021 [INFO] Scraping: RTX 5060 Ti 8G
+2026-06-17 22:11:44,090 [INFO]   kakaku models [RTX 5060 Ti 8G]: 26 models found
+2026-06-17 22:11:45,591 [INFO]   kakaku: ¥62,800
+2026-06-17 22:11:45,591 [INFO] Scraping: RTX 5060
+2026-06-17 22:11:47,639 [INFO]   kakaku models [RTX 5060]: 27 models found
+2026-06-17 22:11:49,140 [INFO]   kakaku: ¥53,500
+2026-06-17 22:11:49,140 [INFO] Scraping: RX 9070 XT
+2026-06-17 22:11:51,277 [INFO]   kakaku models [RX 9070 XT]: 27 models found
+2026-06-17 22:11:52,777 [INFO]   kakaku: ¥89,780
+2026-06-17 22:11:52,778 [INFO] Scraping: RX 9070
+2026-06-17 22:11:54,846 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-17 22:11:56,346 [INFO]   kakaku: ¥85,800
+2026-06-17 22:11:56,347 [INFO] Scraping: RX 9060 XT 16G
+2026-06-17 22:11:58,383 [INFO]   kakaku models [RX 9060 XT 16G]: 16 models found
+2026-06-17 22:11:59,883 [INFO]   kakaku: ¥57,981
+2026-06-17 22:11:59,884 [INFO] Scraping: RX 9060 XT 8G
+2026-06-17 22:12:01,864 [INFO]   kakaku models [RX 9060 XT 8G]: 9 models found
+2026-06-17 22:12:03,365 [INFO]   kakaku: ¥53,980
+2026-06-17 22:12:03,377 [INFO] Data saved. 1 event(s) detected.
+2026-06-17 22:12:03,406 [WARNING] Email not configured — skipping notification.
+2026-06-17 22:12:05,648 [INFO] GitHub Pages updated successfully.
+2026-06-17 22:40:01,392 [INFO] Scraping: RTX 5090
+2026-06-17 22:40:03,389 [INFO]   kakaku models [RTX 5090]: 13 models found
+2026-06-17 22:40:04,890 [INFO]   kakaku: ¥709,800
+2026-06-17 22:40:04,890 [INFO] Scraping: RTX 5080
+2026-06-17 22:40:07,198 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-17 22:40:08,699 [INFO]   kakaku: ¥194,980
+2026-06-17 22:40:08,699 [INFO] Scraping: RTX 5070 Ti
+2026-06-17 22:40:10,938 [INFO]   kakaku models [RTX 5070 Ti]: 27 models found
+2026-06-17 22:40:12,439 [INFO]   kakaku: ¥157,800
+2026-06-17 22:40:12,439 [INFO] Scraping: RTX 5070
+2026-06-17 22:40:14,766 [INFO]   kakaku models [RTX 5070]: 35 models found
+2026-06-17 22:40:16,268 [INFO]   kakaku: ¥94,980
+2026-06-17 22:40:16,268 [INFO] Scraping: RTX 5060 Ti 16G
+2026-06-17 22:40:18,545 [INFO]   kakaku models [RTX 5060 Ti 16G]: 23 models found
+2026-06-17 22:40:20,045 [INFO]   kakaku: ¥91,980
+2026-06-17 22:40:20,046 [INFO] Scraping: RTX 5060 Ti 8G
+2026-06-17 22:40:22,277 [INFO]   kakaku models [RTX 5060 Ti 8G]: 26 models found
+2026-06-17 22:40:23,778 [INFO]   kakaku: ¥62,800
+2026-06-17 22:40:23,778 [INFO] Scraping: RTX 5060
+2026-06-17 22:40:26,048 [INFO]   kakaku models [RTX 5060]: 27 models found
+2026-06-17 22:40:27,548 [INFO]   kakaku: ¥53,500
+2026-06-17 22:40:27,549 [INFO] Scraping: RX 9070 XT
+2026-06-17 22:40:29,777 [INFO]   kakaku models [RX 9070 XT]: 27 models found
+2026-06-17 22:40:31,280 [INFO]   kakaku: ¥89,780
+2026-06-17 22:40:31,281 [INFO] Scraping: RX 9070
+2026-06-17 22:40:33,424 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-17 22:40:34,924 [INFO]   kakaku: ¥85,800
+2026-06-17 22:40:34,925 [INFO] Scraping: RX 9060 XT 16G
+2026-06-17 22:40:37,137 [INFO]   kakaku models [RX 9060 XT 16G]: 16 models found
+2026-06-17 22:40:38,637 [INFO]   kakaku: ¥57,981
+2026-06-17 22:40:38,638 [INFO] Scraping: RX 9060 XT 8G
+2026-06-17 22:40:40,661 [INFO]   kakaku models [RX 9060 XT 8G]: 9 models found
+2026-06-17 22:40:42,162 [INFO]   kakaku: ¥53,980
+2026-06-17 22:40:42,171 [INFO] Data saved. 0 event(s) detected.
+2026-06-17 22:40:42,199 [INFO] No significant events — no email sent.
+2026-06-17 22:40:42,255 [WARNING] GitHub push failed: Command '['git', 'commit', '-m', 'auto update 2026-06-17']' returned non-zero exit status 1.
+2026-06-17 22:56:14,470 [INFO] Scraping: RTX 5090
+2026-06-17 22:56:14,740 [INFO]   kakaku models [RTX 5090]: 13 models found
+2026-06-17 22:56:28,579 [INFO]     ...10/13 件処理済み
+2026-06-17 22:56:32,551 [INFO]   正規代理店モデル数 [RTX 5090]: 10/13
+2026-06-17 22:56:32,552 [INFO]   kakaku (正規代理店最安): ¥711,800
+2026-06-17 22:56:32,554 [INFO] Scraping: RTX 5080
+2026-06-17 22:56:32,840 [INFO]   kakaku models [RTX 5080]: 33 models found
+2026-06-17 22:56:46,772 [INFO]     ...10/33 件処理済み
+2026-06-17 22:57:00,000 [INFO]     ...20/33 件処理済み
+2026-06-17 22:57:13,380 [INFO]     ...30/33 件処理済み
+2026-06-17 22:57:17,284 [INFO]   正規代理店モデル数 [RTX 5080]: 33/33
+2026-06-17 22:57:17,285 [INFO]   kakaku (正規代理店最安): ¥198,000
+2026-06-17 22:57:17,285 [INFO] Scraping: RTX 5070 Ti
+2026-06-17 22:57:17,664 [INFO]   kakaku models [RTX 5070 Ti]: 27 models found
+2026-06-17 22:57:31,794 [INFO]     ...10/27 件処理済み
+2026-06-17 22:57:45,232 [INFO]     ...20/27 件処理済み
+2026-06-17 22:57:54,579 [INFO]   正規代理店モデル数 [RTX 5070 Ti]: 27/27
+2026-06-17 22:57:54,579 [INFO]   kakaku (正規代理店最安): ¥157,800
+2026-06-17 22:57:54,580 [INFO] Scraping: RTX 5070
+2026-06-17 22:57:55,024 [INFO]   kakaku models [RTX 5070]: 35 models found
+2026-06-17 22:58:09,861 [INFO]     ...10/35 件処理済み
+2026-06-17 22:58:23,135 [INFO]     ...20/35 件処理済み
+2026-06-17 22:58:36,496 [INFO]     ...30/35 件処理済み
+2026-06-17 22:58:42,951 [INFO]   正規代理店モデル数 [RTX 5070]: 35/35
+2026-06-17 22:58:42,951 [INFO]   kakaku (正規代理店最安): ¥94,980
+2026-06-17 22:58:42,952 [INFO] Scraping: RTX 5060 Ti 16G
+2026-06-17 22:58:43,333 [INFO]   kakaku models [RTX 5060 Ti 16G]: 23 models found
+2026-06-17 22:58:57,215 [INFO]     ...10/23 件処理済み
+2026-06-17 22:59:10,169 [INFO]     ...20/23 件処理済み
+2026-06-17 22:59:13,942 [INFO]   正規代理店モデル数 [RTX 5060 Ti 16G]: 23/23
+2026-06-17 22:59:13,942 [INFO]   kakaku (正規代理店最安): ¥91,980
+2026-06-17 22:59:13,943 [INFO] Scraping: RTX 5060 Ti 8G
+2026-06-17 22:59:14,377 [INFO]   kakaku models [RTX 5060 Ti 8G]: 26 models found
+2026-06-17 22:59:28,555 [INFO]     ...10/26 件処理済み
+2026-06-17 22:59:41,678 [INFO]     ...20/26 件処理済み
+2026-06-17 22:59:49,209 [INFO]   正規代理店モデル数 [RTX 5060 Ti 8G]: 25/26
+2026-06-17 22:59:49,209 [INFO]   kakaku (正規代理店最安): ¥62,800
+2026-06-17 22:59:49,210 [INFO] Scraping: RTX 5060
+2026-06-17 22:59:49,485 [INFO]   kakaku models [RTX 5060]: 27 models found
+2026-06-17 23:00:03,358 [INFO]     ...10/27 件処理済み
+2026-06-17 23:00:16,392 [INFO]     ...20/27 件処理済み
+2026-06-17 23:00:25,263 [INFO]   正規代理店モデル数 [RTX 5060]: 27/27
+2026-06-17 23:00:25,264 [INFO]   kakaku (正規代理店最安): ¥53,800
+2026-06-17 23:00:25,264 [INFO] Scraping: RX 9070 XT
+2026-06-17 23:00:25,574 [INFO]   kakaku models [RX 9070 XT]: 27 models found
+2026-06-17 23:00:39,914 [INFO]     ...10/27 件処理済み
+2026-06-17 23:00:52,951 [INFO]     ...20/27 件処理済み
+2026-06-17 23:01:02,126 [INFO]   正規代理店モデル数 [RX 9070 XT]: 27/27
+2026-06-17 23:01:02,127 [INFO]   kakaku (正規代理店最安): ¥89,780
+2026-06-17 23:01:02,128 [INFO] Scraping: RX 9070
+2026-06-17 23:01:02,454 [INFO]   kakaku models [RX 9070]: 12 models found
+2026-06-17 23:01:16,547 [INFO]     ...10/12 件処理済み
+2026-06-17 23:01:19,198 [INFO]   正規代理店モデル数 [RX 9070]: 12/12
+2026-06-17 23:01:19,198 [INFO]   kakaku (正規代理店最安): ¥85,800
+2026-06-17 23:01:19,198 [INFO] Scraping: RX 9060 XT 16G
+2026-06-17 23:01:19,462 [INFO]   kakaku models [RX 9060 XT 16G]: 16 models found
+2026-06-17 23:01:33,615 [INFO]     ...10/16 件処理済み
+2026-06-17 23:01:41,752 [INFO]   正規代理店モデル数 [RX 9060 XT 16G]: 16/16
+2026-06-17 23:01:41,752 [INFO]   kakaku (正規代理店最安): ¥57,981
+2026-06-17 23:01:41,752 [INFO] Scraping: RX 9060 XT 8G
+2026-06-17 23:01:41,991 [INFO]   kakaku models [RX 9060 XT 8G]: 9 models found
+2026-06-17 23:01:54,507 [INFO]   正規代理店モデル数 [RX 9060 XT 8G]: 8/9
+2026-06-17 23:01:54,507 [INFO]   kakaku (正規代理店最安): ¥53,980
+2026-06-17 23:01:54,524 [INFO] Data saved. 0 event(s) detected.
+2026-06-17 23:01:54,536 [INFO] No significant events — no email sent.
+2026-06-17 23:01:54,593 [WARNING] GitHub push failed: Command '['git', 'commit', '-m', 'auto update 2026-06-17']' returned non-zero exit status 1.

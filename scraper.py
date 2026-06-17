@@ -32,6 +32,27 @@ EMAIL_APP_PASSWORD = "YOUR_GMAIL_APP_PASSWORD"
 
 PRICE_CHANGE_THRESHOLD = 0.03   # 3% = trigger pick-up
 
+# 正規代理店ホワイトリスト — 並行輸入/マーケットプレイス系を除外
+AUTHORIZED_RETAILERS = [
+    "TSUKUMO", "ツクモ",
+    "パソコン工房", "PCワンズ",
+    "ソフマップ", "ソフマップ.com",
+    "Amazon.co.jp", "Amazon",
+    "コジマネット", "コジマ",
+    "ビックカメラ.com", "ビックカメラ",
+    "ヨドバシ.com", "ヨドバシ",
+    "ヤマダウェブコム", "ヤマダ電機",
+    "ドスパラ", "Dospara",
+    "Joshin", "ジョーシン",
+    "ノジマ",
+    "エディオン",
+    "ケーズデンキ",
+]
+
+def is_authorized_retailer(shop_name: str) -> bool:
+    """Check if shop name matches the authorized retailer whitelist."""
+    return any(r in shop_name for r in AUTHORIZED_RETAILERS)
+
 # GPU models to track
 GPU_MODELS = {
     # NVIDIA RTX 50 Series
@@ -98,21 +119,6 @@ def save_data(data: dict):
 
 
 # ── Scrapers ──────────────────────────────────────────────────────────────────
-
-def scrape_kakaku(gpu_name: str, url: str) -> int | None:
-    """Kakaku.com — lowest price from exact category URL."""
-    try:
-        soup = BeautifulSoup(get(url).text, "html.parser")
-        prices = []
-        for el in soup.select("li.pryen"):
-            p = clean_price(el.get_text())
-            if p and p > 10000:
-                prices.append(p)
-        return min(prices) if prices else None
-    except Exception as e:
-        log.warning(f"kakaku [{gpu_name}]: {e}")
-        return None
-
 
 
 def scrape_kakaku_models(gpu_name: str, url: str) -> list[dict]:
@@ -190,25 +196,79 @@ def scrape_kakaku_models(gpu_name: str, url: str) -> list[dict]:
 
 
 
+def fetch_authorized_price(item_url: str) -> tuple[int | None, str | None]:
+    """Fetch the lowest price among AUTHORIZED_RETAILERS only, from item detail page.
+    Returns (price, shop_name) or (None, None) if no authorized shop found.
+    """
+    try:
+        resp = get(item_url)
+        resp.encoding = resp.apparent_encoding
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        items = soup.select("li.p-priceList_item")
+        best_price = None
+        best_shop = None
+
+        for item in items:
+            shop_el = item.select_one(".p-priceList_shopName")
+            if not shop_el:
+                continue
+            shop_name = shop_el.get_text(strip=True)
+
+            if not is_authorized_retailer(shop_name):
+                continue
+
+            price_el = item.select_one(".p-priceList_priceMain")
+            if not price_el:
+                continue
+            price = clean_price(price_el.get_text())
+            if not price or price < 10000:
+                continue
+
+            if best_price is None or price < best_price:
+                best_price = price
+                best_shop = shop_name
+
+        return best_price, best_shop
+    except Exception as e:
+        log.warning(f"fetch_authorized_price [{item_url}]: {e}")
+        return None, None
+
+
+
 def scrape_all() -> dict[str, dict]:
-    """Run all scrapers for each GPU model."""
+    """Run all scrapers for each GPU model, fetching authorized-retailer prices."""
     results = {}
     for gpu_name, meta in GPU_MODELS.items():
         log.info(f"Scraping: {gpu_name}")
         kakaku_url = meta["kakaku_url"]
 
-        # Kakaku min price + models
-        kakaku_price = scrape_kakaku(gpu_name, kakaku_url)
-        time.sleep(1.5)
         models = scrape_kakaku_models(gpu_name, kakaku_url)
-        time.sleep(1.5)
+        time.sleep(1.0)
+
+        # For each model, fetch the authorized-retailer-only price
+        authorized_models = []
+        for i, model in enumerate(models):
+            auth_price, auth_shop = fetch_authorized_price(model["url"])
+            time.sleep(1.0)
+            if auth_price:
+                model["price"] = auth_price
+                model["source"] = auth_shop
+                authorized_models.append(model)
+            # else: skip — no authorized retailer carries this model
+            if (i + 1) % 10 == 0:
+                log.info(f"    ...{i+1}/{len(models)} 件処理済み")
+
+        authorized_models.sort(key=lambda x: x["price"])
+        log.info(f"  正規代理店モデル数 [{gpu_name}]: {len(authorized_models)}/{len(models)}")
 
         source_prices = {}
-        if kakaku_price:
+        if authorized_models:
+            kakaku_price = authorized_models[0]["price"]
             source_prices["kakaku"] = kakaku_price
-            log.info(f"  kakaku: ¥{kakaku_price:,}")
+            log.info(f"  kakaku (正規代理店最安): ¥{kakaku_price:,}")
 
-        results[gpu_name] = {"sources": source_prices, "models": models}
+        results[gpu_name] = {"sources": source_prices, "models": authorized_models}
     return results
 
 
@@ -338,7 +398,13 @@ def run():
 
         old_data[gpu_name]["events"].extend(events)
 
-    save_data(old_data)
+    # Preserve ALL existing GPU data (including old key names)
+    # Only update/add GPUs that were scraped today
+    final_data = load_data()  # reload fresh to be safe
+    for gpu_name, gpu_data in old_data.items():
+        final_data[gpu_name] = gpu_data
+
+    save_data(final_data)
     log.info(f"Data saved. {len(all_events)} event(s) detected.")
 
     # Inject data into dashboard.html
