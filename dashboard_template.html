@@ -334,6 +334,34 @@
     font-style: italic;
     padding: 8px 0;
   }
+  .date-selector-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .date-selector-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+  }
+  .date-selector-select {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 13px;
+    color: var(--text);
+    background: var(--white);
+    cursor: pointer;
+  }
+  .date-selector-badge {
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 600;
+  }
 
 
   /* ── Empty / No data ── */
@@ -580,9 +608,15 @@ function renderGPUs() {
         <div class="sources-title">販売店別価格</div>
         <div class="source-grid">${sourceHtml}</div>
       </div>
-      <div class="models-section">
-        <div class="models-title">📋 全モデル価格ランキング（kakaku.com）</div>
-        ${buildModelsHtml(data)}
+      <div class="models-section" data-gpu="${gpu}">
+        <div class="date-selector-bar">
+          <span class="date-selector-label">📋 全モデル価格ランキング</span>
+          <select class="date-selector-select" onchange="onDateChange('${gpu}', this.value, ${idx})">
+            ${buildDateOptions(history)}
+          </select>
+          <span class="date-selector-badge">（正規代理店のみ）</span>
+        </div>
+        <div id="models-container-${idx}">${buildModelsHtml(data, null)}</div>
       </div>`;
 
     list.appendChild(card);
@@ -594,20 +628,48 @@ function renderGPUs() {
 }
 
 // ── Model Rankings ───────────────────────────────────────────────────────────
-function buildModelsHtml(data) {
-  // Get latest models from most recent history entry
+function buildDateOptions(history) {
+  // Only dates that have models data, most recent first
+  const datesWithModels = history
+    .filter(h => h.models && h.models.length > 0)
+    .map(h => h.date)
+    .reverse();
+
+  if (!datesWithModels.length) return `<option value="">データなし</option>`;
+
+  return datesWithModels.map((d, i) =>
+    `<option value="${d}"${i === 0 ? " selected" : ""}>${d}${i === 0 ? "（最新）" : ""}</option>`
+  ).join("");
+}
+
+function onDateChange(gpu, dateStr, idx) {
+  const data = PRICES_DATA[gpu];
+  const container = document.getElementById(`models-container-${idx}`);
+  if (container) {
+    container.innerHTML = buildModelsHtml(data, dateStr);
+  }
+}
+
+function buildModelsHtml(data, targetDate) {
   const history = data.history || [];
   let models = [];
-  // Walk history backwards to find latest entry with models
-  for (let i = history.length - 1; i >= 0; i--) {
-    if (history[i].models && history[i].models.length > 0) {
-      models = history[i].models;
-      break;
+
+  if (targetDate) {
+    // Find exact date match
+    const entry = history.find(h => h.date === targetDate);
+    if (entry && entry.models) models = entry.models;
+  } else {
+    // Walk history backwards to find latest entry with models
+    for (let i = history.length - 1; i >= 0; i--) {
+      if (history[i].models && history[i].models.length > 0) {
+        models = history[i].models;
+        break;
+      }
     }
   }
 
   if (!models.length) {
-    return `<div class="models-empty">データなし — 次回 scraper.py 実行時に取得されます</div>`;
+    return `<div class="models-empty">この日付のデータはありません</div>`;
   }
 
   const rows = models.map((m, idx) => {

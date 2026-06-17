@@ -391,10 +391,13 @@ def run():
                 "events":  [],
             }
 
-        # Avoid duplicate entries for the same date
-        existing_dates = {e["date"] for e in old_data[gpu_name]["history"]}
-        if today not in existing_dates:
-            old_data[gpu_name]["history"].append(new_entry)
+        # Same-date entry: overwrite instead of skip, so re-runs reflect latest data
+        history = old_data[gpu_name]["history"]
+        existing_idx = next((i for i, e in enumerate(history) if e["date"] == today), None)
+        if existing_idx is not None:
+            history[existing_idx] = new_entry
+        else:
+            history.append(new_entry)
 
         old_data[gpu_name]["events"].extend(events)
 
