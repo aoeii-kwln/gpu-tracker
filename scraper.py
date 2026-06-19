@@ -30,7 +30,7 @@ EMAIL_FROM = "weilahm@gmail.com"          # Gmail address used as sender
 # ↓ Generate at https://myaccount.google.com/apppasswords  (2FA required)
 EMAIL_APP_PASSWORD = "YOUR_GMAIL_APP_PASSWORD"
 
-PRICE_CHANGE_THRESHOLD = 0.03   # 3% = trigger pick-up
+PRICE_CHANGE_THRESHOLD = 0.005  # 0.5% = trigger pick-up
 
 # 正規代理店ホワイトリスト — 並行輸入/マーケットプレイス系を除外
 AUTHORIZED_RETAILERS = [
