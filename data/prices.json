@@ -1840,11 +1840,19 @@
       },
       {
         "date": "2026-06-19",
-        "min_price": 198000,
+        "min_price": 194980,
         "sources": {
-          "kakaku": 198000
+          "kakaku": 194980
         },
         "models": [
+          {
+            "maker": "Palit Microsystems",
+            "name": "NE75080S19T2-GB2031A (GeForce RTX 5080 GamingPro OC 16GB) [PCIExp 16GB] ドスパラ限定モデ",
+            "price": 194980,
+            "url": "https://kakaku.com/item/K0001768820/",
+            "source": "ドスパラ",
+            "release_date": "2026-02-10"
+          },
           {
             "maker": "Palit Microsystems",
             "name": "NE75080019T2-GB2031A (GeForce RTX 5080 GamingPro 16GB) [PCIExp 16GB] ドスパラ限定モデル",
@@ -1852,14 +1860,6 @@
             "url": "https://kakaku.com/item/K0001682009/",
             "source": "ドスパラ",
             "release_date": "2025-03-21"
-          },
-          {
-            "maker": "Palit Microsystems",
-            "name": "NE75080S19T2-GB2031A (GeForce RTX 5080 GamingPro OC 16GB) [PCIExp 16GB] ドスパラ限定モデ",
-            "price": 199800,
-            "url": "https://kakaku.com/item/K0001768820/",
-            "source": "ドスパラ",
-            "release_date": "2026-02-10"
           },
           {
             "maker": "GIGABYTE",
@@ -4697,20 +4697,20 @@
             "release_date": "2025-03-07"
           },
           {
-            "maker": "ASUS",
-            "name": "PRIME-RTX5070-O12G [PCIExp 12GB]",
-            "price": 130061,
-            "url": "https://kakaku.com/item/K0001679735/",
-            "source": "ビックカメラ.com",
-            "release_date": "2025-03-06"
-          },
-          {
             "maker": "—",
             "name": "Inno3DGeForce RTX 5070 TWIN X2 GD5070-12GERX2 [PCIExp 12GB]",
             "price": 130980,
             "url": "https://kakaku.com/item/K0001677950/",
             "source": "Amazon.co.jp",
             "release_date": "2025-02-21"
+          },
+          {
+            "maker": "ASUS",
+            "name": "PRIME-RTX5070-O12G [PCIExp 12GB]",
+            "price": 135606,
+            "url": "https://kakaku.com/item/K0001679735/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-03-06"
           },
           {
             "maker": "PNY",
