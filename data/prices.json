@@ -2746,14 +2746,6 @@
             "release_date": "2025-01-31"
           },
           {
-            "maker": "GIGABYTE",
-            "name": "GV-N5080AORUSM ICE-16GD [PCIExp 16GB]",
-            "price": 254800,
-            "url": "https://kakaku.com/item/K0001673955/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-01-31"
-          },
-          {
             "maker": "ASUS",
             "name": "PRIME-RTX5080-16G [PCIExp 16GB]",
             "price": 258000,
@@ -2776,6 +2768,14 @@
             "url": "https://kakaku.com/item/K0001689929/",
             "source": "Amazon.co.jp",
             "release_date": "2025-05-22"
+          },
+          {
+            "maker": "GIGABYTE",
+            "name": "GV-N5080AORUSM ICE-16GD [PCIExp 16GB]",
+            "price": 275282,
+            "url": "https://kakaku.com/item/K0001673955/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-01-31"
           },
           {
             "maker": "PNY",
@@ -4309,6 +4309,14 @@
             "release_date": "2025-06-02"
           },
           {
+            "maker": "ASUS",
+            "name": "PRIME-RTX5070TI-16G [PCIExp 16GB]",
+            "price": 158000,
+            "url": "https://kakaku.com/item/K0001677698/",
+            "source": "ドスパラ",
+            "release_date": "2025-02-21"
+          },
+          {
             "maker": "GIGABYTE",
             "name": "GV-N507TWF3OC-16GD [PCIExp 16GB]",
             "price": 159800,
@@ -4367,7 +4375,7 @@
           {
             "maker": "PNY",
             "name": "GeForce RTX 5070 Ti 16GB Overclocked Triple Fan VCG5070T16TFXPB1-O [PCIExp 16GB]",
-            "price": 171039,
+            "price": 170353,
             "url": "https://kakaku.com/item/K0001694582/",
             "source": "Amazon.co.jp",
             "release_date": "2025-06-17"
@@ -6393,6 +6401,14 @@
             "release_date": "2025-03-07"
           },
           {
+            "maker": "ZOTAC",
+            "name": "ZOTAC GAMING GeForce RTX 5070 Twin Edge OC ZT-B50700H-10P [PCIExp 12GB]",
+            "price": 114000,
+            "url": "https://kakaku.com/item/K0001689231/",
+            "source": "パソコン工房",
+            "release_date": "2025-05-13"
+          },
+          {
             "maker": "GIGABYTE",
             "name": "GV-N5070GAMING OC-12GD [PCIExp 12GB]",
             "price": 114800,
@@ -6415,14 +6431,6 @@
             "url": "https://kakaku.com/item/K0001679744/",
             "source": "Joshin",
             "release_date": "2025-03-06"
-          },
-          {
-            "maker": "ZOTAC",
-            "name": "ZOTAC GAMING GeForce RTX 5070 Twin Edge OC ZT-B50700H-10P [PCIExp 12GB]",
-            "price": 117980,
-            "url": "https://kakaku.com/item/K0001689231/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-05-13"
           },
           {
             "maker": "GIGABYTE",
@@ -8091,28 +8099,12 @@
             "release_date": "2025-03-10"
           },
           {
-            "maker": "SAPPHIRE",
-            "name": "SAPPHIRE PURE Radeon RX 9070 XT GAMING OC 16GB GDDR6 [PCIExp 16GB]",
-            "price": 119628,
-            "url": "https://kakaku.com/item/K0001679953/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-03-07"
-          },
-          {
             "maker": "PowerColor",
             "name": "PowerColor Red Devil Spectral White AMD Radeon RX 9070 XT 16GB GDDR6 RX9070XT 16",
             "price": 124800,
             "url": "https://kakaku.com/item/K0001684656/",
             "source": "Amazon.co.jp",
             "release_date": "2025-04-08"
-          },
-          {
-            "maker": "ASUS",
-            "name": "TUF-RX9070XT-O16G-GAMING [PCIExp 16GB]",
-            "price": 125900,
-            "url": "https://kakaku.com/item/K0001679960/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-03-07"
           },
           {
             "maker": "ASRock",
@@ -8139,12 +8131,28 @@
             "release_date": "2025-06-16"
           },
           {
+            "maker": "SAPPHIRE",
+            "name": "SAPPHIRE PURE Radeon RX 9070 XT GAMING OC 16GB GDDR6 [PCIExp 16GB]",
+            "price": 132850,
+            "url": "https://kakaku.com/item/K0001679953/",
+            "source": "ヨドバシ.com",
+            "release_date": "2025-03-07"
+          },
+          {
             "maker": "XFX",
             "name": "RX-97TMAQKW9-GP/U [PCIExp 16GB]",
             "price": 134800,
             "url": "https://kakaku.com/item/K0001785475/",
             "source": "Joshin",
             "release_date": "2026-05-15"
+          },
+          {
+            "maker": "ASUS",
+            "name": "TUF-RX9070XT-O16G-GAMING [PCIExp 16GB]",
+            "price": 135900,
+            "url": "https://kakaku.com/item/K0001679960/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-03-07"
           },
           {
             "maker": "SAPPHIRE",
@@ -11479,20 +11487,20 @@
             "release_date": "2025-05-22"
           },
           {
-            "maker": "玄人志向",
-            "name": "GALAKURO GAMING GG-RTX5060Ti-E8GB/OC/DF [PCIExp 8GB]",
-            "price": 69102,
-            "url": "https://kakaku.com/item/K0001686511/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-04-17"
-          },
-          {
             "maker": "ASUS",
             "name": "DUAL-RTX5060TI-O8G [PCIExp 8GB]",
             "price": 69800,
             "url": "https://kakaku.com/item/K0001687334/",
             "source": "ドスパラ",
             "release_date": "2025-04-24"
+          },
+          {
+            "maker": "玄人志向",
+            "name": "GALAKURO GAMING GG-RTX5060Ti-E8GB/OC/DF [PCIExp 8GB]",
+            "price": 69891,
+            "url": "https://kakaku.com/item/K0001686511/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-04-17"
           },
           {
             "maker": "ZOTAC",
@@ -13766,6 +13774,14 @@
           },
           {
             "maker": "PowerColor",
+            "name": "PowerColor Hellhound AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16G-L/OC [PCIExp ",
+            "price": 65499,
+            "url": "https://kakaku.com/item/K0001693217/",
+            "source": "パソコン工房",
+            "release_date": "2025-06-06"
+          },
+          {
+            "maker": "PowerColor",
             "name": "PowerColor Hellhound Spectral White AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16",
             "price": 65780,
             "url": "https://kakaku.com/item/K0001694356/",
@@ -13782,17 +13798,17 @@
           },
           {
             "maker": "SAPPHIRE",
-            "name": "SAPPHIRE NITRO+ Radeon RX 9060 XT GAMING OC 16GB [PCIExp 16GB]",
-            "price": 67800,
-            "url": "https://kakaku.com/item/K0001693126/",
+            "name": "SAPPHIRE PULSE Radeon RX 9060 XT GAMING OC 16GB [PCIExp 16GB]",
+            "price": 67639,
+            "url": "https://kakaku.com/item/K0001693128/",
             "source": "Amazon.co.jp",
             "release_date": "2025-06-06"
           },
           {
-            "maker": "PowerColor",
-            "name": "PowerColor Hellhound AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16G-L/OC [PCIExp ",
-            "price": 68800,
-            "url": "https://kakaku.com/item/K0001693217/",
+            "maker": "SAPPHIRE",
+            "name": "SAPPHIRE NITRO+ Radeon RX 9060 XT GAMING OC 16GB [PCIExp 16GB]",
+            "price": 67800,
+            "url": "https://kakaku.com/item/K0001693126/",
             "source": "Amazon.co.jp",
             "release_date": "2025-06-06"
           },
@@ -13819,14 +13835,6 @@
             "url": "https://kakaku.com/item/K0001721001/",
             "source": "パソコン工房",
             "release_date": "2025-11-20"
-          },
-          {
-            "maker": "SAPPHIRE",
-            "name": "SAPPHIRE PULSE Radeon RX 9060 XT GAMING OC 16GB [PCIExp 16GB]",
-            "price": 91800,
-            "url": "https://kakaku.com/item/K0001693128/",
-            "source": "ソフマップ.com",
-            "release_date": "2025-06-06"
           }
         ]
       }
