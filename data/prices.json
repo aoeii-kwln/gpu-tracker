@@ -881,27 +881,11 @@
       },
       {
         "date": "2026-06-22",
-        "min_price": 678000,
+        "min_price": 709800,
         "sources": {
-          "kakaku": 678000
+          "kakaku": 709800
         },
         "models": [
-          {
-            "maker": "GIGABYTE",
-            "name": "GV-N5090GAMING OC-32GD [PCIExp 32GB]",
-            "price": 678000,
-            "url": "https://kakaku.com/item/K0001673954/",
-            "source": "ドスパラ",
-            "release_date": "2025-01-31"
-          },
-          {
-            "maker": "GIGABYTE",
-            "name": "AORUS GV-N5090AORUS M-32GD [PCIExp 32GB]",
-            "price": 698000,
-            "url": "https://kakaku.com/item/K0001693612/",
-            "source": "ドスパラ",
-            "release_date": "2025-06-12"
-          },
           {
             "maker": "MSI",
             "name": "GeForce RTX 5090 32G VENTUS 3X OC [PCIExp 32GB]",
@@ -1025,6 +1009,14 @@
         "current": 678000,
         "change": "-4.5%",
         "label": "↘ 値下がり RTX 5090  -4.5%  ¥709,800 → ¥678,000"
+      },
+      {
+        "type": "price_change",
+        "date": "2026-06-22",
+        "prev": 678000,
+        "current": 709800,
+        "change": "+4.7%",
+        "label": "↗ 値上がり RTX 5090  +4.7%  ¥678,000 → ¥709,800"
       }
     ]
   },
@@ -3118,7 +3110,7 @@
           {
             "maker": "GIGABYTE",
             "name": "GV-N5080AORUS M-16GD [PCIExp 16GB]",
-            "price": 251800,
+            "price": 252800,
             "url": "https://kakaku.com/item/K0001673956/",
             "source": "Amazon.co.jp",
             "release_date": "2025-01-31"
@@ -4910,6 +4902,14 @@
             "url": "https://kakaku.com/item/K0001692367/",
             "source": "ドスパラ",
             "release_date": "2025-06-02"
+          },
+          {
+            "maker": "ASUS",
+            "name": "PRIME-RTX5070TI-16G [PCIExp 16GB]",
+            "price": 158000,
+            "url": "https://kakaku.com/item/K0001677698/",
+            "source": "ドスパラ",
+            "release_date": "2025-02-21"
           },
           {
             "maker": "GIGABYTE",
@@ -7199,9 +7199,9 @@
           {
             "maker": "GIGABYTE",
             "name": "GV-N5070WF3OC-12GD [PCIExp 12GB]",
-            "price": 97980,
+            "price": 97800,
             "url": "https://kakaku.com/item/K0001687304/",
-            "source": "Joshin",
+            "source": "Amazon.co.jp",
             "release_date": "2025-04-23"
           },
           {
@@ -7271,9 +7271,9 @@
           {
             "maker": "玄人志向",
             "name": "GALAKURO GAMING GG-RTX5070-E12GB/OC/DF [PCIExp 12GB]",
-            "price": 112500,
+            "price": 111345,
             "url": "https://kakaku.com/item/K0001679796/",
-            "source": "パソコン工房",
+            "source": "Amazon.co.jp",
             "release_date": "2025-03-06"
           },
           {
@@ -9210,7 +9210,7 @@
           {
             "maker": "PowerColor",
             "name": "PowerColor Red Devil Spectral White AMD Radeon RX 9070 XT 16GB GDDR6 RX9070XT 16",
-            "price": 124800,
+            "price": 122800,
             "url": "https://kakaku.com/item/K0001684656/",
             "source": "Amazon.co.jp",
             "release_date": "2025-04-08"
@@ -13151,20 +13151,20 @@
             "release_date": "2026-02-13"
           },
           {
-            "maker": "玄人志向",
-            "name": "GK-RTX5060Ti-E8GB/WHITE/DF/V2 [PCIExp 8GB]",
-            "price": 74800,
-            "url": "https://kakaku.com/item/K0001769371/",
-            "source": "ドスパラ",
-            "release_date": "2026-02-16"
-          },
-          {
             "maker": "ASUS",
             "name": "PRIME-RTX5060TI-O8G [PCIExp 8GB]",
             "price": 74800,
             "url": "https://kakaku.com/item/K0001687333/",
             "source": "ドスパラ",
             "release_date": "2025-04-24"
+          },
+          {
+            "maker": "玄人志向",
+            "name": "GK-RTX5060Ti-E8GB/WHITE/DF/V2 [PCIExp 8GB]",
+            "price": 74800,
+            "url": "https://kakaku.com/item/K0001769371/",
+            "source": "ドスパラ",
+            "release_date": "2026-02-16"
           },
           {
             "maker": "GIGABYTE",
@@ -15681,19 +15681,11 @@
       },
       {
         "date": "2026-06-22",
-        "min_price": 51980,
+        "min_price": 57981,
         "sources": {
-          "kakaku": 51980
+          "kakaku": 57981
         },
         "models": [
-          {
-            "maker": "PowerColor",
-            "name": "PowerColor Reaper AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16G-A [PCIExp 16GB]",
-            "price": 51980,
-            "url": "https://kakaku.com/item/K0001693219/",
-            "source": "パソコン工房",
-            "release_date": "2025-06-06"
-          },
           {
             "maker": "玄人志向",
             "name": "RD-RX9060XT-E16GB/WHITE/DF [PCIExp 16GB]",
@@ -15729,9 +15721,9 @@
           {
             "maker": "SAPPHIRE",
             "name": "SAPPHIRE PURE Radeon RX 9060 XT GAMING OC 16GB [PCIExp 16GB]",
-            "price": 60840,
+            "price": 61454,
             "url": "https://kakaku.com/item/K0001693127/",
-            "source": "Amazon.co.jp",
+            "source": "TSUKUMO",
             "release_date": "2025-06-06"
           },
           {
@@ -15765,6 +15757,14 @@
             "url": "https://kakaku.com/item/K0001694356/",
             "source": "Amazon.co.jp",
             "release_date": "2025-06-16"
+          },
+          {
+            "maker": "PowerColor",
+            "name": "PowerColor Reaper AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16G-A [PCIExp 16GB]",
+            "price": 67000,
+            "url": "https://kakaku.com/item/K0001693219/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-06-06"
           },
           {
             "maker": "SAPPHIRE",
@@ -15831,6 +15831,14 @@
         "current": 51980,
         "change": "-10.3%",
         "label": "↘ 値下がり RX 9060 XT 16G  -10.3%  ¥57,981 → ¥51,980"
+      },
+      {
+        "type": "price_change",
+        "date": "2026-06-22",
+        "prev": 51980,
+        "current": 57981,
+        "change": "+11.5%",
+        "label": "↗ 値上がり RX 9060 XT 16G  +11.5%  ¥51,980 → ¥57,981"
       }
     ]
   },
