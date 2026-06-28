@@ -5347,7 +5347,7 @@
           {
             "maker": "GIGABYTE",
             "name": "GV-N5080AORUSX W-16GD [PCIExp 16GB]",
-            "price": 272526,
+            "price": 269800,
             "url": "https://kakaku.com/item/K0001673960/",
             "source": "Amazon.co.jp",
             "release_date": "2025-01-31"
@@ -5395,9 +5395,9 @@
           {
             "maker": "GIGABYTE",
             "name": "GV-N5080AORUSM ICE-16GD [PCIExp 16GB]",
-            "price": 299800,
+            "price": 302810,
             "url": "https://kakaku.com/item/K0001673955/",
-            "source": "ドスパラ",
+            "source": "ヨドバシ.com",
             "release_date": "2025-01-31"
           },
           {
@@ -5413,7 +5413,7 @@
             "name": "ROG-ASTRAL-RTX5080-O16G-GAMING [PCIExp 16GB]",
             "price": 341070,
             "url": "https://kakaku.com/item/K0001673757/",
-            "source": "パソコン工房",
+            "source": "ソフマップ.com",
             "release_date": "2025-01-30"
           },
           {
@@ -12552,6 +12552,14 @@
             "release_date": "2025-04-23"
           },
           {
+            "maker": "Palit Microsystems",
+            "name": "NE75070U19K9-GB2050W (GeForce RTX 5070 White OC 12GB) [PCIExp 12GB] ドスパラ限定モデル",
+            "price": 99980,
+            "url": "https://kakaku.com/item/K0001707666/",
+            "source": "ドスパラ",
+            "release_date": "2025-08-28"
+          },
+          {
             "maker": "—",
             "name": "Inno3DGeForce RTX 5070 TWIN X2 OC GD5070-12GERX2OC [PCIExp 12GB]",
             "price": 99980,
@@ -12580,7 +12588,7 @@
             "name": "GeForce RTX 5070 12G VENTUS 2X OC [PCIExp 12GB]",
             "price": 108000,
             "url": "https://kakaku.com/item/K0001679747/",
-            "source": "TSUKUMO",
+            "source": "Amazon.co.jp",
             "release_date": "2025-03-06"
           },
           {
@@ -22830,20 +22838,20 @@
             "release_date": "2025-04-16"
           },
           {
-            "maker": "MSI",
-            "name": "GeForce RTX 5060 Ti 8G VENTUS 2X OC WHITE PLUS [PCIExp 8GB]",
-            "price": 72800,
-            "url": "https://kakaku.com/item/K0001763287/",
-            "source": "Joshin",
-            "release_date": "2026-02-13"
-          },
-          {
             "maker": "GIGABYTE",
             "name": "GV-N506TEAGLEOC ICE-8GD [PCIExp 8GB]",
             "price": 72800,
             "url": "https://kakaku.com/item/K0001687040/",
             "source": "Amazon.co.jp",
             "release_date": "2025-04-22"
+          },
+          {
+            "maker": "MSI",
+            "name": "GeForce RTX 5060 Ti 8G VENTUS 2X OC WHITE PLUS [PCIExp 8GB]",
+            "price": 72800,
+            "url": "https://kakaku.com/item/K0001763287/",
+            "source": "Joshin",
+            "release_date": "2026-02-13"
           },
           {
             "maker": "ASUS",
@@ -27573,6 +27581,14 @@
           },
           {
             "maker": "PowerColor",
+            "name": "PowerColor Hellhound Spectral White AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16",
+            "price": 65440,
+            "url": "https://kakaku.com/item/K0001694356/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-06-16"
+          },
+          {
+            "maker": "PowerColor",
             "name": "PowerColor Hellhound AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16G-L/OC [PCIExp ",
             "price": 65499,
             "url": "https://kakaku.com/item/K0001693217/",
@@ -27586,14 +27602,6 @@
             "url": "https://kakaku.com/item/K0001693128/",
             "source": "Amazon.co.jp",
             "release_date": "2025-06-06"
-          },
-          {
-            "maker": "PowerColor",
-            "name": "PowerColor Hellhound Spectral White AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16",
-            "price": 65780,
-            "url": "https://kakaku.com/item/K0001694356/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-06-16"
           },
           {
             "maker": "SAPPHIRE",
