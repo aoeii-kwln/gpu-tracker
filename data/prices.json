@@ -1566,22 +1566,6 @@
             "release_date": "2025-01-31"
           },
           {
-            "maker": "Palit Microsystems",
-            "name": "NE75090019R5-GB2020G (GeForce RTX 5090 GameRock 32GB) [PCIExp 32GB] ドスパラ限定モデル",
-            "price": 689800,
-            "url": "https://kakaku.com/item/K0001682006/",
-            "source": "ドスパラ",
-            "release_date": "2025-03-21"
-          },
-          {
-            "maker": "Palit Microsystems",
-            "name": "NE75090S19R5-GB2020G (GeForce RTX 5090 GameRock OC 32GB) [PCIExp 32GB] ドスパラ限定モデル",
-            "price": 698000,
-            "url": "https://kakaku.com/item/K0001768819/",
-            "source": "ドスパラ",
-            "release_date": "2026-02-10"
-          },
-          {
             "maker": "MSI",
             "name": "GeForce RTX 5090 32G GAMING TRIO OC [PCIExp 32GB]",
             "price": 716800,
@@ -5631,7 +5615,7 @@
             "name": "PRIME-RTX5080-O16G [PCIExp 16GB]",
             "price": 224151,
             "url": "https://kakaku.com/item/K0001673755/",
-            "source": "ドスパラ",
+            "source": "TSUKUMO",
             "release_date": "2025-01-30"
           },
           {
@@ -5675,6 +5659,14 @@
             "release_date": "2025-02-03"
           },
           {
+            "maker": "MSI",
+            "name": "GeForce RTX 5080 16G GAMING TRIO OC [PCIExp 16GB]",
+            "price": 239267,
+            "url": "https://kakaku.com/item/K0001673987/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-02-03"
+          },
+          {
             "maker": "GAINWARD",
             "name": "GeForce RTX 5080 Phoenix NE75080019T2-GB2031X [PCIExp 16GB]",
             "price": 239800,
@@ -5688,14 +5680,6 @@
             "price": 239800,
             "url": "https://kakaku.com/item/K0001673990/",
             "source": "パソコン工房",
-            "release_date": "2025-02-03"
-          },
-          {
-            "maker": "MSI",
-            "name": "GeForce RTX 5080 16G GAMING TRIO OC [PCIExp 16GB]",
-            "price": 240267,
-            "url": "https://kakaku.com/item/K0001673987/",
-            "source": "Amazon.co.jp",
             "release_date": "2025-02-03"
           },
           {
@@ -5831,7 +5815,7 @@
             "name": "ROG-ASTRAL-RTX5080-O16G-GAMING [PCIExp 16GB]",
             "price": 341070,
             "url": "https://kakaku.com/item/K0001673757/",
-            "source": "ソフマップ.com",
+            "source": "パソコン工房",
             "release_date": "2025-01-30"
           },
           {
@@ -9183,6 +9167,14 @@
             "release_date": "2025-04-17"
           },
           {
+            "maker": "—",
+            "name": "Inno3DGeForce RTX 5070 Ti X3 OC WHITE GD5070T-16GERX3OCW [PCIExp 16GB]",
+            "price": 159800,
+            "url": "https://kakaku.com/item/K0001676306/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-02-14"
+          },
+          {
             "maker": "PNY",
             "name": "GeForce RTX 5070 Ti 16GB ARGB Overclocked Triple Fan VCG5070T16TFXXPB1-O [PCIExp",
             "price": 162800,
@@ -9241,9 +9233,9 @@
           {
             "maker": "ASUS",
             "name": "PRIME-RTX5070TI-O16G [PCIExp 16GB]",
-            "price": 178180,
+            "price": 177980,
             "url": "https://kakaku.com/item/K0001677697/",
-            "source": "TSUKUMO",
+            "source": "Amazon.co.jp",
             "release_date": "2025-02-21"
           },
           {
@@ -9273,7 +9265,7 @@
           {
             "maker": "ZOTAC",
             "name": "ZOTAC GAMING GeForce RTX 5070 Ti SOLID OC ZT-B50710J-10P [PCIExp 16GB]",
-            "price": 186800,
+            "price": 184980,
             "url": "https://kakaku.com/item/K0001677383/",
             "source": "Amazon.co.jp",
             "release_date": "2025-02-19"
@@ -13702,7 +13694,7 @@
           {
             "maker": "ZOTAC",
             "name": "ZOTAC GAMING GeForce RTX 5070 SOLID ZT-B50700D-10P [PCIExp 12GB]",
-            "price": 142370,
+            "price": 140475,
             "url": "https://kakaku.com/item/K0001679188/",
             "source": "Amazon.co.jp",
             "release_date": "2025-03-04"
@@ -27542,14 +27534,6 @@
             "release_date": "2025-05-20"
           },
           {
-            "maker": "ASUS",
-            "name": "DUAL-RTX5060-O8G [PCIExp 8GB]",
-            "price": 59800,
-            "url": "https://kakaku.com/item/K0001689909/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-05-20"
-          },
-          {
             "maker": "ZOTAC",
             "name": "ZOTAC GAMING GeForce RTX 5060 SOLO ZT-B50600G-10L [PCIExp 8GB]",
             "price": 59800,
@@ -27684,6 +27668,14 @@
             "url": "https://kakaku.com/item/K0001711304/",
             "source": "Joshin",
             "release_date": "2025-09-16"
+          },
+          {
+            "maker": "ASUS",
+            "name": "DUAL-RTX5060-O8G [PCIExp 8GB]",
+            "price": 75120,
+            "url": "https://kakaku.com/item/K0001689909/",
+            "source": "ソフマップ.com",
+            "release_date": "2025-05-20"
           },
           {
             "maker": "ASUS",
@@ -29528,9 +29520,9 @@
           {
             "maker": "玄人志向",
             "name": "RD-RX9060XT-E16GB/DF [PCIExp 16GB]",
-            "price": 58400,
+            "price": 58980,
             "url": "https://kakaku.com/item/K0001693234/",
-            "source": "ソフマップ.com",
+            "source": "Joshin",
             "release_date": "2025-06-06"
           },
           {
@@ -29610,13 +29602,13 @@
             "name": "SAPPHIRE NITRO+ Radeon RX 9060 XT GAMING OC 16GB [PCIExp 16GB]",
             "price": 67800,
             "url": "https://kakaku.com/item/K0001693126/",
-            "source": "Joshin",
+            "source": "Amazon.co.jp",
             "release_date": "2025-06-06"
           },
           {
             "maker": "ASUS",
             "name": "PRIME-RX9060XT-O16G [PCIExp 16GB]",
-            "price": 68880,
+            "price": 68825,
             "url": "https://kakaku.com/item/K0001693172/",
             "source": "Amazon.co.jp",
             "release_date": "2025-06-06"
