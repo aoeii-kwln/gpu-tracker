@@ -2174,11 +2174,19 @@
       },
       {
         "date": "2026-07-05",
-        "min_price": 709800,
+        "min_price": 679800,
         "sources": {
-          "kakaku": 709800
+          "kakaku": 679800
         },
         "models": [
+          {
+            "maker": "GIGABYTE",
+            "name": "GV-N5090WF3OC-32GD [PCIExp 32GB]",
+            "price": 679800,
+            "url": "https://kakaku.com/item/K0001699505/",
+            "source": "TSUKUMO",
+            "release_date": "2025-07-15"
+          },
           {
             "maker": "MSI",
             "name": "GeForce RTX 5090 32G VENTUS 3X OC [PCIExp 32GB]",
@@ -2260,14 +2268,6 @@
             "release_date": "2025-01-30"
           },
           {
-            "maker": "ASUS",
-            "name": "ROG-ASTRAL-RTX5090-O32G-WHITE [PCIExp 32GB]",
-            "price": 795800,
-            "url": "https://kakaku.com/item/K0001696304/",
-            "source": "TSUKUMO",
-            "release_date": "2025-06-26"
-          },
-          {
             "maker": "GIGABYTE",
             "name": "AORUS GV-N5090AORUSM ICE-32GD [PCIExp 32GB]",
             "price": 798800,
@@ -2282,6 +2282,14 @@
             "url": "https://kakaku.com/item/K0001693053/",
             "source": "ヨドバシ.com",
             "release_date": "2025-06-05"
+          },
+          {
+            "maker": "ASUS",
+            "name": "ROG-ASTRAL-RTX5090-O32G-WHITE [PCIExp 32GB]",
+            "price": 819900,
+            "url": "https://kakaku.com/item/K0001696304/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-06-26"
           },
           {
             "maker": "ASUS",
@@ -2494,6 +2502,14 @@
         "current": 709800,
         "change": "+3.2%",
         "label": "↗ 値上がり RTX 5090  +3.2%  ¥688,000 → ¥709,800"
+      },
+      {
+        "type": "price_change",
+        "date": "2026-07-05",
+        "prev": 709800,
+        "current": 679800,
+        "change": "-4.2%",
+        "label": "↘ 値下がり RTX 5090  -4.2%  ¥709,800 → ¥679,800"
       }
     ],
     "available": true
@@ -7915,7 +7931,7 @@
             "name": "GV-N5080WF3OC-16GD [PCIExp 16GB]",
             "price": 199800,
             "url": "https://kakaku.com/item/K0001711807/",
-            "source": "ドスパラ",
+            "source": "Joshin",
             "release_date": "2025-09-19"
           },
           {
@@ -7991,20 +8007,20 @@
             "release_date": "2025-01-28"
           },
           {
-            "maker": "MSI",
-            "name": "GeForce RTX 5080 16G GAMING TRIO OC [PCIExp 16GB]",
-            "price": 235268,
-            "url": "https://kakaku.com/item/K0001673987/",
-            "source": "TSUKUMO",
-            "release_date": "2025-02-03"
-          },
-          {
             "maker": "—",
             "name": "Inno3DGeForce RTX 5080 X3 OC WHITE GD5080-16GERX3OCW [PCIExp 16GB]",
             "price": 235400,
             "url": "https://kakaku.com/item/K0001674506/",
             "source": "Amazon.co.jp",
             "release_date": "2025-02-04"
+          },
+          {
+            "maker": "MSI",
+            "name": "GeForce RTX 5080 16G GAMING TRIO OC [PCIExp 16GB]",
+            "price": 237267,
+            "url": "https://kakaku.com/item/K0001673987/",
+            "source": "TSUKUMO",
+            "release_date": "2025-02-03"
           },
           {
             "maker": "GAINWARD",
@@ -8089,7 +8105,7 @@
           {
             "maker": "GIGABYTE",
             "name": "GV-N5080AORUSX W-16GD [PCIExp 16GB]",
-            "price": 269800,
+            "price": 272526,
             "url": "https://kakaku.com/item/K0001673960/",
             "source": "Amazon.co.jp",
             "release_date": "2025-01-31"
@@ -8111,6 +8127,14 @@
             "release_date": "2025-08-28"
           },
           {
+            "maker": "—",
+            "name": "Inno3DGeForce RTX 5080 iCHILL FROSTBITE GD5080-16GERIF [PCIExp 16GB]",
+            "price": 279990,
+            "url": "https://kakaku.com/item/K0001692030/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-05-30"
+          },
+          {
             "maker": "PNY",
             "name": "GeForce RTX 5080 16GB ARGB Overclocked Triple Fan VCG508016TFXXPB1-O [PCIExp 16G",
             "price": 280674,
@@ -8121,9 +8145,9 @@
           {
             "maker": "ASUS",
             "name": "ROG-ASTRAL-RTX5080-O16G-GAMING [PCIExp 16GB]",
-            "price": 331111,
+            "price": 296800,
             "url": "https://kakaku.com/item/K0001673757/",
-            "source": "Amazon.co.jp",
+            "source": "ソフマップ.com",
             "release_date": "2025-01-30"
           },
           {
@@ -12825,6 +12849,14 @@
             "release_date": "2025-04-17"
           },
           {
+            "maker": "—",
+            "name": "Inno3DGeForce RTX 5070 Ti X3 OC WHITE GD5070T-16GERX3OCW [PCIExp 16GB]",
+            "price": 159800,
+            "url": "https://kakaku.com/item/K0001676306/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-02-14"
+          },
+          {
             "maker": "PNY",
             "name": "GeForce RTX 5070 Ti 16GB ARGB Overclocked Triple Fan VCG5070T16TFXXPB1-O [PCIExp",
             "price": 162800,
@@ -12877,7 +12909,7 @@
             "name": "PRIME-RTX5070TI-O16G [PCIExp 16GB]",
             "price": 178180,
             "url": "https://kakaku.com/item/K0001677697/",
-            "source": "TSUKUMO",
+            "source": "Joshin",
             "release_date": "2025-02-21"
           },
           {
@@ -12919,14 +12951,6 @@
             "url": "https://kakaku.com/item/K0001717841/",
             "source": "TSUKUMO",
             "release_date": "2025-10-31"
-          },
-          {
-            "maker": "MSI",
-            "name": "GeForce RTX 5070 Ti 16G INSPIRE 3X OC [PCIExp 16GB]",
-            "price": 185929,
-            "url": "https://kakaku.com/item/K0001683181/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-03-28"
           },
           {
             "maker": "MSI",
@@ -12975,6 +12999,14 @@
             "url": "https://kakaku.com/item/K0001676305/",
             "source": "Amazon.co.jp",
             "release_date": "2025-02-14"
+          },
+          {
+            "maker": "MSI",
+            "name": "GeForce RTX 5070 Ti 16G INSPIRE 3X OC [PCIExp 16GB]",
+            "price": 199857,
+            "url": "https://kakaku.com/item/K0001683181/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-03-28"
           },
           {
             "maker": "MSI",
@@ -19030,7 +19062,7 @@
           {
             "maker": "PNY",
             "name": "GeForce RTX 5070 12GB ARGB Overclocked Triple Fan VCG507012TFXXPB1-O [PCIExp 12G",
-            "price": 116294,
+            "price": 116093,
             "url": "https://kakaku.com/item/K0001772558/",
             "source": "Amazon.co.jp",
             "release_date": "2026-03-05"
@@ -19116,6 +19148,14 @@
             "release_date": "2026-03-03"
           },
           {
+            "maker": "MSI",
+            "name": "GeForce RTX 5070 12G INSPIRE 3X OC [PCIExp 12GB]",
+            "price": 137260,
+            "url": "https://kakaku.com/item/K0001679746/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-03-06"
+          },
+          {
             "maker": "ZOTAC",
             "name": "ZOTAC GAMING GeForce RTX 5070 SOLID ZT-B50700D-10P [PCIExp 12GB]",
             "price": 139032,
@@ -19162,14 +19202,6 @@
             "url": "https://kakaku.com/item/K0001684366/",
             "source": "Amazon.co.jp",
             "release_date": "2025-04-07"
-          },
-          {
-            "maker": "MSI",
-            "name": "GeForce RTX 5070 12G INSPIRE 3X OC [PCIExp 12GB]",
-            "price": 160684,
-            "url": "https://kakaku.com/item/K0001679746/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-03-06"
           },
           {
             "maker": "ASUS",
@@ -23607,19 +23639,11 @@
       },
       {
         "date": "2026-07-05",
-        "min_price": 87800,
+        "min_price": 92800,
         "sources": {
-          "kakaku": 87800
+          "kakaku": 92800
         },
         "models": [
-          {
-            "maker": "ASRock",
-            "name": "Radeon RX 9070 XT Steel Legend Dark 16GB [PCIExp 16GB]",
-            "price": 87800,
-            "url": "https://kakaku.com/item/K0001683328/",
-            "source": "TSUKUMO",
-            "release_date": "2025-03-31"
-          },
           {
             "maker": "玄人志向",
             "name": "RD-RX9070XT-E16GB/TP [PCIExp 16GB]",
@@ -23633,8 +23657,16 @@
             "name": "Radeon RX 9070 XT Challenger 16GB [PCIExp 16GB]",
             "price": 92800,
             "url": "https://kakaku.com/item/K0001717666/",
-            "source": "Joshin",
+            "source": "Amazon.co.jp",
             "release_date": "2025-10-30"
+          },
+          {
+            "maker": "ASRock",
+            "name": "Radeon RX 9070 XT Steel Legend Dark 16GB [PCIExp 16GB]",
+            "price": 96800,
+            "url": "https://kakaku.com/item/K0001683328/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-03-31"
           },
           {
             "maker": "ASRock",
@@ -23693,14 +23725,6 @@
             "release_date": "2025-03-10"
           },
           {
-            "maker": "GIGABYTE",
-            "name": "AORUS GV-R9070XTAORUS E-16GD [PCIExp 16GB]",
-            "price": 115000,
-            "url": "https://kakaku.com/item/K0001680228/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-03-10"
-          },
-          {
             "maker": "ASRock",
             "name": "Radeon RX 9070 XT Taichi 16GB OC [PCIExp 16GB]",
             "price": 115800,
@@ -23715,6 +23739,14 @@
             "url": "https://kakaku.com/item/K0001681911/",
             "source": "Amazon.co.jp",
             "release_date": "2025-03-19"
+          },
+          {
+            "maker": "GIGABYTE",
+            "name": "AORUS GV-R9070XTAORUS E-16GD [PCIExp 16GB]",
+            "price": 123000,
+            "url": "https://kakaku.com/item/K0001680228/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-03-10"
           },
           {
             "maker": "PowerColor",
@@ -23863,6 +23895,14 @@
         "current": 87800,
         "change": "-5.4%",
         "label": "↘ 値下がり RX 9070 XT  -5.4%  ¥92,800 → ¥87,800"
+      },
+      {
+        "type": "price_change",
+        "date": "2026-07-05",
+        "prev": 87800,
+        "current": 92800,
+        "change": "+5.7%",
+        "label": "↗ 値上がり RX 9070 XT  +5.7%  ¥87,800 → ¥92,800"
       }
     ],
     "available": true
@@ -30170,9 +30210,9 @@
           {
             "maker": "GIGABYTE",
             "name": "AORUS GV-N506TIXEB-16GD [16GB]",
-            "price": 153800,
+            "price": 153799,
             "url": "https://kakaku.com/item/K0001775520/",
-            "source": "Amazon.co.jp",
+            "source": "TSUKUMO",
             "release_date": "2026-03-19"
           }
         ]
@@ -38572,6 +38612,14 @@
             "release_date": "2025-05-20"
           },
           {
+            "maker": "GIGABYTE",
+            "name": "GV-N5060EAGLEOC ICE-8GD [PCIExp 8GB]",
+            "price": 59800,
+            "url": "https://kakaku.com/item/K0001689916/",
+            "source": "TSUKUMO",
+            "release_date": "2025-05-20"
+          },
+          {
             "maker": "ZOTAC",
             "name": "ZOTAC GAMING GeForce RTX 5060 SOLO ZT-B50600G-10L [PCIExp 8GB]",
             "price": 59800,
@@ -38585,14 +38633,6 @@
             "price": 59980,
             "url": "https://kakaku.com/item/K0001689909/",
             "source": "ソフマップ.com",
-            "release_date": "2025-05-20"
-          },
-          {
-            "maker": "GIGABYTE",
-            "name": "GV-N5060EAGLEOC ICE-8GD [PCIExp 8GB]",
-            "price": 60840,
-            "url": "https://kakaku.com/item/K0001689916/",
-            "source": "Amazon.co.jp",
             "release_date": "2025-05-20"
           },
           {
@@ -38640,7 +38680,7 @@
             "name": "TUF-RTX5060-O8G-GAMING [PCIExp 8GB]",
             "price": 64800,
             "url": "https://kakaku.com/item/K0001689907/",
-            "source": "ソフマップ.com",
+            "source": "Joshin",
             "release_date": "2025-05-20"
           },
           {
@@ -41342,7 +41382,7 @@
             "name": "PRIME-RX9060XT-O16G [PCIExp 16GB]",
             "price": 63840,
             "url": "https://kakaku.com/item/K0001693172/",
-            "source": "Amazon.co.jp",
+            "source": "TSUKUMO",
             "release_date": "2025-06-06"
           },
           {
@@ -41350,7 +41390,7 @@
             "name": "DUAL-RX9060XT-16G [PCIExp 16GB]",
             "price": 64400,
             "url": "https://kakaku.com/item/K0001707620/",
-            "source": "TSUKUMO",
+            "source": "Joshin",
             "release_date": "2025-08-28"
           },
           {
@@ -41362,19 +41402,19 @@
             "release_date": "2025-06-17"
           },
           {
+            "maker": "SAPPHIRE",
+            "name": "SAPPHIRE PULSE Radeon RX 9060 XT GAMING OC 16GB [PCIExp 16GB]",
+            "price": 65149,
+            "url": "https://kakaku.com/item/K0001693128/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-06-06"
+          },
+          {
             "maker": "PowerColor",
             "name": "PowerColor Hellhound AMD Radeon RX 9060 XT 16GB GDDR6 RX9060XT 16G-L/OC [PCIExp ",
             "price": 65499,
             "url": "https://kakaku.com/item/K0001693217/",
             "source": "パソコン工房",
-            "release_date": "2025-06-06"
-          },
-          {
-            "maker": "SAPPHIRE",
-            "name": "SAPPHIRE PULSE Radeon RX 9060 XT GAMING OC 16GB [PCIExp 16GB]",
-            "price": 65500,
-            "url": "https://kakaku.com/item/K0001693128/",
-            "source": "Amazon.co.jp",
             "release_date": "2025-06-06"
           },
           {
