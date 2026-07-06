@@ -2334,11 +2334,19 @@
           },
           {
             "maker": "GIGABYTE",
-            "name": "AORUS GV-N5090AORUSM ICE-32GD [PCIExp 32GB]",
-            "price": 698000,
-            "url": "https://kakaku.com/item/K0001699506/",
+            "name": "GV-N5090GAMING OC-32GD [PCIExp 32GB]",
+            "price": 699800,
+            "url": "https://kakaku.com/item/K0001673954/",
+            "source": "パソコン工房",
+            "release_date": "2025-01-31"
+          },
+          {
+            "maker": "Palit Microsystems",
+            "name": "NE75090S19R5-GB2020G (GeForce RTX 5090 GameRock OC 32GB) [PCIExp 32GB] ドスパラ限定モデル",
+            "price": 699800,
+            "url": "https://kakaku.com/item/K0001768819/",
             "source": "ドスパラ",
-            "release_date": "2025-07-15"
+            "release_date": "2026-02-10"
           },
           {
             "maker": "MSI",
@@ -2349,12 +2357,12 @@
             "release_date": "2025-02-03"
           },
           {
-            "maker": "Palit Microsystems",
-            "name": "NE75090S19R5-GB2020G (GeForce RTX 5090 GameRock OC 32GB) [PCIExp 32GB] ドスパラ限定モデル",
+            "maker": "GIGABYTE",
+            "name": "AORUS GV-N5090AORUS M-32GD [PCIExp 32GB]",
             "price": 719800,
-            "url": "https://kakaku.com/item/K0001768819/",
-            "source": "ドスパラ",
-            "release_date": "2026-02-10"
+            "url": "https://kakaku.com/item/K0001693612/",
+            "source": "パソコン工房",
+            "release_date": "2025-06-12"
           },
           {
             "maker": "MSI",
@@ -2363,6 +2371,14 @@
             "url": "https://kakaku.com/item/K0001673983/",
             "source": "パソコン工房",
             "release_date": "2025-02-03"
+          },
+          {
+            "maker": "ZOTAC",
+            "name": "ZOTAC GAMING GeForce RTX 5090 SOLID OC ZT-B50900J-10P [PCIExp 32GB]",
+            "price": 738001,
+            "url": "https://kakaku.com/item/K0001673535/",
+            "source": "パソコン工房",
+            "release_date": "2025-01-29"
           },
           {
             "maker": "ASUS",
@@ -2411,6 +2427,14 @@
             "url": "https://kakaku.com/item/K0001673758/",
             "source": "TSUKUMO",
             "release_date": "2025-01-30"
+          },
+          {
+            "maker": "GIGABYTE",
+            "name": "AORUS GV-N5090AORUSM ICE-32GD [PCIExp 32GB]",
+            "price": 798800,
+            "url": "https://kakaku.com/item/K0001699506/",
+            "source": "Joshin",
+            "release_date": "2025-07-15"
           },
           {
             "maker": "ASUS",
@@ -13446,19 +13470,11 @@
       },
       {
         "date": "2026-07-06",
-        "min_price": 152980,
+        "min_price": 157800,
         "sources": {
-          "kakaku": 152980
+          "kakaku": 157800
         },
         "models": [
-          {
-            "maker": "Palit Microsystems",
-            "name": "NE7507TS19T2-GB2031U (GeForce RTX 5070 Ti GamingPro-S OC 16GB) [PCIExp 16GB] ドスパ",
-            "price": 152980,
-            "url": "https://kakaku.com/item/K0001768822/",
-            "source": "ドスパラ",
-            "release_date": "2026-02-10"
-          },
           {
             "maker": "Palit Microsystems",
             "name": "NE7507T019T2-GB2031U (GeForce RTX 5070 Ti GamingPro-S 16GB) [PCIExp 16GB] ドスパラ限定",
@@ -13482,6 +13498,14 @@
             "url": "https://kakaku.com/item/K0001676306/",
             "source": "Amazon.co.jp",
             "release_date": "2025-02-14"
+          },
+          {
+            "maker": "Palit Microsystems",
+            "name": "NE7507TS19T2-GB2031U (GeForce RTX 5070 Ti GamingPro-S OC 16GB) [PCIExp 16GB] ドスパ",
+            "price": 162800,
+            "url": "https://kakaku.com/item/K0001768822/",
+            "source": "ドスパラ",
+            "release_date": "2026-02-10"
           },
           {
             "maker": "PNY",
@@ -13522,14 +13546,6 @@
             "url": "https://kakaku.com/item/K0001682486/",
             "source": "Amazon.co.jp",
             "release_date": "2025-03-25"
-          },
-          {
-            "maker": "ZOTAC",
-            "name": "ZOTAC GAMING GeForce RTX 5070 Ti SOLID SFF OC ZT-B50710J3-10P [PCIExp 16GB]",
-            "price": 177700,
-            "url": "https://kakaku.com/item/K0001684658/",
-            "source": "ソフマップ.com",
-            "release_date": "2025-04-08"
           },
           {
             "maker": "ASUS",
@@ -13630,7 +13646,7 @@
           {
             "maker": "MSI",
             "name": "GeForce RTX 5070 Ti 16G INSPIRE 3X OC [PCIExp 16GB]",
-            "price": 206137,
+            "price": 204995,
             "url": "https://kakaku.com/item/K0001683181/",
             "source": "Amazon.co.jp",
             "release_date": "2025-03-28"
@@ -13694,6 +13710,14 @@
         "current": 152980,
         "change": "-3.1%",
         "label": "↘ 値下がり RTX 5070 Ti  -3.1%  ¥157,800 → ¥152,980"
+      },
+      {
+        "type": "price_change",
+        "date": "2026-07-06",
+        "prev": 152980,
+        "current": 157800,
+        "change": "+3.2%",
+        "label": "↗ 値上がり RTX 5070 Ti  +3.2%  ¥152,980 → ¥157,800"
       }
     ],
     "available": true
@@ -19900,7 +19924,15 @@
             "name": "GeForce RTX 5070 12G VENTUS 2X OC [PCIExp 12GB]",
             "price": 103000,
             "url": "https://kakaku.com/item/K0001679747/",
-            "source": "TSUKUMO",
+            "source": "Joshin",
+            "release_date": "2025-03-06"
+          },
+          {
+            "maker": "MSI",
+            "name": "GeForce RTX 5070 12G VENTUS 2X OC WHITE [PCIExp 12GB]",
+            "price": 103000,
+            "url": "https://kakaku.com/item/K0001679748/",
+            "source": "Joshin",
             "release_date": "2025-03-06"
           },
           {
@@ -19910,14 +19942,6 @@
             "url": "https://kakaku.com/item/K0001686190/",
             "source": "Joshin",
             "release_date": "2025-04-16"
-          },
-          {
-            "maker": "MSI",
-            "name": "GeForce RTX 5070 12G VENTUS 2X OC WHITE [PCIExp 12GB]",
-            "price": 104800,
-            "url": "https://kakaku.com/item/K0001679748/",
-            "source": "Joshin",
-            "release_date": "2025-03-06"
           },
           {
             "maker": "PNY",
@@ -24962,20 +24986,20 @@
             "release_date": "2026-06-15"
           },
           {
+            "maker": "ASUS",
+            "name": "TUF-RX9070XT-O16G-GAMING [PCIExp 16GB]",
+            "price": 188667,
+            "url": "https://kakaku.com/item/K0001679960/",
+            "source": "ビックカメラ.com",
+            "release_date": "2025-03-07"
+          },
+          {
             "maker": "SAPPHIRE",
             "name": "SAPPHIRE NITRO+ Radeon RX 9070 XT GAMING OC 16GB PhantomLink Polar [PCIExp 16GB]",
             "price": 190719,
             "url": "https://kakaku.com/item/K0001789771/",
             "source": "Joshin",
             "release_date": "2026-06-15"
-          },
-          {
-            "maker": "ASUS",
-            "name": "TUF-RX9070XT-O16G-GAMING [PCIExp 16GB]",
-            "price": 191800,
-            "url": "https://kakaku.com/item/K0001679960/",
-            "source": "Joshin",
-            "release_date": "2025-03-07"
           }
         ]
       }
@@ -35920,7 +35944,7 @@
           {
             "maker": "MSI",
             "name": "GeForce RTX 5060 Ti 8G VENTUS 2X OC PLUS [PCIExp 8GB]",
-            "price": 76490,
+            "price": 77759,
             "url": "https://kakaku.com/item/K0001686419/",
             "source": "Amazon.co.jp",
             "release_date": "2025-04-17"
@@ -40415,7 +40439,7 @@
           {
             "maker": "PNY",
             "name": "GeForce RTX 5060 8GB Overclocked Dual Fan VCG50608DFXPB1-O [PCIExp 8GB]",
-            "price": 56800,
+            "price": 55800,
             "url": "https://kakaku.com/item/K0001766185/",
             "source": "ドスパラ",
             "release_date": "2026-01-26"
