@@ -57988,6 +57988,14 @@
             "release_date": "2025-04-02"
           },
           {
+            "maker": "GIGABYTE",
+            "name": "AORUS GV-N507TAORUS IF-16GD [PCIExp 16GB]",
+            "price": 245000,
+            "url": "https://kakaku.com/item/K0001794264/",
+            "source": "ドスパラ",
+            "release_date": "2026-07-17"
+          },
+          {
             "maker": "ASUS",
             "name": "TUF-RTX5070TI-O16G-WHITE-GAMING [PCIExp 16GB]",
             "price": 256800,
@@ -87131,6 +87139,14 @@
             "url": "https://kakaku.com/item/K0001686005/",
             "source": "Amazon.co.jp",
             "release_date": "2025-04-15"
+          },
+          {
+            "maker": "MSI",
+            "name": "GeForce RTX 5070 12G GAMING TRIO OC WHITE [PCIExp 12GB]",
+            "price": 127800,
+            "url": "https://kakaku.com/item/K0001679745/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-03-06"
           },
           {
             "maker": "GIGABYTE",
