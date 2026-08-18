@@ -88041,20 +88041,20 @@
             "release_date": "2026-07-23"
           },
           {
+            "maker": "MSI",
+            "name": "GeForce RTX 5070 12G GAMING TRIO OC [PCIExp 12GB]",
+            "price": 146800,
+            "url": "https://kakaku.com/item/K0001679744/",
+            "source": "Amazon.co.jp",
+            "release_date": "2025-03-06"
+          },
+          {
             "maker": "GIGABYTE",
             "name": "GV-N5070AORUS M-12GD [PCIExp 12GB]",
             "price": 146800,
             "url": "https://kakaku.com/item/K0001679966/",
             "source": "Joshin",
             "release_date": "2025-03-07"
-          },
-          {
-            "maker": "MSI",
-            "name": "GeForce RTX 5070 12G GAMING TRIO OC [PCIExp 12GB]",
-            "price": 147000,
-            "url": "https://kakaku.com/item/K0001679744/",
-            "source": "Amazon.co.jp",
-            "release_date": "2025-03-06"
           },
           {
             "maker": "ASUS",
@@ -109018,7 +109018,7 @@
           {
             "maker": "ASRock",
             "name": "Radeon RX 9070 XT Challenger 16GB [PCIExp 16GB]",
-            "price": 133001,
+            "price": 132990,
             "url": "https://kakaku.com/item/K0001717666/",
             "source": "Amazon.co.jp",
             "release_date": "2025-10-30"
