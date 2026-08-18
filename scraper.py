@@ -361,7 +361,7 @@ def build_email_html(events: list[dict], today: str) -> str:
 
 
 def run():
-    today     = datetime.now().strftime("%Y-%m-%d")
+    today     = datetime.now().strftime("%Y-%m-%d %H:%M")
     old_data  = load_data()
     new_scrape = scrape_all()
 
@@ -424,6 +424,17 @@ def run():
         send_email(subject, html)
     else:
         log.info("No significant events — no email sent.")
+
+# Backup to OneDrive
+    try:
+        import shutil
+        backup_dir = Path(r'C:\Users\Weilin\OneDrive\gpu-tracker-backup')
+        backup_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(DATA_FILE, backup_dir / 'prices.json')
+        shutil.copy2(BASE_DIR / 'dashboard.html', backup_dir / 'dashboard.html')
+        log.info('Files backed up to OneDrive.')
+    except Exception as e:
+        log.warning(f'OneDrive backup failed: {e}')
 
     # Auto push to GitHub Pages
     try:
