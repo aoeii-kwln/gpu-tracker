@@ -364,6 +364,28 @@
   }
 
 
+  /* ── Market Matrix ── */
+  .section-label small { font-weight: 500; text-transform: none; letter-spacing: 0; margin-left: 8px; color: var(--muted); }
+  .mx-block { margin-bottom: 14px; }
+  .mx-title { font-size: 12px; font-weight: 800; margin: 0 0 6px 2px; display: flex; align-items: center; gap: 6px; }
+  .matrix-wrap { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow-x: auto; }
+  table.matrix { width: 100%; border-collapse: collapse; }
+  .matrix th { font-size: 11px; font-weight: 700; color: var(--muted); text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); background: #fafbfc; white-space: nowrap; }
+  .matrix td { padding: 0; border-left: 1px solid var(--bg); vertical-align: top; }
+  .matrix td:first-child { border-left: none; }
+  .mx-cell { padding: 10px 12px; cursor: pointer; min-width: 128px; transition: background .12s; outline: none; }
+  .mx-cell:hover, .mx-cell:focus-visible { background: #f5f8ff; }
+  .mx-empty { padding: 10px 12px; color: #c4c8cf; font-size: 12px; }
+  .mx-min { font-size: 17px; font-weight: 900; font-variant-numeric: tabular-nums; line-height: 1.2; }
+  .mx-chg { font-size: 11px; font-weight: 700; margin-left: 6px; white-space: nowrap; }
+  .mx-sub { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .mx-sub b { color: var(--text); font-weight: 700; }
+  .mx-msi { font-size: 11px; font-weight: 700; color: var(--accent); margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .mx-legend { font-size: 11px; color: var(--muted); margin-bottom: 24px; }
+  .gpu-card { scroll-margin-top: 72px; }
+  @keyframes mxflash { 0% { box-shadow: 0 0 0 3px rgba(37,99,235,.55); } 100% { box-shadow: var(--shadow); } }
+  .gpu-card.flash { animation: mxflash 1.6s ease-out; }
+
   /* ── Empty / No data ── */
   .no-pickup {
     color: var(--muted);
@@ -394,10 +416,16 @@
   <div class="section-label">⚡ Pick Up — 直近7日の変動 / 新着</div>
   <div class="pickup-list" id="pickup-list"></div>
 
+  <!-- Market matrix -->
+  <div class="section-label">📊 市場価格マトリクス<small>セルをクリックで該当GPUへ移動</small></div>
+  <div id="matrix-area"></div>
+  <div class="mx-legend">各セル: 最安値（前回比）／ 中央値・機種数 ／ <span style="color:var(--accent);font-weight:700">MSI最安（最安値との差）</span>　※正規代理店価格のみ</div>
+
   <!-- Filters -->
+  <div class="section-label" id="detail-top">📋 GPU別詳細</div>
   <div class="tabs">
-    <button class="tab active" onclick="setPage('nvidia',this)">🟢 NVIDIA RTX 50</button>
-    <button class="tab" onclick="setPage('amd',this)">🔴 AMD RX 9000</button>
+    <button class="tab active" data-series="RTX50" onclick="setPage('nvidia',this)">🟢 NVIDIA RTX 50</button>
+    <button class="tab" data-series="RX9000" onclick="setPage('amd',this)">🔴 AMD RX 9000</button>
   </div>
 
   <!-- GPU list -->
@@ -426,6 +454,8 @@ const CHART_COLORS = {
 
 let currentFilter = "RTX50";
 const chartInstances = {};
+const SERIES_LABELS = { RTX50: "RTX 50 Series", RX9000: "RX 9000 Series" };
+const yen = n => n == null ? "—" : "¥" + Math.round(n).toLocaleString();
 
 // ── Boot ─────────────────────────────────────────────────────────────────
 (function init() {
@@ -438,14 +468,19 @@ const chartInstances = {};
   }
 
   renderPickup();
+  renderMatrix();
   renderGPUs();
 })();
 
 // ── Filter ───────────────────────────────────────────────────────────────
 function setPage(page, btn) {
-  currentFilter = page === 'nvidia' ? 'RTX50' : 'RX9000';
-  document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
+  switchSeries(page === 'nvidia' ? 'RTX50' : 'RX9000');
+}
+
+function switchSeries(series) {
+  currentFilter = series;
+  document.querySelectorAll(".tab").forEach(b =>
+    b.classList.toggle("active", b.dataset.series === series));
   Object.values(chartInstances).forEach(c => { try { c.destroy(); } catch(e){} });
   Object.keys(chartInstances).forEach(k => delete chartInstances[k]);
   renderGPUs();
@@ -535,6 +570,87 @@ function renderPickup() {
   }).join("");
 }
 
+// ── Market Matrix ─────────────────────────────────────────────────────────
+
+function gpuSlug(gpu) { return String(gpu).replace(/[^A-Za-z0-9]+/g, "-"); }
+
+function medianOf(nums) {
+  if (!nums.length) return null;
+  const s = [...nums].sort((a, b) => a - b), m = Math.floor(s.length / 2);
+  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+}
+
+function matrixCell(gpu) {
+  const history = PRICES_DATA[gpu].history || [];
+  const last = history[history.length - 1];
+  if (!last || last.min_price == null) return `<td class="mx-empty">—</td>`;
+
+  let prev = null;
+  for (let i = history.length - 2; i >= 0; i--) {
+    if (history[i].min_price != null) { prev = history[i]; break; }
+  }
+  let chgHtml = "";
+  if (prev) {
+    const pct = (last.min_price - prev.min_price) / prev.min_price * 100;
+    const cls = pct > 0 ? "change-up" : pct < 0 ? "change-down" : "change-flat";
+    const arrow = pct > 0 ? "▲" : pct < 0 ? "▼" : "";
+    chgHtml = pct === 0
+      ? `<span class="mx-chg ${cls}">±0.0%</span>`
+      : `<span class="mx-chg ${cls}">${arrow}${pct > 0 ? "+" : ""}${pct.toFixed(1)}%</span>`;
+  }
+
+  const models = last.models || [];
+  const med = medianOf(models.map(m => m.price).filter(p => p != null));
+  const msi = models.filter(m => m.maker === "MSI").sort((a, b) => a.price - b.price)[0];
+  const msiLine = msi
+    ? `<div class="mx-msi">MSI ${yen(msi.price)}${msi.price > last.min_price
+        ? ` (+${((msi.price / last.min_price - 1) * 100).toFixed(0)}%)` : " (最安)"}</div>`
+    : "";
+
+  return `<td><div class="mx-cell" role="button" tabindex="0" data-gpu="${escHtml(gpu)}">
+      <div><span class="mx-min">${yen(last.min_price)}</span>${chgHtml}</div>
+      <div class="mx-sub">中央値 <b>${yen(med)}</b> ・ <b>${models.length}</b>機種</div>
+      ${msiLine}
+    </div></td>`;
+}
+
+function renderMatrix() {
+  const area = document.getElementById("matrix-area");
+  const groups = {};
+  Object.entries(PRICES_DATA).forEach(([gpu, d]) => {
+    const s = d.meta?.series ?? "other";
+    (groups[s] = groups[s] || []).push(gpu);
+  });
+
+  area.innerHTML = Object.entries(groups).map(([series, gpus]) => {
+    const vendor = PRICES_DATA[gpus[0]].meta?.vendor ?? "";
+    const badge = vendor === "AMD" ? "badge-amd" : "badge-nvidia";
+    return `<div class="mx-block">
+      <div class="mx-title"><span class="vendor-badge ${badge}">${escHtml(vendor)}</span>${escHtml(SERIES_LABELS[series] ?? series)}</div>
+      <div class="matrix-wrap"><table class="matrix">
+        <thead><tr>${gpus.map(g => `<th>${escHtml(g)}</th>`).join("")}</tr></thead>
+        <tbody><tr>${gpus.map(g => matrixCell(g)).join("")}</tr></tbody>
+      </table></div>
+    </div>`;
+  }).join("");
+
+  area.querySelectorAll(".mx-cell").forEach(el => {
+    el.addEventListener("click", () => gotoGPU(el.dataset.gpu));
+    el.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); gotoGPU(el.dataset.gpu); }
+    });
+  });
+}
+
+function gotoGPU(gpu) {
+  const series = PRICES_DATA[gpu]?.meta?.series;
+  if (series && series !== currentFilter) switchSeries(series);
+  const el = document.getElementById("card-" + gpuSlug(gpu));
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+  el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+}
+
 // ── GPU Cards ─────────────────────────────────────────────────────────────
 function renderGPUs() {
   const list = document.getElementById("gpu-list");
@@ -550,6 +666,7 @@ function renderGPUs() {
     const vendor  = data.meta?.vendor ?? "NVIDIA";
     const card    = document.createElement("div");
     card.className = "gpu-card";
+    card.id = "card-" + gpuSlug(gpu);
     const chartId = `chart-${idx}`;
 
     // Price info
