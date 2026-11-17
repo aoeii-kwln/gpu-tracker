@@ -113,6 +113,23 @@
   .badge-up   { background: #fef2f2; color: var(--red);   }
   .badge-down { background: #f0fdf4; color: var(--green); }
   .badge-new  { background: #eff6ff; color: var(--accent);}
+  .pickup-badge { white-space: nowrap; }
+  .pickup-date { white-space: nowrap; }
+  .pickup-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; cursor:pointer; user-select:none;
+    background:var(--white); border:1px solid var(--border); border-radius:8px; padding:8px 12px; box-shadow:var(--shadow);
+    margin-bottom:8px; }
+  .pickup-head:hover { background:#f9fafb; }
+  .pickup-head:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .pickup-head.collapsed { margin-bottom:28px; }
+  .pickup-head .caret { font-size:10px; color:var(--muted); width:12px; }
+  .pickup-count { font-size:11px; font-weight:700; text-transform:none; letter-spacing:0; color:var(--accent);
+    background:#eff6ff; padding:2px 10px; border-radius:20px; }
+  .pickup-list[hidden] { display:none; }
+  .pickup-older { display:flex; flex-direction:column; gap:6px; }
+  .pickup-older[hidden] { display:none; }
+  .pickup-more { align-self:flex-start; border:1px solid var(--border); background:var(--white); color:var(--accent);
+    font-size:12px; font-weight:700; padding:6px 14px; border-radius:20px; cursor:pointer; }
+  .pickup-more:hover { background:#eff6ff; }
 
   /* ── Filter tabs ── */
   .tabs {
@@ -413,7 +430,11 @@
 <div class="container">
 
   <!-- Pick Up -->
-  <div class="section-label">⚡ Pick Up — 直近7日の変動 / 新着</div>
+  <div class="section-label pickup-head" id="pickup-head" role="button" tabindex="0" aria-expanded="true" title="クリックで開閉">
+    <span class="caret" id="pickup-caret">▼</span>
+    <span>⚡ Pick Up — 直近7日の変動 / 新着</span>
+    <span class="pickup-count" id="pickup-count"></span>
+  </div>
   <div class="pickup-list" id="pickup-list"></div>
 
   <!-- Market matrix -->
@@ -468,6 +489,7 @@ const yen = n => n == null ? "—" : "¥" + Math.round(n).toLocaleString();
   }
 
   renderPickup();
+  initPickupToggle();
   renderMatrix();
   renderGPUs();
 })();
@@ -533,41 +555,88 @@ function renderPickup() {
 
   items.sort((a, b) => b.date.localeCompare(a.date));
 
+  const countEl = document.getElementById("pickup-count");
   if (!items.length) {
+    countEl.textContent = "0件";
     list.innerHTML = `<p class="no-pickup">直近7日間に価格変動・新着商品はありません</p>`;
     return;
   }
 
-  list.innerHTML = items.map(ev => {
-    if (ev.type === "new_product") {
-      const nameHtml = ev.url
-        ? `<a href="${ev.url}" target="_blank" style="color:inherit">${escHtml(ev.maker)} ${escHtml(ev.name)}</a>`
-        : `${escHtml(ev.maker)} ${escHtml(ev.name)}`;
-      return `
-        <div class="pickup-item new">
-          <span class="pickup-icon">🆕</span>
-          <span class="pickup-text"><b>${ev.gpu}</b> — ${nameHtml} ¥${ev.price.toLocaleString()}</span>
-          <span class="pickup-date">${ev.date}</span>
-          <span class="pickup-badge badge-new">NEW</span>
-        </div>`;
-    }
-    const isNew  = ev.type === "new_model";
-    const isUp   = ev.type === "price_change" && ev.current > ev.prev;
-    const cls    = isNew ? "new" : isUp ? "up" : "down";
-    const icon   = isNew ? "🆕" : isUp ? "📈" : "📉";
-    const badge  = isNew ? "NEW" : ev.change;
-    const badgeCls = isNew ? "badge-new" : isUp ? "badge-up" : "badge-down";
-    const detail = isNew
-      ? `${ev.gpu} が初めて検出 — ¥${ev.price.toLocaleString()}`
-      : `${ev.gpu}  ¥${ev.prev.toLocaleString()} → ¥${ev.current.toLocaleString()}`;
+  // 最新の1日分のみ表示。それ以前（7日以内）はボタンで展開
+  const dayOf = e => e.date.slice(0, 10);
+  const latestDay = dayOf(items[0]);
+  const latest = items.filter(e => dayOf(e) === latestDay);
+  const older  = items.filter(e => dayOf(e) !== latestDay);
+  countEl.textContent = `最新 ${latestDay.slice(5)}：${pickupBreakdown(latest)}` +
+    (older.length ? ` ／ 7日合計 ${items.length}件` : "");
+
+  list.innerHTML = latest.map(pickupItemHtml).join("") + (older.length
+    ? `<button type="button" class="pickup-more" id="pickup-more">▼ それ以前（7日以内）の ${older.length}件を表示</button>
+       <div class="pickup-older" id="pickup-older" hidden>${older.map(pickupItemHtml).join("")}</div>` : "");
+  const more = document.getElementById("pickup-more");
+  if (more) more.addEventListener("click", () => {
+    const box = document.getElementById("pickup-older");
+    box.hidden = !box.hidden;
+    more.textContent = box.hidden ? `▼ それ以前（7日以内）の ${older.length}件を表示` : `▲ それ以前の表示を閉じる`;
+  });
+}
+
+function pickupBreakdown(arr) {
+  const chg = e => e.type === "price_change";
+  const up = arr.filter(e => chg(e) && e.current > e.prev).length;
+  const down = arr.filter(e => chg(e) && e.current < e.prev).length;
+  const nw = arr.filter(e => e.type === "new_product" || e.type === "new_model").length;
+  return `${arr.length}件（値上がり ${up} ／ 値下がり ${down} ／ 新着 ${nw}）`;
+}
+
+function pickupItemHtml(ev) {
+  if (ev.type === "new_product") {
+    const nameHtml = ev.url
+      ? `<a href="${ev.url}" target="_blank" style="color:inherit">${escHtml(ev.maker)} ${escHtml(ev.name)}</a>`
+      : `${escHtml(ev.maker)} ${escHtml(ev.name)}`;
     return `
-      <div class="pickup-item ${cls}">
-        <span class="pickup-icon">${icon}</span>
-        <span class="pickup-text">${detail}</span>
+      <div class="pickup-item new">
+        <span class="pickup-icon">🆕</span>
+        <span class="pickup-text"><b>${ev.gpu}</b> — ${nameHtml} ¥${ev.price.toLocaleString()}</span>
         <span class="pickup-date">${ev.date}</span>
-        <span class="pickup-badge ${badgeCls}">${badge}</span>
+        <span class="pickup-badge badge-new">NEW</span>
       </div>`;
-  }).join("");
+  }
+  const isNew  = ev.type === "new_model";
+  const isUp   = ev.type === "price_change" && ev.current > ev.prev;
+  const cls    = isNew ? "new" : isUp ? "up" : "down";
+  const icon   = isNew ? "🆕" : isUp ? "📈" : "📉";
+  const badge  = isNew ? "NEW" : ev.change;
+  const badgeCls = isNew ? "badge-new" : isUp ? "badge-up" : "badge-down";
+  const detail = isNew
+    ? `${ev.gpu} が初めて検出 — ¥${ev.price.toLocaleString()}`
+    : `${ev.gpu}  ¥${ev.prev.toLocaleString()} → ¥${ev.current.toLocaleString()}`;
+  return `
+    <div class="pickup-item ${cls}">
+      <span class="pickup-icon">${icon}</span>
+      <span class="pickup-text">${detail}</span>
+      <span class="pickup-date">${ev.date}</span>
+      <span class="pickup-badge ${badgeCls}">${badge}</span>
+    </div>`;
+}
+
+// Pick Up 開閉（状態はブラウザに保存）
+function initPickupToggle() {
+  const head = document.getElementById("pickup-head"), list = document.getElementById("pickup-list");
+  const caret = document.getElementById("pickup-caret");
+  function apply(collapsed, save) {
+    head.classList.toggle("collapsed", collapsed);
+    list.hidden = collapsed;
+    caret.textContent = collapsed ? "▶" : "▼";
+    head.setAttribute("aria-expanded", String(!collapsed));
+    if (save) { try { localStorage.setItem("vga_pickup_collapsed", collapsed ? "1" : "0"); } catch (e) {} }
+  }
+  let collapsed = false;
+  try { collapsed = localStorage.getItem("vga_pickup_collapsed") === "1"; } catch (e) {}
+  apply(collapsed, false);
+  const toggle = () => apply(!head.classList.contains("collapsed"), true);
+  head.addEventListener("click", toggle);
+  head.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
 }
 
 // ── Market Matrix ─────────────────────────────────────────────────────────
