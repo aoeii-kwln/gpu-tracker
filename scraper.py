@@ -63,6 +63,11 @@ GPU_MODELS = {
     "RTX 5060 Ti 16G":{"kakaku_url": "https://kakaku.com/pc/videocard/itemlist.aspx?pdf_Spec103=503&pdf_Spec301=16384",        "series": "RTX50", "vendor": "NVIDIA"},
     "RTX 5060 Ti 8G": {"kakaku_url": "https://kakaku.com/pc/videocard/itemlist.aspx?pdf_Spec103=503&pdf_Spec301=8192",         "series": "RTX50", "vendor": "NVIDIA"},
     "RTX 5060":       {"kakaku_url": "https://kakaku.com/pc/videocard/itemlist.aspx?pdf_Spec103=504",                          "series": "RTX50", "vendor": "NVIDIA"},
+    # NVIDIA RTX 30 Series (旧世代・継続販売分)
+    # kakaku_url が None の場合は、起動時に kakaku のチップ絞り込み一覧から自動解決する。
+    # 自動解決に失敗したら、kakaku で絞り込んだURLをここに直接貼ればOK。
+    "RTX 3060 12G":   {"kakaku_url": None, "chip_label": "RTX 3060", "mem_mb": 12288,                                        "series": "RTX30", "vendor": "NVIDIA"},
+    "RTX 3050 6G":    {"kakaku_url": None, "chip_label": "RTX 3050", "mem_mb": 6144,                                         "series": "RTX30", "vendor": "NVIDIA"},
     # AMD RX 9000 Series
     "RX 9070 XT":     {"kakaku_url": "https://kakaku.com/pc/videocard/itemlist.aspx?pdf_Spec112=106",                          "series": "RX9000", "vendor": "AMD"},
     "RX 9070":        {"kakaku_url": "https://kakaku.com/pc/videocard/itemlist.aspx?pdf_Spec112=107",                          "series": "RX9000", "vendor": "AMD"},
@@ -236,12 +241,69 @@ def fetch_authorized_price(item_url: str) -> tuple[int | None, str | None]:
 
 
 
+KAKAKU_LIST_URL = "https://kakaku.com/pc/videocard/itemlist.aspx"
+
+
+def find_chip_candidates(soup) -> dict[str, str]:
+    """Return {pdf_Spec103 id: label} found in the page's chipset filter."""
+    found: dict[str, str] = {}
+    for a in soup.select("a[href*='pdf_Spec103=']"):
+        m = re.search(r"pdf_Spec103=(\d+)", a.get("href", ""))
+        label = a.get_text(strip=True)
+        if m and label:
+            found.setdefault(m.group(1), label)
+    for inp in soup.select("input[name='pdf_Spec103']"):
+        val = inp.get("value")
+        label = ""
+        parent = inp.find_parent("label")
+        if parent:
+            label = parent.get_text(strip=True)
+        elif inp.get("id"):
+            lab = soup.select_one(f"label[for='{inp['id']}']")
+            label = lab.get_text(strip=True) if lab else ""
+        if not label and inp.next_sibling is not None:
+            label = str(inp.next_sibling).strip()
+        if val and label:
+            found.setdefault(val, label)
+    return found
+
+
+def resolve_kakaku_url(gpu_name: str, meta: dict) -> str | None:
+    """Use meta['kakaku_url'] if set; otherwise look up the chipset id on kakaku."""
+    if meta.get("kakaku_url"):
+        return meta["kakaku_url"]
+    chip = re.sub(r"\s", "", meta.get("chip_label", "")).upper()   # e.g. RTX3060
+    if not chip:
+        return None
+    try:
+        soup = BeautifulSoup(get(KAKAKU_LIST_URL).text, "html.parser")
+        pat = re.compile(re.escape(chip) + r"(?!TI|SUPER|\d)")
+        hits = [(i, l) for i, l in find_chip_candidates(soup).items()
+                if pat.search(re.sub(r"\s", "", l).upper())]
+        if len(hits) != 1:
+            log.warning(f"resolve_kakaku_url [{gpu_name}]: {len(hits)} candidates {hits} — "
+                        f"kakaku_url を手動で設定してください")
+            return None
+        chip_id = hits[0][0]
+        url = f"{KAKAKU_LIST_URL}?pdf_Spec103={chip_id}"
+        if meta.get("mem_mb"):
+            url += f"&pdf_Spec301={meta['mem_mb']}"
+        log.info(f"  resolved [{gpu_name}] → {url}")
+        return url
+    except Exception as e:
+        log.warning(f"resolve_kakaku_url [{gpu_name}]: {e}")
+        return None
+
+
 def scrape_all() -> dict[str, dict]:
     """Run all scrapers for each GPU model, fetching authorized-retailer prices."""
     results = {}
     for gpu_name, meta in GPU_MODELS.items():
         log.info(f"Scraping: {gpu_name}")
-        kakaku_url = meta["kakaku_url"]
+        kakaku_url = resolve_kakaku_url(gpu_name, meta)
+        if not kakaku_url:
+            log.warning(f"  skip [{gpu_name}]: kakaku URL を解決できませんでした")
+            continue
 
         models = scrape_kakaku_models(gpu_name, kakaku_url)
         time.sleep(1.0)
@@ -448,6 +510,14 @@ def run():
 
 
 if __name__ == "__main__":
+    import sys
+    if "--find-chip" in sys.argv:
+        # 例: python scraper.py --find-chip   → kakaku のチップ絞り込み候補を表示
+        cands = find_chip_candidates(BeautifulSoup(get(KAKAKU_LIST_URL).text, "html.parser"))
+        for cid, label in sorted(cands.items(), key=lambda x: x[1]):
+            print(f"pdf_Spec103={cid:>5}  {label}")
+        print(f"({len(cands)} 件)")
+        sys.exit(0)
     try:
         run()
     except Exception:

@@ -445,8 +445,8 @@
   <!-- Filters -->
   <div class="section-label" id="detail-top">📋 GPU別詳細</div>
   <div class="tabs">
-    <button class="tab active" data-series="RTX50" onclick="setPage('nvidia',this)">🟢 NVIDIA RTX 50</button>
-    <button class="tab" data-series="RX9000" onclick="setPage('amd',this)">🔴 AMD RX 9000</button>
+    <button class="tab active" data-series="NVIDIA" onclick="setPage('nvidia',this)">🟢 NVIDIA</button>
+    <button class="tab" data-series="AMD" onclick="setPage('amd',this)">🔴 AMD</button>
   </div>
 
   <!-- GPU list -->
@@ -473,9 +473,9 @@ const CHART_COLORS = {
   sofmap:  "#6366f1",
 };
 
-let currentFilter = "RTX50";
+let currentFilter = "NVIDIA";   // NVIDIA / AMD（meta.vendor で分類）
 const chartInstances = {};
-const SERIES_LABELS = { RTX50: "RTX 50 Series", RX9000: "RX 9000 Series" };
+const SERIES_LABELS = { NVIDIA: "GeForce RTX 50 / 30", AMD: "Radeon RX 9000" };
 const yen = n => n == null ? "—" : "¥" + Math.round(n).toLocaleString();
 
 // ── Boot ─────────────────────────────────────────────────────────────────
@@ -496,7 +496,7 @@ const yen = n => n == null ? "—" : "¥" + Math.round(n).toLocaleString();
 
 // ── Filter ───────────────────────────────────────────────────────────────
 function setPage(page, btn) {
-  switchSeries(page === 'nvidia' ? 'RTX50' : 'RX9000');
+  switchSeries(page === 'nvidia' ? 'NVIDIA' : 'AMD');
 }
 
 function switchSeries(series) {
@@ -687,15 +687,19 @@ function renderMatrix() {
   const area = document.getElementById("matrix-area");
   const groups = {};
   Object.entries(PRICES_DATA).forEach(([gpu, d]) => {
-    const s = d.meta?.series ?? "other";
+    const s = d.meta?.vendor ?? "NVIDIA";
     (groups[s] = groups[s] || []).push(gpu);
   });
 
-  area.innerHTML = Object.entries(groups).map(([series, gpus]) => {
-    const vendor = PRICES_DATA[gpus[0]].meta?.vendor ?? "";
+  const vendorOrder = ["NVIDIA", "AMD"];
+  const sortedGroups = Object.entries(groups).sort((a, b) => {
+    const ia = vendorOrder.indexOf(a[0]), ib = vendorOrder.indexOf(b[0]);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+  area.innerHTML = sortedGroups.map(([vendor, gpus]) => {
     const badge = vendor === "AMD" ? "badge-amd" : "badge-nvidia";
     return `<div class="mx-block">
-      <div class="mx-title"><span class="vendor-badge ${badge}">${escHtml(vendor)}</span>${escHtml(SERIES_LABELS[series] ?? series)}</div>
+      <div class="mx-title"><span class="vendor-badge ${badge}">${escHtml(vendor)}</span>${escHtml(SERIES_LABELS[vendor] ?? vendor)}</div>
       <div class="matrix-wrap"><table class="matrix">
         <thead><tr>${gpus.map(g => `<th>${escHtml(g)}</th>`).join("")}</tr></thead>
         <tbody><tr>${gpus.map(g => matrixCell(g)).join("")}</tr></tbody>
@@ -712,8 +716,8 @@ function renderMatrix() {
 }
 
 function gotoGPU(gpu) {
-  const series = PRICES_DATA[gpu]?.meta?.series;
-  if (series && series !== currentFilter) switchSeries(series);
+  const vendor = PRICES_DATA[gpu]?.meta?.vendor ?? "NVIDIA";
+  if (vendor !== currentFilter) switchSeries(vendor);
   const el = document.getElementById("card-" + gpuSlug(gpu));
   if (!el) return;
   el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -727,7 +731,7 @@ function renderGPUs() {
 
   const entries = Object.entries(PRICES_DATA).filter(([, d]) => {
     if (currentFilter === "all") return true;
-    return (d.meta?.series ?? "") === currentFilter;
+    return (d.meta?.vendor ?? "NVIDIA") === currentFilter;
   });
 
   entries.forEach(([gpu, data], idx) => {
